@@ -22,6 +22,8 @@
   width: 25%;
   display: inline-block;
   float: left; }
+  #buddypress div#item-header #item-header:after, #buddypress div#item-nav #item-header:after {
+    clear: none; }
 #buddypress div#item-body {
   width: 75%;
   display: inline-block; }

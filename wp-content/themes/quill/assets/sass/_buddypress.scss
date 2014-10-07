@@ -3,6 +3,12 @@
 		width: 25%;
 		display: inline-block;
 		float: left;
+		#item-header {
+			&:after {
+				clear:none;
+			}
+		}
+
 	}
 	div#item-body {
 		width: 75%;
