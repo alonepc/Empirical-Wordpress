@@ -3464,7 +3464,7 @@ a.post-thumbnail:hover {
 
 	.primary-navigation .nav-menu {
 		border-bottom: 0;
-		display: block;
+		display: inline-block;
 	}
 
 	.primary-navigation.toggled-on {

@@ -1,0 +1,11 @@
+#buddypress {
+	div#item-header, div#item-nav {
+		width: 25%;
+		display: inline-block;
+		float: left;
+	}
+	div#item-body {
+		width: 75%;
+		display: inline-block;
+	}
+}

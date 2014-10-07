@@ -1,14 +1,2 @@
-#masthead {
-	.header-main {
-		.site-title {
-			a {
-				background-image: url('../img/logo.png');
-				background-repeat: no-repeat;
-				height: 70px;
-				width: 250px;
-				font-size: 1px;
-				color: #DFEDD6;
-			}
-		}
-	}
-}
+@import 'header';
+@import 'buddypress';

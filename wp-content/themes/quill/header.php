@@ -44,9 +44,11 @@
 				<?php wp_nav_menu( array( 
 									'theme_location' => 'primary', 
 									'menu_class' => 'nav-menu', 
-									'after' => ' | ',
 									) 
 				); ?>
+				
+				<a href="#" class="my-portfolio">My Portfolio</a>
+				
 			</nav>
 		</div>
 		
