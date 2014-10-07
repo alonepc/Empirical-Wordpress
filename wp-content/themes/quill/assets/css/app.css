@@ -18,12 +18,59 @@
   min-height: 30px;
   line-height: 30px; }
 
-#buddypress div#item-header, #buddypress div#item-nav {
+#buddypress div#buddypress-sidebar {
   width: 25%;
   display: inline-block;
   float: left; }
-  #buddypress div#item-header #item-header:after, #buddypress div#item-nav #item-header:after {
-    clear: none; }
 #buddypress div#item-body {
   width: 75%;
   display: inline-block; }
+#buddypress div.empirical_group_card {
+  width: 200px;
+  height: 320px;
+  border: 1px solid #d6d6d6;
+  border-radius: 15px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #dfedd6; }
+  #buddypress div.empirical_group_card h2 a {
+    color: #000;
+    text-decoration: none; }
+  #buddypress div.empirical_group_card div.description {
+    background-color: #fff;
+    padding: 10px;
+    line-height: 1;
+    height: 160px; }
+  #buddypress div.empirical_group_card div.description a {
+    color: #000;
+    text-decoration: none; }
+  #buddypress div.empirical_group_card .group_icon {
+    height: 72px;
+    text-align: center;
+    padding: 7px; }
+  #buddypress div.empirical_group_card .statistics {
+    text-align: center;
+    margin-top: 11px; }
+    #buddypress div.empirical_group_card .statistics div.count_icon {
+      background-color: #fff;
+      padding: 2px 13px 5px 13px;
+      width: 50px;
+      height: 25px;
+      text-align: center;
+      display: inline-block;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border: 1px solid #d6d6d6;
+      z-index: 6;
+      margin: -1px; }
+      #buddypress div.empirical_group_card .statistics div.count_icon img {
+        display: inline-block; }
+      #buddypress div.empirical_group_card .statistics div.count_icon div.member_count, #buddypress div.empirical_group_card .statistics div.count_icon div.update_count {
+        display: inline-block; }
+      #buddypress div.empirical_group_card .statistics div.count_icon.updates_count_icon {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-left: -3px; }

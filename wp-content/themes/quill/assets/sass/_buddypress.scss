@@ -1,17 +1,75 @@
 #buddypress {
-	div#item-header, div#item-nav {
+	div#buddypress-sidebar {
 		width: 25%;
 		display: inline-block;
 		float: left;
-		#item-header {
-			&:after {
-				clear:none;
-			}
-		}
-
 	}
 	div#item-body {
 		width: 75%;
 		display: inline-block;
 	}
+	
+	div.empirical_group_card {
+		width: 200px;
+		height: 320px;
+		border: 1px solid #d6d6d6;
+		border-radius: 15px;
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		background-color: #dfedd6;
+		h2 a {
+			color: #000;
+			text-decoration: none;
+		}
+		div.description {
+			background-color: #fff;
+			padding: 10px;
+			line-height: 1;
+			height: 160px;
+		}
+		div.description a {
+			color: #000;
+			text-decoration: none;
+		}
+		
+		.group_icon {
+			height: 72px;
+			text-align: center;
+			padding: 7px;
+		}
+		.statistics {
+			$statistics-border-radius: 10px;
+			text-align: center;
+			margin-top: 11px;
+			div.count_icon {
+				background-color: #fff;
+				padding: 2px 13px 5px 13px;
+				width: 50px;
+				height: 25px;
+				text-align: center;
+				display: inline-block;
+				border-top-left-radius: $statistics-border-radius;
+				border-bottom-left-radius: $statistics-border-radius;
+				border: 1px solid #d6d6d6;
+				z-index: 6;
+				margin: -1px;
+				img {
+					display: inline-block;
+				}
+				div.member_count, div.update_count {
+					display: inline-block;
+				}
+				&.updates_count_icon {
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: $statistics-border-radius;
+					border-top-right-radius: $statistics-border-radius;
+					margin-left: -3px;
+				}
+			}
+		}
+
+	}
+
 }

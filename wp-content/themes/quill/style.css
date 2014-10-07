@@ -4298,66 +4298,6 @@ a.group-create {
 	float: right;
 	display: none;
 }
-div.empirical_group_card {
-	width: 200px;
-	height: 320px;
-	border: 1px solid #d6d6d6;
-	border-radius: 15px;
-	float: left;
-	margin-right: 15px;
-	margin-bottom: 15px;
-	background-color: #dfedd6;
-}
-div.empirical_group_card h2 a {
-	color: #000;
-	text-decoration: none;
-}
-div.empirical_group_card div.description {
-	background-color: #fff;
-	padding: 10px;
-	line-height: 1;
-	height: 160px;
-}
-div.empirical_group_card div.description a {
-	color: #000;
-	text-decoration: none;
-}
-
-div.empirical_group_card .group_icon {
-	height: 72px;
-	text-align: center;
-	padding: 7px;
-}
-div.empirical_group_card div.member_count_icon {
-	background-color: #fff;
-	padding: 2px 5px 5px 5px;
-	width: 22px;
-	height: 25px;
-	text-align: center;
-	border-radius: 33px;
-	border: 1px solid #d6d6d6;
-	position: absolute;
-	top: 11px;
-	left: 72px;
-	z-index: 6;
-}
-div.empirical_group_card div.member_count {
-	background-color: #fff;
-	padding: 7px 7px 7px 7px;
-	width: 27px;
-	height: 27px;
-	text-align: center;
-	border-radius: 33px;
-	border: 1px solid #d6d6d6;
-	position: absolute;
-	top: 6px;
-	left: 95px;
-	z-index: 3;
-}
-div.empirical_group_card div.statistics {
-	padding: 10px;
-	position: relative;
-}
 #groups-dir-list div.pag-count {
 	display:  none;
 }

@@ -45,11 +45,22 @@
 			<a href="<?php bp_group_permalink(); ?>"><?php bp_group_description_excerpt(); ?></a>
 		</div>
 		<div class="statistics">
-			<div class="member_count_icon">
+			<div class="count_icon member_count_icon">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/group_person.png" />
+				<div class="member_count">
+					<?php bp_group_member_count(); ?>
+				</div>
 			</div>
-			<div class="member_count">
-				<?php bp_group_member_count(); ?>
+			<div class="count_icon updates_count_icon">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/group_person.png" />
+				<div class="update_count">
+					<?php
+						global $wpdb;
+						$group_id = bp_get_group_id();
+						$update_count = $wpdb->get_var( "SELECT COUNT(*) FROM wp_bp_activity WHERE item_id=$group_id" );
+						echo($update_count);
+					?>
+				</div>
 			</div>
 		</div>
 	</div>
