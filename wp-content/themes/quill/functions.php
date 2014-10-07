@@ -223,6 +223,9 @@ function twentyfourteen_font_url() {
  * @since Twenty Fourteen 1.0
  */
 function twentyfourteen_scripts() {
+	//Add our custom css
+	wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.css' );
+	
 	// Add Lato font, used in the main stylesheet.
 	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
 
@@ -513,3 +516,6 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
+//Disable the wordpress admin bar
+add_filter('show_admin_bar', '__return_false');

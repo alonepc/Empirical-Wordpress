@@ -820,9 +820,6 @@ span + .edit-link:before,
  */
 
 .site {
-	/*background-color: #fff;*/
-	max-width: 1260px;
-	position: relative;
 }
 
 .main-content {
@@ -847,16 +844,17 @@ span + .edit-link:before,
 }
 
 .site-header {
-	background-color: #000;
-	max-width: 1260px;
+	background-color: #DFEDD6;
 	position: relative;
 	width: 100%;
 	z-index: 4;
 }
 
 .header-main {
-	min-height: 48px;
+	max-width: 700px;
+	min-height: 70px;
 	padding: 0 10px;
+	margin: 0 auto;
 }
 
 .site-title {
@@ -953,9 +951,9 @@ span + .edit-link:before,
 }
 
 .site-navigation a {
-	color: #fff;
+	color: #000;
 	display: block;
-	text-transform: uppercase;
+	font-weight: normal;
 }
 
 .site-navigation a:hover {
@@ -966,7 +964,7 @@ span + .edit-link:before,
 .site-navigation .current_page_ancestor > a,
 .site-navigation .current-menu-item > a,
 .site-navigation .current-menu-ancestor > a {
-	color: #55d737;
+	color: #000;
 	font-weight: 900;
 }
 
@@ -985,7 +983,6 @@ span + .edit-link:before,
 }
 
 .primary-navigation .nav-menu {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	display: none;
 }
 
@@ -3442,21 +3439,6 @@ a.post-thumbnail:hover {
 		margin-right: 0;
 	}
 
-	/* Fixed Header */
-
-	.masthead-fixed .site-header {
-		position: fixed;
-		top: 0;
-	}
-
-	.admin-bar.masthead-fixed .site-header {
-		top: 32px;
-	}
-
-	.masthead-fixed .site-main {
-		margin-top: 48px;
-	}
-
 	/* Navigation */
 
 	.site-navigation li .current_page_item > a,
@@ -3470,10 +3452,9 @@ a.post-thumbnail:hover {
 
 	.primary-navigation {
 		float: right;
-		font-size: 11px;
+		font-size: 13px;
 		margin: 0 1px 0 -12px;
 		padding: 0;
-		text-transform: uppercase;
 	}
 
 	.primary-navigation .menu-toggle {
@@ -3494,10 +3475,8 @@ a.post-thumbnail:hover {
 
 	.primary-navigation li {
 		border: 0;
-		display: inline-block;
-		height: 48px;
-		line-height: 48px;
-		position: relative;
+		display: inline;
+		line-height: 70px;
 	}
 
 	.primary-navigation a {
@@ -3536,13 +3515,12 @@ a.post-thumbnail:hover {
 
 	.primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
-		background-color: #24890d;
-		color: #fff;
+		color: #000;
 	}
 
 	.primary-navigation ul ul a:hover,
 	.primary-navigation ul ul li.focus > a {
-		background-color: #41a62a;
+		color: #000;
 	}
 
 	.primary-navigation ul li:hover > ul,
@@ -4312,10 +4290,6 @@ a.post-thumbnail:hover {
 
 #primary-sidebar {
 	display: none;
-}
-#quill-header {
-	background-image: url('./images/empiricallogobg.png');
-	padding-left: 255px;
 }
 #buddypress div#item-header img.avatar {
 	border-radius: 75px;
