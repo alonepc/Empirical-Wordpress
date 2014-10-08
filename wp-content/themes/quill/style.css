@@ -851,7 +851,7 @@ span + .edit-link:before,
 }
 
 .header-main {
-	max-width: 700px;
+	max-width: 964px;
 	min-height: 70px;
 	padding: 0 10px;
 	margin: 0 auto;
@@ -1054,7 +1054,7 @@ span + .edit-link:before,
 .site-content .entry-meta,
 .page-content {
 	margin: 0 auto;
-	max-width: 700px;
+	max-width: 964px;
 }
 
 .page-content {

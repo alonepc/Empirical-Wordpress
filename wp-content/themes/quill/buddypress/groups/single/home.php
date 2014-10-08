@@ -3,25 +3,20 @@
 	<?php if ( bp_has_groups() ) : while ( bp_groups() ) : bp_the_group(); ?>
 
 	<?php do_action( 'bp_before_group_home_content' ); ?>
-
-	<div id="item-header" role="complementary">
-
-		<?php bp_get_template_part( 'groups/single/group-header' ); ?>
-
-	</div><!-- #item-header -->
-
-	<div id="item-nav">
-		<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
-			<ul>
-
-				<?php bp_get_options_nav(); ?>
-
-				<?php do_action( 'bp_group_options_nav' ); ?>
-
-			</ul>
+	
+	<div id="buddypress-sidebar">
+		<div id="item-header" role="complementary">
+	
+			<?php bp_get_template_part( 'groups/single/group-header' ); ?>
+	
+		</div><!-- #item-header -->
+		
+		<div id="item-members">
+			<?php bp_get_template_part( 'groups/single/members'); ?>
 		</div>
-	</div><!-- #item-nav -->
-
+	
+	</div>
+	
 	<div id="item-body">
 
 		<?php do_action( 'bp_before_group_body' );

@@ -6,6 +6,35 @@
 		width: 25%;
 		display: inline-block;
 		float: left;
+		#item-header-title {
+			h2 {
+			}
+
+		}
+		#item-members {
+			ul#member-list {
+				border-top: none;
+				li {
+					border-bottom: none;
+					a {
+						img {
+							border-radius: 25px;
+						}
+					}
+					h5 {
+						display: inline-block;
+						font-weight: normal;
+						margin: 0;
+						padding: 0;
+						line-height: 47px;
+						a {
+							color: #000;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
 	}
 	div#item-body {
 		width: 75%;
@@ -22,13 +51,13 @@
 
 	
 	div.empirical_group_card {
-		width: 200px;
+		width: 28%;
 		height: 320px;
 		border: 1px solid #d6d6d6;
 		border-radius: 15px;
 		float: left;
-		margin-right: 15px;
-		margin-bottom: 15px;
+		margin-right: 5%;
+		margin-bottom: 5%;
 		background-color: #dfedd6;
 		h2 a {
 			color: #000;

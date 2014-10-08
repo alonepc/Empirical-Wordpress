@@ -26,6 +26,21 @@
   width: 25%;
   display: inline-block;
   float: left; }
+  #buddypress div#buddypress-sidebar #item-members ul#member-list {
+    border-top: none; }
+    #buddypress div#buddypress-sidebar #item-members ul#member-list li {
+      border-bottom: none; }
+      #buddypress div#buddypress-sidebar #item-members ul#member-list li a img {
+        border-radius: 25px; }
+      #buddypress div#buddypress-sidebar #item-members ul#member-list li h5 {
+        display: inline-block;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        line-height: 47px; }
+        #buddypress div#buddypress-sidebar #item-members ul#member-list li h5 a {
+          color: #000;
+          text-decoration: none; }
 #buddypress div#item-body {
   width: 75%;
   display: inline-block; }
@@ -33,13 +48,13 @@
   color: #000;
   font-weight: bold; }
 #buddypress div.empirical_group_card {
-  width: 200px;
+  width: 28%;
   height: 320px;
   border: 1px solid #d6d6d6;
   border-radius: 15px;
   float: left;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin-right: 5%;
+  margin-bottom: 5%;
   background-color: #dfedd6; }
   #buddypress div.empirical_group_card h2 a {
     color: #000;
