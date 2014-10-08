@@ -17,9 +17,18 @@
 <li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">
 	<div class="activity-avatar">
 		<a href="<?php bp_activity_user_link(); ?>">
-
-			<?php bp_activity_avatar(); ?>
-
+			<?php
+			global $wpdb;
+			$activity_id = bp_get_activity_id();
+			$group_id = $wpdb->get_var( "SELECT item_id FROM wp_bp_activity WHERE id=$activity_id" );
+			$group_id = intval($group_id);
+			if($group_id === 0) {
+				bp_activity_avatar();
+			} else {
+				$avatar = bp_core_fetch_avatar( array( 'item_id' => $group_id, 'object' => 'group', 'width' => 75, 'height' => 75 ) );
+				echo($avatar);
+			}
+			?>
 		</a>
 	</div>
 
