@@ -41,7 +41,7 @@
         #buddypress div#buddypress-sidebar #item-members ul#member-list li h5 a {
           color: #000;
           text-decoration: none; }
-#buddypress div#item-body {
+#buddypress div#item-body, #buddypress .item-body {
   width: 75%;
   display: inline-block; }
 #buddypress .activity-list .activity-content .activity-header {
