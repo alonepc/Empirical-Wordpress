@@ -14,7 +14,7 @@
 
 <?php do_action( 'bp_before_activity_entry' ); ?>
 
-<li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">
+<li class="activity activity_update activity-item" id="activity-<?php bp_activity_id(); ?>">
 	<div class="activity-avatar">
 		<a href="<?php bp_activity_user_link(); ?>">
 			<?php
@@ -36,19 +36,32 @@
 
 		<div class="activity-header">
 
-			<?php bp_activity_action(); ?>
-
+			<?php
+				if($group_id == 0) {
+					
+				} else {
+					$group_name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
+					echo($group_name);
+				}
+			?>
 		</div>
 
-		<?php if ( bp_activity_has_content() ) : ?>
+		
 
 			<div class="activity-inner">
-
-				<?php bp_activity_content_body(); ?>
-
+			
+				<?php if ( bp_activity_has_content() ) { ?>
+					<?php bp_activity_content_body(); ?>
+				<?php } else { ?>
+					<?php
+						$image = bp_get_activity_action();
+						$image = preg_replace("/<img[^>]+\>/i", "", $image); 
+						echo($image);
+					?>
+				<?php } ?>
+				
 			</div>
 
-		<?php endif; ?>
 
 		<?php do_action( 'bp_activity_entry_content' ); ?>
 
