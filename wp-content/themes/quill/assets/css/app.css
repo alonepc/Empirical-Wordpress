@@ -26,6 +26,9 @@
 #buddypress div#item-body {
   width: 75%;
   display: inline-block; }
+#buddypress .activity-list .activity-content .activity-header {
+  color: #000;
+  font-weight: bold; }
 #buddypress div.empirical_group_card {
   width: 200px;
   height: 320px;
