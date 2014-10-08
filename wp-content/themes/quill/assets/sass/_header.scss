@@ -11,6 +11,7 @@
 			}
 		}
 		.primary-navigation {
+			float: right;
 			.nav-menu {
 				li {
 					border-right: 1px solid #000;
@@ -28,6 +29,7 @@
 				border-radius: 5px;
 				min-height: 30px;
 				line-height: 30px;
+				float: right;
 			}
 		}
 	}

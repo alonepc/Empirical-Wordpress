@@ -17,7 +17,8 @@
   display: inline-block;
   border-radius: 5px;
   min-height: 30px;
-  line-height: 30px; }
+  line-height: 30px;
+  float: right; }
 
 .buddypress-wrapper {
   padding-top: 50px; }
