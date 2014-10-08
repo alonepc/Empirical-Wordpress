@@ -3454,8 +3454,8 @@ a.post-thumbnail:hover {
 	.primary-navigation {
 		float: right;
 		font-size: 13px;
-		margin: 0 1px 0 -12px;
 		padding: 0;
+		width: 70%
 	}
 
 	.primary-navigation .menu-toggle {
