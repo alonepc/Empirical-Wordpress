@@ -38,10 +38,15 @@
 
 			<?php
 				if($group_id == 0) {
+				
+					global $bp;
+					echo($bp->displayed_user->fullname);
 					
 				} else {
+				
 					$group_name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
 					echo($group_name);
+					
 				}
 			?>
 		</div>
