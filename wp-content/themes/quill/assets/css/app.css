@@ -8,6 +8,8 @@
   color: #DFEDD6; }
 #masthead .header-main .primary-navigation {
   width: auto; }
+  #masthead .header-main .primary-navigation .menu-primary-menu-container {
+    display: inline-block; }
   #masthead .header-main .primary-navigation .nav-menu {
     display: inline-block; }
     #masthead .header-main .primary-navigation .nav-menu li {

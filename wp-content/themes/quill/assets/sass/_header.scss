@@ -12,6 +12,9 @@
 		}
 		.primary-navigation {
 			width: auto;
+			.menu-primary-menu-container {
+				display: inline-block;
+			}
 			.nav-menu {
 				display: inline-block;
 				li {
