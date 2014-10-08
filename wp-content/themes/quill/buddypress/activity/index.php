@@ -4,12 +4,6 @@
 
 	<?php do_action( 'bp_before_directory_activity_content' ); ?>
 
-	<?php if ( is_user_logged_in() ) : ?>
-
-		<?php bp_get_template_part( 'activity/post-form' ); ?>
-
-	<?php endif; ?>
-
 	<?php do_action( 'template_notices' ); ?>
 
 	<div id="buddypress-sidebar">
@@ -19,6 +13,12 @@
 	<?php do_action( 'bp_before_directory_activity_list' ); ?>
 
 	<div class="activity item-body" role="main">
+
+		<?php if ( is_user_logged_in() ) : ?>
+	
+			<?php bp_get_template_part( 'activity/post-form' ); ?>
+	
+		<?php endif; ?>
 
 		<?php bp_get_template_part( 'activity/activity-loop' ); ?>
 
