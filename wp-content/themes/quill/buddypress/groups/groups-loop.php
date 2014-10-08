@@ -46,13 +46,13 @@
 		</div>
 		<div class="statistics">
 			<div class="count_icon member_count_icon">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/group_person.png" />
+				<i class="fa fa-user"></i>
 				<div class="member_count">
 					<?php bp_group_member_count(); ?>
 				</div>
 			</div>
 			<div class="count_icon updates_count_icon">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/group_person.png" />
+				<i class="fa fa-refresh"></i>
 				<div class="update_count">
 					<?php
 						global $wpdb;

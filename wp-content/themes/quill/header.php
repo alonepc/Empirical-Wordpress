@@ -47,7 +47,7 @@
 									) 
 				); ?>
 				
-				<a href="#" class="my-portfolio">My Portfolio</a>
+				<a href="#" class="my-portfolio"><i class="fa fa-suitcase"></i> My Portfolio</a>
 				
 			</nav>
 		</div>
