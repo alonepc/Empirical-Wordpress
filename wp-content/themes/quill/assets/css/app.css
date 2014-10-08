@@ -7,20 +7,21 @@
   font-size: 1px;
   color: #DFEDD6; }
 #masthead .header-main .primary-navigation {
-  float: right; }
-  #masthead .header-main .primary-navigation .nav-menu li {
-    border-right: 1px solid #000; }
-    #masthead .header-main .primary-navigation .nav-menu li a {
-      text-decoration: underline; }
-    #masthead .header-main .primary-navigation .nav-menu li:last-child {
-      border-right: none; }
+  width: auto; }
+  #masthead .header-main .primary-navigation .nav-menu {
+    display: inline-block; }
+    #masthead .header-main .primary-navigation .nav-menu li {
+      border-right: 1px solid #000; }
+      #masthead .header-main .primary-navigation .nav-menu li a {
+        text-decoration: underline; }
+      #masthead .header-main .primary-navigation .nav-menu li:last-child {
+        border-right: none; }
   #masthead .header-main .primary-navigation .my-portfolio {
     background-color: #92D36E;
     display: inline-block;
     border-radius: 5px;
     min-height: 30px;
-    line-height: 30px;
-    float: right; }
+    line-height: 30px; }
 
 .buddypress-wrapper {
   padding-top: 50px; }

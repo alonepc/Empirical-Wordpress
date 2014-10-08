@@ -11,8 +11,9 @@
 			}
 		}
 		.primary-navigation {
-			float: right;
+			width: auto;
 			.nav-menu {
+				display: inline-block;
 				li {
 					border-right: 1px solid #000;
 					a {
@@ -29,7 +30,6 @@
 				border-radius: 5px;
 				min-height: 30px;
 				line-height: 30px;
-				float: right;
 			}
 		}
 	}
