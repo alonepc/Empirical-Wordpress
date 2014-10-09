@@ -26,10 +26,12 @@ if($group_id === 0) {
   $user_id = $wpdb->get_var( "SELECT user_id FROM wp_bp_activity WHERE id=$activity_id" );
   $user_data = get_userdata($user_id);
   $name = $user_data->first_name . ' ' . $user_data->last_name;
+  $img_class = 'round';
 } else {
   $avatar = bp_core_fetch_avatar( array( 'item_id' => $group_id, 'object' => 'group', 'width' => 75, 'height' => 75 ) );
   $link = '/groups/' . $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
   $name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
+  $img_class = '';
 }
 
 $date = date("F jS, Y",strtotime($activities_template->activity->date_recorded));
@@ -41,7 +43,7 @@ $date = date("F jS, Y",strtotime($activities_template->activity->date_recorded))
 <li class="activity activity_update activity-item" id="activity-<?php bp_activity_id(); ?>">
 
   <div class="activity-avatar">
-    <a href="<?php echo($link); ?>">
+    <a href="<?php echo($link); ?>" class="<?php echo($img_class); ?>">
       <?php echo($avatar);  ?>
     </a>
   </div>

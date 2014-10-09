@@ -55,6 +55,8 @@
   font-weight: bold; }
 #buddypress .activity-list .activity-content .activity-header .activity-date {
   float: right; }
+#buddypress .activity-list .activity .activity-avatar .round img {
+  border-radius: 50%; }
 #buddypress div.empirical_group_card {
   width: 28%;
   height: 320px;
