@@ -50,7 +50,7 @@
 #buddypress div#item-body, #buddypress .item-body {
   width: 75%;
   display: inline-block; }
-#buddypress .activity-list .activity-content .activity-header {
+#buddypress .activity-list .activity-content .activity-header a {
   color: #000;
   font-weight: bold; }
 #buddypress div.empirical_group_card {
