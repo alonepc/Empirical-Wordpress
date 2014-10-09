@@ -102,6 +102,28 @@
         border-bottom-right-radius: 10px;
         border-top-right-radius: 10px;
         margin-left: -3px; }
+#buddypress #members-dir-list ul#members-list {
+  border-top: none; }
+  #buddypress #members-dir-list ul#members-list li {
+    border-bottom: none;
+    width: 33%;
+    display: inline-block; }
+    #buddypress #members-dir-list ul#members-list li .item-avatar {
+      display: block;
+      text-align: center; }
+      #buddypress #members-dir-list ul#members-list li .item-avatar img.avatar {
+        border-radius: 50%;
+        float: none;
+        text-align: center; }
+    #buddypress #members-dir-list ul#members-list li .item .item-title {
+      display: block;
+      margin: 0 auto;
+      margin-top: 5px;
+      text-align: center; }
+      #buddypress #members-dir-list ul#members-list li .item .item-title a {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px; }
 
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome

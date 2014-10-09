@@ -117,5 +117,39 @@
 		}
 
 	}
+	
+	
+	#members-dir-list {
+		ul#members-list {
+			border-top: none;
+			li {
+				border-bottom: none;
+				width: 33%;
+				display: inline-block;
+				.item-avatar {
+					display: block;
+					text-align: center;
+					img.avatar {
+						border-radius: 50%;
+						float: none;
+						text-align: center;
+					}
+				}
+				.item {
+					.item-title {
+						display: block;
+						margin:  0 auto;
+						margin-top: 5px;
+						text-align: center;
+						a {
+							color: #000;
+							text-decoration: none;
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
