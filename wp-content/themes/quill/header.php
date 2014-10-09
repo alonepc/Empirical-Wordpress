@@ -47,8 +47,9 @@
 									) 
 				); ?>
 				
-				<a href="#" class="my-portfolio"><i class="fa fa-suitcase"></i> My Portfolio</a>
-				
+				<?php if(is_user_logged_in()) { ?>
+					<a href="<?php bp_loggedin_user_link(); ?>" class="my-portfolio"><i class="fa fa-suitcase"></i> My Portfolio</a>
+				<?php } ?>
 			</nav>
 		</div>
 		
