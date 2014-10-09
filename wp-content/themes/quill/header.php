@@ -49,6 +49,8 @@
 				
 				<?php if(is_user_logged_in()) { ?>
 					<a href="<?php bp_loggedin_user_link(); ?>" class="my-portfolio"><i class="fa fa-suitcase"></i> My Portfolio</a>
+				<?php } else { ?>
+					<a href="<?php echo(wp_login_url(esc_url( home_url( '/' ) ))); ?>" class="my-portfolio"><i class="fa fa-user"></i> Login</a>
 				<?php } ?>
 			</nav>
 		</div>
