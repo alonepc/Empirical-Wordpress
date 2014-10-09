@@ -27,7 +27,6 @@ $bp->avatar->thumb->width = 125;
 	<ul id="members-list" class="item-list" role="main">
 
 	<?php while ( bp_members() ) : bp_the_member(); ?>
-		<?php var_dump(bp_the_member()); ?>
 		<li>
 			<div class="item-avatar">
 				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
