@@ -8,6 +8,8 @@
 
 	<div id="buddypress-sidebar">
 		<h2>Activity</h2>
+		<img src="<?php echo(get_template_directory_uri()); ?>/assets/img/activity-sidebar.jpg" />
+		<p>All activity on Empirical</p>
 	</div>
 
 	<?php do_action( 'bp_before_directory_activity_list' ); ?>
