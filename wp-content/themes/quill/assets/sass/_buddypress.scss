@@ -2,18 +2,16 @@
 	padding-top: 50px;
 }
 #buddypress {
+	div#item-header {
+		div#item-meta {
+			color: #000;
+		}
+
+	}
 	div#buddypress-sidebar {
 		width: 25%;
 		display: inline-block;
 		float: left;
-		#item-header {
-			#item-meta {
-				#item-buttons {
-					
-				}
-			}
-
-		}
 		#item-members {
 			ul#member-list {
 				border-top: none;

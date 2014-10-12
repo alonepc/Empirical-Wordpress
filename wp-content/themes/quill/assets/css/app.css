@@ -28,6 +28,8 @@
 .buddypress-wrapper {
   padding-top: 50px; }
 
+#buddypress div#item-header div#item-meta {
+  color: #000; }
 #buddypress div#buddypress-sidebar {
   width: 25%;
   display: inline-block;

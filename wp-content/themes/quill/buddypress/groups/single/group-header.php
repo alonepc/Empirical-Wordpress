@@ -16,8 +16,6 @@ do_action( 'bp_before_group_header' );
 </div><!-- #item-header-avatar -->
 
 <div id="item-header-content">
-	<span class="highlight"><?php bp_group_type(); ?></span>
-	<span class="activity"><?php printf( __( 'active %s', 'buddypress' ), bp_get_group_last_active() ); ?></span>
 
 	<?php do_action( 'bp_before_group_header_meta' ); ?>
 
