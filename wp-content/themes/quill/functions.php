@@ -519,3 +519,15 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 
 //Disable the wordpress admin bar
 add_filter('show_admin_bar', '__return_false');
+
+//Add a new custom Avatar
+if ( !function_exists('empirical_addgravatar') ) {
+	function empirical_addgravatar( $avatar_defaults ) {
+		$myavatar = get_template_directory_uri() . '/assets/img/avatar.jpg';
+		$avatar_defaults[$myavatar] = 'Empirical';
+
+		return $avatar_defaults;
+	}
+
+	add_filter( 'avatar_defaults', 'empirical_addgravatar' );
+}
