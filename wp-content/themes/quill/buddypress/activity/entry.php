@@ -20,7 +20,7 @@ $bp->avatar->thumb->width = 75;
 $activity_id = bp_get_activity_id();
 $group_id = $wpdb->get_var( "SELECT item_id FROM wp_bp_activity WHERE id=$activity_id" );
 $group_id = intval($group_id);
-if($group_id === 0) {
+if($group_id === 0 || $bp->current_component == 'groups' || $bp->current_component == 'activity') {
   $link = bp_get_activity_user_link();
   $avatar = bp_get_activity_avatar();
   $user_id = $wpdb->get_var( "SELECT user_id FROM wp_bp_activity WHERE id=$activity_id" );
@@ -62,7 +62,19 @@ $date = date("F jS, Y",strtotime($activities_template->activity->date_recorded))
     <div class="activity-inner">
       <?php bp_activity_content_body(); ?>
     </div>
-
+	
+	<?php if($bp->current_component == 'activity' && $group_id != 0) {
+		
+		$group_avatar = bp_core_fetch_avatar( array( 'item_id' => $group_id, 'object' => 'group', 'width' => 20, 'height' => 20 ) );
+		$group_link = '/groups/' . $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
+		$group_name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
+	?>
+		
+		<div class="activity-group">
+			<a href="<?php echo($group_link); ?>"><?php echo($group_avatar); ?><?php echo($group_name); ?></a>
+		</div>
+		
+	<?php } ?>
 
     <?php do_action( 'bp_activity_entry_content' ); ?>
 

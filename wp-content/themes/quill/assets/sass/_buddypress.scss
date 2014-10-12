@@ -46,10 +46,26 @@
 			.activity-header {
 				a {
 					color: #000;
-					font-weight: bold;	
+					font-weight: 500;	
 				}
 				.activity-date {
 					float: right;
+				}
+			}
+			.activity-inner {
+				margin: 0;
+				font-size: 90%;
+			}
+			.activity-group {
+				display: block;
+				line-height: 22px;
+				a {
+					color: #636363;
+					text-decoration: none;
+					font-size: 80%;
+					img {
+						margin-right: 1px;
+					}
 				}
 			}
 		}

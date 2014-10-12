@@ -54,9 +54,21 @@
   display: inline-block; }
 #buddypress .activity-list .activity-content .activity-header a {
   color: #000;
-  font-weight: bold; }
+  font-weight: 500; }
 #buddypress .activity-list .activity-content .activity-header .activity-date {
   float: right; }
+#buddypress .activity-list .activity-content .activity-inner {
+  margin: 0;
+  font-size: 90%; }
+#buddypress .activity-list .activity-content .activity-group {
+  display: block;
+  line-height: 22px; }
+  #buddypress .activity-list .activity-content .activity-group a {
+    color: #636363;
+    text-decoration: none;
+    font-size: 80%; }
+    #buddypress .activity-list .activity-content .activity-group a img {
+      margin-right: 1px; }
 #buddypress .activity-list .activity .activity-avatar .round img {
   border-radius: 50%; }
 #buddypress div.empirical_group_card {
