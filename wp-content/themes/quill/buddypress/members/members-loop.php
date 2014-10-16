@@ -9,10 +9,8 @@
  * @subpackage bp-legacy
  */
 
-global $bp;
+global $bp, $members_template;
 
-$bp->avatar->thumb->width = 125;
-$bp->avatar->thumb->width = 125;
 
 ?>
 
@@ -29,7 +27,18 @@ $bp->avatar->thumb->width = 125;
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li>
 			<div class="item-avatar">
-				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
+			<?php
+			$args = array(
+				'item_id' => $members_template->member->id, 
+				'type' => 'full', 
+				'alt' => 'Avatar', 
+				'width' => 125, 
+				'height' => 125, 
+				'email' => $members_template->member->user_email
+			);
+			$avatar = bp_core_fetch_avatar($args);
+			?>
+				<a href="<?php bp_member_permalink(); ?>"><?php echo $avatar; ?></a>
 			</div>
 
 			<div class="item">
