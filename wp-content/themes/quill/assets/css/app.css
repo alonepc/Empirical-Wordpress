@@ -62,7 +62,8 @@
   font-size: 90%; }
 #buddypress .activity-list .activity-content .activity-group {
   display: block;
-  line-height: 22px; }
+  line-height: 22px;
+  margin-left: 15px; }
   #buddypress .activity-list .activity-content .activity-group a {
     color: #636363;
     text-decoration: none;
