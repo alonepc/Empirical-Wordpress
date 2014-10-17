@@ -844,7 +844,7 @@ span + .edit-link:before,
 }
 
 .site-header {
-	background-color: #DFEDD6;
+	background-color: #f7f5f5;
 	position: relative;
 	width: 100%;
 	z-index: 4;
