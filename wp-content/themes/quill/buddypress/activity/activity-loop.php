@@ -1,6 +1,6 @@
 <?php do_action( 'bp_before_activity_loop' ); ?>
 
-<?php if ( bp_has_activities( bp_ajax_querystring( 'activity' ) ) ) : ?>
+<?php if ( bp_has_activities( bp_ajax_querystring( 'activity' ) . '&per_page=15' ) ) : ?>
 
 	<?php /* Show pagination if JS is not enabled, since the "Load More" link will do nothing */ ?>
 	<noscript>
@@ -16,7 +16,7 @@
 
 	<?php endif; ?>
 
-	<?php while ( bp_activities() ) : bp_the_activity(); ?>
+	<?php while ( bp_activities()) : bp_the_activity(); ?>
 
 		<?php bp_get_template_part( 'activity/entry' ); ?>
 
