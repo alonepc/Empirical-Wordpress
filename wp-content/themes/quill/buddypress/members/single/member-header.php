@@ -6,7 +6,7 @@
  * @package BuddyPress
  * @subpackage bp-legacy
  */
-
+global $wpdb, $bp;
 ?>
 
 <?php do_action( 'bp_before_member_header' ); ?>
@@ -20,10 +20,6 @@
 <div id="item-header-content">
 
 	<?php if ( bp_is_active( 'activity' ) && bp_activity_do_mentions() ) : ?>
-		<?php
-			global $bp;
-			
-		?>
 		<h2 class="user-nicename"><?php echo($bp->displayed_user->fullname); ?></h2>
 	<?php endif; ?>
 
@@ -59,7 +55,35 @@
 		 ?>
 
 	</div><!-- #item-meta -->
-
+	
+	
+	<div id="item-member-groups">
+		<ul>
+		<?php
+			$user_id = $bp->displayed_user->id; 
+			$group_ids = $wpdb->get_results( "SELECT group_id FROM wp_bp_groups_members WHERE user_id=$user_id" );
+			foreach($group_ids as $group)
+			{
+				$group_id = intval($group->group_id);
+				$group_name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
+				$group_slug = $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
+				$slug = '/groups/' . $group_slug;
+				$avatar = bp_core_fetch_avatar( array( 'item_id' => $group_id, 'object' => 'group', 'width' => 50, 'height' => 50 ) );
+			?>
+			<li>
+				<a href="<?php echo($slug); ?>">
+					<?php echo($avatar); ?>
+					<span class="text">
+						<?php echo($group_name); ?>
+					</span>
+				</a>
+			</li>
+			<?php
+			}
+		?>
+		</ul>
+	</div>
+	
 </div><!-- #item-header-content -->
 
 <?php do_action( 'bp_after_member_header' ); ?>
