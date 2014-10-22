@@ -66,6 +66,32 @@
     #buddypress div#buddypress-sidebar #item-member-groups ul li img {
       border-radius: 0;
       display: inline-block; }
+  #buddypress div#buddypress-sidebar ul.buddypress-group-list {
+    border: 1px solid #000;
+    border-radius: 5px;
+    list-style: none;
+    margin-left: 0; }
+    #buddypress div#buddypress-sidebar ul.buddypress-group-list li {
+      border-bottom: 1px solid #e6e6e6; }
+      #buddypress div#buddypress-sidebar ul.buddypress-group-list li a {
+        color: #000;
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        display: block;
+        padding: 13px 5px; }
+        #buddypress div#buddypress-sidebar ul.buddypress-group-list li a img, #buddypress div#buddypress-sidebar ul.buddypress-group-list li a i.fa {
+          margin-right: 8px;
+          margin-left: 5px; }
+        #buddypress div#buddypress-sidebar ul.buddypress-group-list li a i.fa {
+          font-size: 30px; }
+      #buddypress div#buddypress-sidebar ul.buddypress-group-list li.active {
+        background: #e6e6e6;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; }
+      #buddypress div#buddypress-sidebar ul.buddypress-group-list li:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; }
 #buddypress div#item-body, #buddypress .item-body {
   width: 75%;
   display: inline-block; }
