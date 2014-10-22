@@ -9,9 +9,11 @@
 
 	}
 	div#buddypress-sidebar {
-		width: 25%;
+		width: 250px;
 		display: inline-block;
 		float: left;
+		margin-left: -40px;
+		margin-right: 25px;
 		#item-members {
 			ul#member-list {
 				border-top: none;
