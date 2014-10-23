@@ -15,7 +15,7 @@
 	</div>
 	
 	<div id="item-body" role="main">
-
+		
 		<?php do_action( 'bp_before_member_body' );
 
 		if ( bp_is_user_activity() || !bp_current_component() ) :
