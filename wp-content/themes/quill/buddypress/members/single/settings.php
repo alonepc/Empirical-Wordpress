@@ -6,7 +6,7 @@
  * @package BuddyPress
  * @subpackage bp-legacy
  */
-
+ 
 ?>
 
 <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
