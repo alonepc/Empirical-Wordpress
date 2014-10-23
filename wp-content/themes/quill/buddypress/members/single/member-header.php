@@ -45,7 +45,7 @@ global $wpdb, $bp;
 			<?php
 			if($bp->displayed_user->id == get_current_user_id()) {
 			?>
-				<div class="generic-button" id="settings"><a href="<?php echo '/members/'. $bp->displayed_user->userdata->user_login . '/settings/'; ?>" title="Settings" class="activity-button mention">Settings</a></div>
+				<div class="generic-button" id="settings"><a href="<?php echo '/contributors/'. $bp->displayed_user->userdata->user_login . '/settings/'; ?>" title="Settings" class="activity-button mention">Settings</a></div>
 			<?php
 			}
 			?>
