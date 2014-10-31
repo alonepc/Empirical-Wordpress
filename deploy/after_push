@@ -13,4 +13,4 @@ umask 002
 
 git submodule sync && git submodule update --init --recursive
 
-chown -R apache:apache /var/www/empirical.org/wp-content/plugins/si-captcha-for-wordpress/captcha/temp
+sudo chown -R apache:apache /var/www/empirical.org/wp-content/plugins/si-captcha-for-wordpress/captcha/temp
