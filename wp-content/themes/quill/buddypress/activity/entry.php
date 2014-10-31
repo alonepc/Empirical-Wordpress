@@ -35,6 +35,21 @@ if($group_id === 0 || $bp->current_component == 'groups' || $bp->current_compone
 }
 
 $date = date("F jS, Y",strtotime($activities_template->activity->date_recorded));
+
+$regexp = "<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>@(.*)<\/a>";
+if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matches)) {
+	$link = str_replace("'", "", $matches[2][0]);
+	$link = parse_url($link);
+	$link = $link['path'];
+	$username = strval($matches[3][0]);
+	$user_id = $wpdb->get_var( "SELECT ID FROM wp_users WHERE user_login='$username'" );
+	if($user_id){
+		$user_data = get_userdata($user_id);
+		$name = $user_data->first_name . ' ' . $user_data->last_name;
+		$img_class = 'round';
+		$avatar = bp_core_fetch_avatar( array( 'item_id' => $user_id, 'width' => 75, 'height' => 75 ) );
+	}
+}
 ?>
 
 <?php do_action( 'bp_before_activity_entry' ); ?>
