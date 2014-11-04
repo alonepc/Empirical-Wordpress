@@ -9,7 +9,7 @@
  * @subpackage bp-legacy
  */
 
-global $bp, $members_template;
+global $bp, $members_template, $wpdb;
 
 
 ?>
@@ -18,14 +18,24 @@ global $bp, $members_template;
 
 <?php if ( bp_has_members( bp_ajax_querystring( 'members' ) ) ) : ?>
 
-
-
 	<?php do_action( 'bp_before_directory_members_list' ); ?>
 
 	<ul id="members-list" class="item-list" role="main">
 
-	<?php while ( bp_members() ) : bp_the_member(); ?>
-		<li>
+	<?php while ( bp_members() ) : bp_the_member();
+		$groups = '';
+		$user_id = bp_get_member_user_id(); 
+		$group_ids = $wpdb->get_results( "SELECT group_id FROM wp_bp_groups_members WHERE user_id=$user_id" );
+		foreach($group_ids as $group)
+		{
+			$group_id = intval($group->group_id);
+			$group_name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
+			$group_slug = $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
+			$avatar = bp_core_fetch_avatar( array( 'item_id' => $group_id, 'object' => 'group', 'width' => 50, 'height' => 50 ) );
+			$groups = $groups . $group_slug;
+		}
+	?>
+		<li class="member <?php echo($groups); ?>">
 			<div class="item-avatar">
 			<?php
 			$args = array(

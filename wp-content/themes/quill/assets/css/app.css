@@ -85,13 +85,31 @@
           margin-left: 5px; }
         #buddypress div#buddypress-sidebar ul.buddypress-group-list li a i.fa {
           font-size: 30px; }
-      #buddypress div#buddypress-sidebar ul.buddypress-group-list li.active {
-        background: #e6e6e6;
+      #buddypress div#buddypress-sidebar ul.buddypress-group-list li:first-child.active {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px; }
+      #buddypress div#buddypress-sidebar ul.buddypress-group-list li.active {
+        background: #e6e6e6; }
       #buddypress div#buddypress-sidebar ul.buddypress-group-list li:last-child {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px; }
+        #buddypress div#buddypress-sidebar ul.buddypress-group-list li:last-child.active {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px; }
+#buddypress div.banner-header img {
+  float: left;
+  display: inline-block;
+  margin-left: 50px;
+  height: 100px;
+  width: 100px; }
+#buddypress div.banner-header .right {
+  display: inline-block;
+  float: left;
+  width: 75%; }
+  #buddypress div.banner-header .right h2 {
+    margin-left: 15px; }
+  #buddypress div.banner-header .right .text {
+    margin-left: 15px; }
 #buddypress div#item-body, #buddypress .item-body {
   width: 75%;
   display: inline-block; }

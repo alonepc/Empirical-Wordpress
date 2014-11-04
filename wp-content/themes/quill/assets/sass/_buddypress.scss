@@ -84,16 +84,46 @@
 						font-size: 30px;
 					}
 				}
+				&:first-child {
+					&.active {
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
+				}
 				&.active {
 					background: rgb(230, 230, 230);
-					border-top-left-radius: 5px;
-					border-top-right-radius: 5px;
 				}
 				&:last-child {
 					border-bottom-left-radius: 5px;
 					border-bottom-right-radius: 5px;
+					&.active {
+						border-bottom-left-radius: 5px;
+						border-bottom-right-radius: 5px;
+					}
 				}
 			}
+		}
+	}
+	div.banner-header {
+		img {
+			float: left;
+			display: inline-block;
+			margin-left: 50px;
+			height: 100px;
+			width: 100px;
+		}
+		.right {
+			display: inline-block;
+			float: left;
+			width: 75%;
+			h2 {
+				margin-left: 15px;
+
+			}
+			.text {
+				margin-left: 15px;
+
+			}	
 		}
 	}
 	div#item-body, .item-body {
