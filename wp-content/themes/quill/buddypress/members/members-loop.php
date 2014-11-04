@@ -32,7 +32,7 @@ global $bp, $members_template, $wpdb;
 			$group_name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
 			$group_slug = $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
 			$avatar = bp_core_fetch_avatar( array( 'item_id' => $group_id, 'object' => 'group', 'width' => 50, 'height' => 50 ) );
-			$groups = $groups . $group_slug;
+			$groups = $groups . ' ' . $group_slug;
 		}
 	?>
 		<li class="member <?php echo($groups); ?>">
