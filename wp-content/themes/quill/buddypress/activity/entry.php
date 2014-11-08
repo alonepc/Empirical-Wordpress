@@ -16,6 +16,7 @@ if ( bp_activity_has_content() ) {
 
 $bp->avatar->thumb->width = 75;
 $bp->avatar->thumb->width = 75;
+$postedBy = false;
 
 $activity_id = bp_get_activity_id();
 $group_id = $wpdb->get_var( "SELECT item_id FROM wp_bp_activity WHERE id=$activity_id" );
@@ -48,6 +49,12 @@ if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matc
 		$name = $user_data->first_name . ' ' . $user_data->last_name;
 		$img_class = 'round';
 		$avatar = bp_core_fetch_avatar( array( 'item_id' => $user_id, 'width' => 75, 'height' => 75 ) );
+		
+		$postedBy = true;
+		$postby_user_id = $wpdb->get_var( "SELECT user_id FROM wp_bp_activity WHERE id=$activity_id" );
+		$postby_user_data = get_userdata($postby_user_id);
+		$postby_name = $postby_user_data->first_name . ' ' . $postby_user_data->last_name;
+		
 	}
 }
 ?>
@@ -68,6 +75,13 @@ if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matc
       <a href="<?php echo($link); ?>">
         <?php echo($name); ?>
       </a>
+      
+      <?php if($postedBy) { ?>
+		<div class="acivity-postedby">
+			Posted by <?php echo($postby_name); ?>
+		</div>    
+	  <?php }  ?>
+      
 	    <div class="activity-date">
 	    	<?php echo($date); ?>
 	    </div>

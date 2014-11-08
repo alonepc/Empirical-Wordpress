@@ -118,6 +118,11 @@
   font-weight: 500; }
 #buddypress .activity-list .activity-content .activity-header .activity-date {
   float: right; }
+#buddypress .activity-list .activity-content .activity-header .acivity-postedby {
+  display: inline;
+  font-size: 12px;
+  font-style: italic;
+  margin-left: 5px; }
 #buddypress .activity-list .activity-content .activity-inner {
   margin: 0;
   font-size: 90%; }
