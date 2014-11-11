@@ -16,7 +16,7 @@ global $bp, $members_template, $wpdb;
 
 <?php do_action( 'bp_before_members_loop' ); ?>
 
-<?php if ( bp_has_members( bp_ajax_querystring( 'members' . 'per_page=999999' ) ) ) : ?>
+<?php if ( bp_has_members( bp_ajax_querystring( 'members' . '&type=alphabetical&per_page=999999' ) ) ) : ?>
 
 	<?php do_action( 'bp_before_directory_members_list' ); ?>
 
