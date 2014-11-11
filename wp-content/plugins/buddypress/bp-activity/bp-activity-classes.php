@@ -1212,7 +1212,12 @@ class BP_Activity_Activity {
 		$filter_sql = array();
 
 		if ( !empty( $filter_array['user_id'] ) ) {
+			global $wpdb;
 			$user_sql = BP_Activity_Activity::get_in_operator_sql( 'a.user_id', $filter_array['user_id'] );
+			// START Also include @Mentions in User Stream
+			$search_terms = '@'.bp_core_get_username($filter_array['user_id']);
+			$user_sql.= "OR ( a.content LIKE '%%".$wpdb->esc_like($search_terms)."%%' )";
+			// END Also include @Mentions in User Stream
 			if ( !empty( $user_sql ) )
 				$filter_sql[] = $user_sql;
 		}
