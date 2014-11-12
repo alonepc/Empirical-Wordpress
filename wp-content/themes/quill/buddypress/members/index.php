@@ -63,7 +63,7 @@
 				</div>
 				<div class="right">
 					<h2>Quill Community</h2>
-					<div class="text"></div>
+					<div class="text">Quill is an open source literacy tool that provides writing, grammar, and vocabulary activities to students. Quill is being built by a community of educators and developers.</div>
 				</div>
 			</a>
 		</div>
