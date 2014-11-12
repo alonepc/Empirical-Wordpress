@@ -105,25 +105,28 @@
 		}
 	}
 	div.banner-header {
-		img {
-			float: left;
-			display: inline-block;
-			margin-left: 50px;
-			height: 100px;
-			width: 100px;
-		}
-		.right {
-			display: inline-block;
-			float: left;
-			width: 75%;
-			h2 {
-				margin-left: 15px;
-
+		a.banner-link {
+			color: #000;
+			img {
+				float: left;
+				display: inline-block;
+				margin-left: 50px;
+				height: 100px;
+				width: 100px;
 			}
-			.text {
-				margin-left: 15px;
-
-			}	
+			.right {
+				display: inline-block;
+				float: left;
+				width: 75%;
+				h2 {
+					margin-left: 15px;
+	
+				}
+				.text {
+					margin-left: 15px;
+	
+				}	
+			}
 		}
 	}
 	div#item-body, .item-body {

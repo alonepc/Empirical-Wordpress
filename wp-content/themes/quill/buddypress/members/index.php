@@ -57,13 +57,15 @@
 	<form action="" method="post" id="members-directory-form" class="dir-form item-body">
 		
 		<div class="banner-header">
-			<div class="left">
-				<img src="/wp-content/themes/quill/assets/img/avatar.jpg" />
-			</div>
-			<div class="right">
-				<h2>Quill Community</h2>
-				<div class="text"></div>
-			</div>
+			<a href="#" class="banner-link">
+				<div class="left">
+					<img src="/wp-content/themes/quill/assets/img/avatar.jpg" />
+				</div>
+				<div class="right">
+					<h2>Quill Community</h2>
+					<div class="text"></div>
+				</div>
+			</a>
 		</div>
 		
 		<div id="members-dir-list" class="members dir-list">
@@ -101,6 +103,10 @@
 			$('ul.buddypress-group-list li').removeClass('active');
 			$(this).parent().addClass('active');
 			var filterValue = $(this).data('filter');
+			var filterAnchor = $(this).attr('href');
+			filterAnchor = filterAnchor.slice(1);
+			filterAnchor = '/groups/' + filterAnchor;
+
 			$container.isotope({ filter: filterValue });
 			
 			var filterTitle = $(this).data('title');
@@ -109,6 +115,8 @@
 			$('.banner-header h2').text(filterTitle);
 			$('.banner-header .text').html(filterDescription);
 			$('.banner-header img').attr('src', filterImage);
+			$('.banner-header a.banner-link').attr('href', filterAnchor);
+
 			
 		});
 		
