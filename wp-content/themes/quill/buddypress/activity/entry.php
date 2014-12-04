@@ -17,6 +17,7 @@ if ( bp_activity_has_content() ) {
 $bp->avatar->thumb->width = 75;
 $bp->avatar->thumb->width = 75;
 $postedBy = false;
+$skip = false;
 
 $activity_id = bp_get_activity_id();
 $group_id = $wpdb->get_var( "SELECT item_id FROM wp_bp_activity WHERE id=$activity_id" );
@@ -39,6 +40,12 @@ $date = date("F jS, Y",strtotime($activities_template->activity->date_recorded))
 
 $regexp = "<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>@(.*)<\/a>";
 if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matches)) {
+	
+	if($bp->current_action == 'just-me')
+	{
+		$skip = true;
+	}
+	
 	$link = str_replace("'", "", $matches[2][0]);
 	$link = parse_url($link);
 	$link = $link['path'];
@@ -60,7 +67,7 @@ if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matc
 ?>
 
 <?php do_action( 'bp_before_activity_entry' ); ?>
-
+<?php if(!$skip){ ?>
 <li class="activity activity_update activity-item" id="activity-<?php bp_activity_id(); ?>">
 
   <div class="activity-avatar">
@@ -108,6 +115,8 @@ if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matc
   </div>
 
 </li>
+<?php } ?>
+
 
 <?php do_action( 'bp_after_activity_entry' ); ?>
 <?php } ?>
