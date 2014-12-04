@@ -50,8 +50,9 @@ if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matc
 
 	if($user_id){
 		
+		
 		//Check to see if it's a profile page
-		if(bp_is_user() && $username != $activities_template->activity->user_nicename)
+		if(bp_is_user() && bp_displayed_user_id() == $activities_template->activity->user_id)
 		{
 			$skip = true;
 		}
