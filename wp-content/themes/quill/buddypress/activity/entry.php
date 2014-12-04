@@ -41,17 +41,21 @@ $date = date("F jS, Y",strtotime($activities_template->activity->date_recorded))
 $regexp = "<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>@(.*)<\/a>";
 if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matches)) {
 	
-	if($bp->current_action == 'just-me')
-	{
-		$skip = true;
-	}
-	
 	$link = str_replace("'", "", $matches[2][0]);
 	$link = parse_url($link);
 	$link = $link['path'];
 	$username = strval($matches[3][0]);
-	$user_id = $wpdb->get_var( "SELECT ID FROM wp_users WHERE user_login='$username'" );
+
+	$user_id = $wpdb->get_var( "SELECT ID FROM wp_users WHERE user_login='$username'" );	
+
 	if($user_id){
+		
+		//Check to see if it's a profile page
+		if(bp_is_user() && $username != $activities_template->activity->user_nicename)
+		{
+			$skip = true;
+		}
+		
 		$user_data = get_userdata($user_id);
 		$name = $user_data->first_name . ' ' . $user_data->last_name;
 		$img_class = 'round';
