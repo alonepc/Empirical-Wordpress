@@ -219,6 +219,27 @@
 .groups #buddypress div#item-header img.avatar {
   border-radius: 0; }
 
+.signup-page .signup-wrap {
+  margin: 0 auto;
+  display: block;
+  width: 50%; }
+  .signup-page .signup-wrap a.signup {
+    display: inline-block;
+    width: 320px;
+    height: 250px; }
+    .signup-page .signup-wrap a.signup.signup-contributor {
+      background-image: url("../img/signup/contributor.png"); }
+    .signup-page .signup-wrap a.signup.signup-parent {
+      background-image: url("../img/signup/parent.png"); }
+    .signup-page .signup-wrap a.signup.signup-student {
+      background-image: url("../img/signup/student.png"); }
+    .signup-page .signup-wrap a.signup.signup-teacher {
+      background-image: url("../img/signup/teacher.png"); }
+    .signup-page .signup-wrap a.signup:nth-child(2n) {
+      margin-left: 5%; }
+  .signup-page .signup-wrap .row {
+    margin-top: 5%; }
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

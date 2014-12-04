@@ -1,0 +1,32 @@
+.signup-page {
+	.signup-wrap {
+		margin: 0 auto;
+		display: block;
+		width: 50%;
+		a.signup {
+			display: inline-block;
+			width: 320px;
+			height: 250px;
+	
+			&.signup-contributor {
+				background-image: url('../img/signup/contributor.png');
+			}
+			&.signup-parent {
+				background-image: url('../img/signup/parent.png');
+			}
+			&.signup-student {
+				background-image: url('../img/signup/student.png');
+			}
+			&.signup-teacher {
+				background-image: url('../img/signup/teacher.png');
+			}
+			&:nth-child(2n)
+			{
+				margin-left: 5%;
+			}
+		}
+		.row {
+			margin-top: 5%;
+		}
+	}
+}
