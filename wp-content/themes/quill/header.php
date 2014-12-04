@@ -51,7 +51,7 @@
 					<a href="<?php bp_loggedin_user_link(); ?>" class="my-portfolio"><i class="fa fa-suitcase"></i> My Portfolio</a>
 					<a href="<?php echo(wp_logout_url(esc_url( home_url( '/' ) ))); ?>" class="my-portfolio"><i class="fa fa-sign-out"></i> Logout</a>
 				<?php } else { ?>
-					<a href="<?php echo(esc_url( home_url( '/register' ) )); ?>" class="my-portfolio"><i class="fa fa-sign-in"></i> Register</a>
+					<a href="<?php echo(esc_url( home_url( '/signup' ) )); ?>" class="my-portfolio"><i class="fa fa-sign-in"></i> Register</a>
 					<a href="<?php echo(wp_login_url(esc_url( home_url( '/' ) ))); ?>" class="my-portfolio"><i class="fa fa-user"></i> Login</a>
 				<?php } ?>
 			</nav>
