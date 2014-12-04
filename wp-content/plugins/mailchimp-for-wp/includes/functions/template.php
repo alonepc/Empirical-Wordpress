@@ -66,11 +66,22 @@ function mc4wp_replace_variables( $text, $list_ids = array() ) {
 		$text = str_ireplace( '{subscriber_count}', $subscriber_count, $text );
 	}
 
+	// replace {email} tag
+	if( isset( $_GET['email'] ) ) {
+		$email = esc_attr( $_GET['email'] );
+	} elseif( isset( $_COOKIE['mc4wp_email'] ) ) {
+		$email = esc_attr( $_COOKIE['mc4wp_email'] );
+	} else {
+		$email = '';
+	}
+
+	$text = str_ireplace( '{email}', $email, $text );
+
 	// replace user variables
 	$needles = array( '{user_email}', '{user_firstname}', '{user_lastname}', '{user_name}', '{user_id}' );
 	if ( is_user_logged_in() && ( $user = wp_get_current_user() ) && ( $user instanceof WP_User ) ) {
 		// logged in user, replace vars by user vars
-		$replacements = array( $user->user_email, $user->user_firstname, $user->user_lastname, $user->display_name, $user->ID );
+		$replacements = array( $user->user_email, $user->first_name, $user->last_name, $user->display_name, $user->ID );
 		$text = str_replace( $needles, $replacements, $text );
 	} else {
 		// no logged in user, replace vars with empty string
