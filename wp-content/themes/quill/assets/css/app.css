@@ -36,6 +36,8 @@
   float: left;
   margin-left: -40px;
   margin-right: 25px; }
+  #buddypress div#buddypress-sidebar #item-header-content {
+    width: 100%; }
   #buddypress div#buddypress-sidebar #item-members ul#member-list {
     border-top: none; }
     #buddypress div#buddypress-sidebar #item-members ul#member-list li {
