@@ -14,3 +14,4 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/themes/quill/config.codekit
 wp-content/themes/quill/assets/sass/.sass-cache
+wp-content/plugins/si-captcha-for-wordpress/captcha/cache

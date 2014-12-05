@@ -38,18 +38,33 @@ if($group_id === 0 || $bp->current_component == 'groups' || $bp->current_compone
 
 $date = date("F jS, Y",strtotime($activities_template->activity->date_recorded));
 
-$regexp = "<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>@(.*)<\/a>";
-if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matches)) {
-	
-	$link = str_replace("'", "", $matches[2][0]);
-	$link = parse_url($link);
-	$link = $link['path'];
-	$username = strval($matches[3][0]);
 
-	$user_id = $wpdb->get_var( "SELECT ID FROM wp_users WHERE user_login='$username'" );	
 
+$otheruser = false;
+$regex_url = '/<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>@(.*)<\/a>/siU';
+$regex_username = '/(^|[^@\w])@(\w{1,15})\b/';
+if(preg_match_all($regex_url, $activities_template->activity->content, $matches))
+{
+	if(isset($matches[3][0]))
+	{
+		$username = strval($matches[3][0]);
+		$otheruser = true;	
+	}
+} else if (preg_match_all($regex_username, $activities_template->activity->content, $matches))
+{
+	if(isset($matches[2][0]))
+	{
+		$username = strtolower($matches[2][0]);
+		$otheruser = true;	
+	}
+}
+
+
+if($otheruser) {
+
+	$user_id = $wpdb->get_var( "SELECT ID FROM wp_users WHERE user_nicename='$username'" );
 	if($user_id){
-		
+		$link = get_home_url() . '/contributors/' . $username;
 		
 		//Check to see if it's a profile page
 		if(bp_is_user() && bp_displayed_user_id() == $activities_template->activity->user_id)
@@ -61,7 +76,6 @@ if(preg_match_all("/$regexp/siU", $activities_template->activity->content, $matc
 		$name = $user_data->first_name . ' ' . $user_data->last_name;
 		$img_class = 'round';
 		$avatar = bp_core_fetch_avatar( array( 'item_id' => $user_id, 'width' => 75, 'height' => 75 ) );
-		
 		$postedBy = true;
 		$postby_user_id = $wpdb->get_var( "SELECT user_id FROM wp_bp_activity WHERE id=$activity_id" );
 		$postby_user_data = get_userdata($postby_user_id);
