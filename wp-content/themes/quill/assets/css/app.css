@@ -41,7 +41,8 @@
   #buddypress div#buddypress-sidebar #item-members ul#member-list {
     border-top: none; }
     #buddypress div#buddypress-sidebar #item-members ul#member-list li {
-      border-bottom: none; }
+      border-bottom: none;
+      overflow: auto; }
       #buddypress div#buddypress-sidebar #item-members ul#member-list li a img {
         border-radius: 25px; }
       #buddypress div#buddypress-sidebar #item-members ul#member-list li h5 {
