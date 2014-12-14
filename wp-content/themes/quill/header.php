@@ -29,6 +29,7 @@
 	<![endif]-->
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 
@@ -38,31 +39,33 @@
 		<div class="header-main">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-				<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
-				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
-				<?php wp_nav_menu( array( 
-									'theme_location' => 'primary', 
-									'menu_class' => 'nav-menu', 
-									) 
-				); ?>
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">			
 				
-				<?php if(is_user_logged_in()) { ?>
-					<a href="<?php bp_loggedin_user_link(); ?>" class="my-portfolio"><i class="fa fa-suitcase"></i> My Portfolio</a>
-					<a href="<?php echo(wp_logout_url(esc_url( home_url( '/' ) ))); ?>" class="my-portfolio"><i class="fa fa-sign-out"></i> Logout</a>
-				<?php } else { ?>
-					<a href="<?php echo(esc_url( home_url( '/signup' ) )); ?>" class="my-portfolio"><i class="fa fa-sign-in"></i> Register</a>
-					<a href="<?php echo(wp_login_url(esc_url( home_url( '/' ) ))); ?>" class="my-portfolio"><i class="fa fa-user"></i> Login</a>
-				<?php } ?>
+				<ul class="nav navbar-nav">
+	                <li><a href="http://quill.org/about">About</a></li>
+	                <li><a href="http://community.quill.org/">Community</a></li>
+	                <li><a href="http://quill.org/faq">Support</a></li>
+	                <li><a href="http://news.quill.org">News</a></li>
+	                
+					<?php if(is_user_logged_in()) { ?>
+						<li><a href="<?php echo(wp_logout_url(esc_url( home_url( '/' ) ))); ?>">Logout</a></li>
+					<?php } else { ?>
+						<li><a href="<?php echo(esc_url( home_url( '/signup' ) )); ?>">Register</a></li>
+						<li><a href="<?php echo(wp_login_url(esc_url( home_url( '/' ) ))); ?>">Login</a></li>
+					<?php } ?>
+	            </ul>
+              
 			</nav>
 		</div>
 		<div class="header-bottom">
 			<nav id="sub-navigation" class="site-navigation sub-navigation">
-				<?php wp_nav_menu( array( 
-									'theme_location' => 'secondary', 
-									'menu_class' => 'nav-menu', 
-									) 
-				); ?>
+				<ul class="nav">
+					<li><a href="/groups">Teams</a></li>
+					<li><a href="/">Contributors</a></li>
+					<li><a href="/activity/">Activity</a></li>
+					<li><a href="http://empirical-core.readme.io/v1.0">Docs</a></li>
+					<li><a href="/chat/">Chat</a></li>
+				</ul>
 			</nav>
 		</div>
 		

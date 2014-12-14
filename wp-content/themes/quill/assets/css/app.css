@@ -1,36 +1,43 @@
 @charset "UTF-8";
-#masthead .header-main .site-title a {
-  background-image: url("../img/logo.png");
-  background-repeat: no-repeat;
-  height: 57px;
-  width: 345px;
-  font-size: 1px;
-  color: #DFEDD6; }
-#masthead .header-main .primary-navigation {
-  width: auto; }
-  #masthead .header-main .primary-navigation .menu-primary-menu-container {
-    display: inline-block; }
-  #masthead .header-main .primary-navigation .nav-menu {
-    display: inline-block; }
-    #masthead .header-main .primary-navigation .nav-menu li {
-      border-right: 1px solid #000; }
-      #masthead .header-main .primary-navigation .nav-menu li a {
-        text-decoration: underline; }
-      #masthead .header-main .primary-navigation .nav-menu li:last-child {
-        border-right: none; }
-  #masthead .header-main .primary-navigation .my-portfolio {
-    background-color: #92D36E;
-    display: inline-block;
-    border-radius: 5px;
-    min-height: 30px;
-    line-height: 30px; }
-#masthead .header-bottom {
-  padding: 0 30px;
-  max-width: 964px;
+#masthead .header-main {
   min-height: 50px;
-  margin: 0 auto; }
-  #masthead .header-bottom nav#sub-navigation ul#menu-secondary-menu li {
-    display: inline-block; }
+  margin: 20px auto;
+  overflow: auto; }
+  #masthead .header-main .site-title {
+    float: left; }
+    #masthead .header-main .site-title a {
+      background-image: url("../img/logo.png");
+      background-repeat: no-repeat;
+      height: 57px;
+      width: 345px;
+      font-size: 1px;
+      color: #DFEDD6; }
+  #masthead .header-main .navbar-nav.nav {
+    float: right; }
+    #masthead .header-main .navbar-nav.nav li {
+      display: inline-block;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+      #masthead .header-main .navbar-nav.nav li a {
+        color: #000;
+        font-size: 16px;
+        line-height: 45px;
+        padding: 10px 20px;
+        font-weight: 400;
+        border-top: none; }
+#masthead .header-bottom {
+  padding: 12px 0;
+  min-height: 25px;
+  border-bottom: 1px solid #cecece;
+  border-top: 1px solid #cecece;
+  background: #fff; }
+  #masthead .header-bottom nav#sub-navigation {
+    margin: 0 auto;
+    max-width: 964px; }
+    #masthead .header-bottom nav#sub-navigation ul.nav {
+      padding: 0 30px; }
+      #masthead .header-bottom nav#sub-navigation ul.nav li {
+        display: inline-block;
+        margin: 0 15px; }
 
 .buddypress-wrapper {
   padding-top: 50px; }

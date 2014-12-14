@@ -1,6 +1,10 @@
 #masthead {
 	.header-main {
+		min-height: 50px;
+		margin: 20px auto;
+		overflow: auto;
 		.site-title {
+			float: left;
 			a {
 				background-image: url('../img/logo.png');
 				background-repeat: no-repeat;
@@ -10,41 +14,36 @@
 				color: #DFEDD6;
 			}
 		}
-		.primary-navigation {
-			width: auto;
-			.menu-primary-menu-container {
+		.navbar-nav.nav {
+			float: right;
+			li {
 				display: inline-block;
-			}
-			.nav-menu {
-				display: inline-block;
-				li {
-					border-right: 1px solid #000;
-					a {
-						text-decoration: underline;
-					}
-					&:last-child {
-						border-right: none;
-					}
+				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+				a {
+					color: #000;
+					font-size: 16px;
+					line-height: 45px;
+					padding: 10px 20px;
+					font-weight: 400;
+					border-top: none;
 				}
-			}
-			.my-portfolio {
-				background-color: #92D36E;
-				display: inline-block;
-				border-radius: 5px;
-				min-height: 30px;
-				line-height: 30px;
 			}
 		}
 	}
 	.header-bottom {
-		padding: 0 30px;
-		max-width: 964px;
-		min-height: 50px;
-		margin: 0 auto;
+		padding: 12px 0;
+		min-height: 25px;
+		border-bottom: 1px solid #cecece;
+		border-top: 1px solid #cecece;
+		background: #fff;
 		nav#sub-navigation {
-			ul#menu-secondary-menu {
+			margin: 0 auto;
+			max-width: 964px;
+			ul.nav {
+				padding: 0 30px;
 				li {
 					display: inline-block;
+					margin: 0 15px;
 				}
 			}
 		}
