@@ -36,4 +36,17 @@
 			}
 		}
 	}
+	.header-bottom {
+		padding: 0 30px;
+		max-width: 964px;
+		min-height: 50px;
+		margin: 0 auto;
+		nav#sub-navigation {
+			ul#menu-secondary-menu {
+				li {
+					display: inline-block;
+				}
+			}
+		}
+	}
 }

@@ -24,6 +24,13 @@
     border-radius: 5px;
     min-height: 30px;
     line-height: 30px; }
+#masthead .header-bottom {
+  padding: 0 30px;
+  max-width: 964px;
+  min-height: 50px;
+  margin: 0 auto; }
+  #masthead .header-bottom nav#sub-navigation ul#menu-secondary-menu li {
+    display: inline-block; }
 
 .buddypress-wrapper {
   padding-top: 50px; }
