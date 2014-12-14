@@ -81,7 +81,7 @@ function twentyfourteen_setup() {
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'primary'   => __( 'Top primary menu', 'twentyfourteen' ),
-		'secondary' => __( 'Secondary menu in left sidebar', 'twentyfourteen' ),
+		'secondary' => __( 'Secondary top menu', 'twentyfourteen' ),
 	) );
 
 	/*

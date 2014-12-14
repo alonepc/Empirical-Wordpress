@@ -56,6 +56,15 @@
 				<?php } ?>
 			</nav>
 		</div>
+		<div class="header-bottom">
+			<nav id="sub-navigation" class="site-navigation sub-navigation">
+				<?php wp_nav_menu( array( 
+									'theme_location' => 'secondary', 
+									'menu_class' => 'nav-menu', 
+									) 
+				); ?>
+			</nav>
+		</div>
 		
 	</header><!-- #masthead -->
 	<div id="main" class="site-main">
