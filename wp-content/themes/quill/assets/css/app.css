@@ -33,8 +33,16 @@
   #masthead .header-bottom nav#sub-navigation {
     margin: 0 auto;
     max-width: 964px; }
+    #masthead .header-bottom nav#sub-navigation h1 {
+      font-weight: 600;
+      font-size: 24px;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0 30px;
+      float: left; }
     #masthead .header-bottom nav#sub-navigation ul.nav {
-      padding: 0 30px; }
+      padding: 0 30px;
+      float: right; }
       #masthead .header-bottom nav#sub-navigation ul.nav li {
         display: inline-block;
         margin: 0 15px; }

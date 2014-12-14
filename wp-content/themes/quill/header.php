@@ -59,7 +59,9 @@
 		</div>
 		<div class="header-bottom">
 			<nav id="sub-navigation" class="site-navigation sub-navigation">
-				<ul class="nav">
+				<h1><?php the_title(); ?></h1>
+			
+				<ul class="nav">					
 					<li><a href="/groups">Teams</a></li>
 					<li><a href="/">Contributors</a></li>
 					<li><a href="/activity/">Activity</a></li>
