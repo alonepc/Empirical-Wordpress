@@ -4291,9 +4291,6 @@ a.post-thumbnail:hover {
 #primary-sidebar {
 	display: none;
 }
-#buddypress div#item-header img.avatar {
-	border-radius: 75px;
-}
 a.group-create {
 	float: right;
 	display: none;
