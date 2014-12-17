@@ -242,6 +242,9 @@
 .groups #buddypress div#item-header img.avatar {
   border-radius: 0; }
 
+.bp-user #buddypress div#item-header img.avatar {
+  border-radius: 50%; }
+
 .signup-page .signup-wrap {
   margin: 0 auto;
   display: block;
