@@ -238,6 +238,8 @@
         font-size: 18px; }
 #buddypress .standard-form #basic-details-section {
   clear: both; }
+#buddypress form#whats-new-form #whats-new-avatar {
+  display: none; }
 
 .groups #buddypress div#item-header img.avatar {
   border-radius: 0; }
