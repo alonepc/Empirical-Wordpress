@@ -16,7 +16,7 @@ get_header();
 				</div>
 				<div class="row">
 					<a class="signup signup-parent" href="http://www.quill.org/account/new"></a>
-					<a class="signup signup-contributor" href="/register"></a>
+					<a class="signup signup-contributor" href="/signup/cla"></a>
 				</div>
 			</div>
 		

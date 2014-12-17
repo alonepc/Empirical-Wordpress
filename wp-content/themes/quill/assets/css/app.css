@@ -268,6 +268,15 @@
   .signup-page .signup-wrap .row {
     margin-top: 5%; }
 
+.cla-page div.agreement-box {
+  height: 500px;
+  width: 100%;
+  margin: 25px auto;
+  overflow: auto;
+  padding: 25px; }
+.cla-page a.button {
+  margin: 25px 0; }
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
