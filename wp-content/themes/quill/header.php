@@ -31,6 +31,14 @@
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" type="image/x-icon">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$('select.group-selector').on('change', function(){
+				window.location.href = $(this).find(':selected').data('href');
+			});
+		});
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -59,7 +67,33 @@
 		</div>
 		<div class="header-bottom">
 			<nav id="sub-navigation" class="site-navigation sub-navigation">
-				<h1><?php the_title(); ?></h1>
+			
+			<?php
+				$args = array(
+					'type' => 'alphabetical',
+					'per_page' => 99999,
+					'max' => false
+				);
+				if ( bp_has_groups($args) ) : ?>
+				<select class="group-selector">
+					<option>Quill Community</option>
+					<?php while ( bp_groups() ) : bp_the_group(); ?>
+						<?php
+							
+							if(bp_get_group_slug() == bp_current_item())
+							{
+								$selected = true;
+							} else {
+								$selected = false;
+							}
+							
+						?>
+						<option <?php if($selected){echo('selected="selected"');} ?> data-href="<?php bp_group_permalink() ?>">
+							<?php bp_group_name() ?>
+						</option>
+					<?php endwhile; ?>
+				</select>
+			<?php endif; ?>
 			
 				<ul class="nav">					
 					<li><a href="/groups">Teams</a></li>
