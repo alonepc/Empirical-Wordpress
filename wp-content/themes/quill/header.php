@@ -96,7 +96,7 @@
 			<?php endif; ?>
 			
 			<?php if(bp_current_item()) : ?>
-				<ul class="menu">
+				
 					<?php
 						$args = array(
 							'name' => bp_current_item(),
@@ -109,13 +109,18 @@
 							$query = new WP_Query();
 							$all_wp_pages = $query->query(array('post_type' => 'page'));
 							$subpages = get_page_children($page[0]->ID, $all_wp_pages);
+							
+							echo('<ul class="menu">');
+							
 							foreach($subpages as $page)
 							{
 								echo('<li><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>');
 							}
+							
+							echo('</ul>');
 						}
 					?>
-				</ul>
+				
 			<?php else: ?>
 				<ul class="menu">		
 					<li><a href="/teams">Teams</a></li>
