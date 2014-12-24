@@ -105,7 +105,7 @@
 			var filterValue = $(this).data('filter');
 			var filterAnchor = $(this).attr('href');
 			filterAnchor = filterAnchor.slice(1);
-			filterAnchor = '/groups/' + filterAnchor;
+			filterAnchor = '/teams/' + filterAnchor;
 
 			$container.isotope({ filter: filterValue });
 			
