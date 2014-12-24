@@ -31,7 +31,7 @@ if($group_id === 0 || $bp->current_component == 'groups' || $bp->current_compone
   $img_class = 'round';
 } else {
   $avatar = bp_core_fetch_avatar( array( 'item_id' => $group_id, 'object' => 'group', 'width' => 75, 'height' => 75 ) );
-  $link = '/groups/' . $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
+  $link = '/teams/' . $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
   $name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
   $img_class = '';
 }
@@ -119,7 +119,7 @@ if($otheruser) {
 	
 	<?php if($bp->current_action == '' && $bp->current_component == 'activity' && $group_id != 0) {
 		$group_avatar = bp_core_fetch_avatar( array( 'item_id' => $group_id, 'object' => 'group', 'width' => 20, 'height' => 20 ) );
-		$group_link = '/groups/' . $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
+		$group_link = '/teams/' . $wpdb->get_var( "SELECT slug FROM wp_bp_groups WHERE id=$group_id" );
 		$group_name = $wpdb->get_var( "SELECT name FROM wp_bp_groups WHERE id=$group_id" );
 	?>
 		
