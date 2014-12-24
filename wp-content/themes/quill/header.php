@@ -106,12 +106,16 @@
 						);
 						$page = get_posts($args);
 						if($page[0]->ID){
-							$query = new WP_Query();
-							$all_wp_pages = $query->query(array('post_type' => 'page'));
-							$subpages = get_page_children($page[0]->ID, $all_wp_pages);
+							$args = array(
+								'post_parent' => $page[0]->ID,
+								'post_type' => 'page',
+								'posts_per_page' => -1,
+								'post_status' => 'publish'
+							);
+							$subpages = get_children($args);
 							
 							echo('<ul class="menu">');
-							
+
 							foreach($subpages as $page)
 							{
 								echo('<li><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>');
