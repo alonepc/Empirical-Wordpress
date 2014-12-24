@@ -40,10 +40,10 @@
       margin: 0;
       padding: 0 30px;
       float: left; }
-    #masthead .header-bottom nav#sub-navigation ul.nav {
+    #masthead .header-bottom nav#sub-navigation ul.menu {
       padding: 0 30px;
       float: right; }
-      #masthead .header-bottom nav#sub-navigation ul.nav li {
+      #masthead .header-bottom nav#sub-navigation ul.menu li {
         display: inline-block;
         margin: 0 15px; }
 
