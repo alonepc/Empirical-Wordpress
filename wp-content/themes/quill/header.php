@@ -95,13 +95,17 @@
 				</select>
 			<?php endif; ?>
 			
-				<ul class="nav">					
-					<li><a href="/groups">Teams</a></li>
+			<?php if(bp_current_item()) : ?>
+				<?php wp_nav_menu( array( 'theme_location' => bp_get_group_slug() ) ); ?>
+			<?php else: ?>
+				<ul class="menu">		
+					<li><a href="/teams">Teams</a></li>
 					<li><a href="/">Contributors</a></li>
 					<li><a href="/activity/">Activity</a></li>
 					<li><a href="http://empirical-core.readme.io/v1.0">Docs</a></li>
 					<li><a href="/chat/">Chat</a></li>
 				</ul>
+			<?php endif; ?>
 			</nav>
 		</div>
 		
