@@ -96,7 +96,7 @@
 			<?php endif; ?>
 			
 			<?php if(bp_current_item()) : ?>
-				<?php wp_nav_menu( array( 'theme_location' => bp_get_group_slug() ) ); ?>
+
 			<?php else: ?>
 				<ul class="menu">		
 					<li><a href="/teams">Teams</a></li>
