@@ -96,7 +96,26 @@
 			<?php endif; ?>
 			
 			<?php if(bp_current_item()) : ?>
-
+				<ul class="menu">
+					<?php
+						$args = array(
+							'name' => bp_current_item(),
+							'post_type' => 'page',
+							'post_status' => 'publish',
+							'numberposts' => 1
+						);
+						$page = get_posts($args);
+						if($page[0]->ID){
+							$query = new WP_Query();
+							$all_wp_pages = $query->query(array('post_type' => 'page'));
+							$subpages = get_page_children($page[0]->ID, $all_wp_pages);
+							foreach($subpages as $page)
+							{
+								echo('<li><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>');
+							}
+						}
+					?>
+				</ul>
 			<?php else: ?>
 				<ul class="menu">		
 					<li><a href="/teams">Teams</a></li>
