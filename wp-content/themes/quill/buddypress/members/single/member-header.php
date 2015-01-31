@@ -13,7 +13,7 @@ global $wpdb, $bp;
 
 <div id="item-header-avatar">
 	<a href="<?php bp_displayed_user_link(); ?>">
-		<?php bp_displayed_user_avatar( 'type=full' ); ?>
+		<?php bp_displayed_user_avatar( 'type=full&width=225&height=225' ); ?>
 	</a>
 </div><!-- #item-header-avatar -->
 <div style="clear: both;"></div>
