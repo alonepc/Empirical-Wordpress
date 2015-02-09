@@ -1,10 +1,13 @@
 #masthead {
 	.header-main {
 		min-height: 50px;
-		margin: 20px auto;
+		margin: 5px auto;
 		overflow: auto;
 		.site-title {
 			float: left;
+			h1 {
+				padding-top: 15px;
+			}
 			a {
 				background-image: url('../img/logo.png');
 				background-repeat: no-repeat;
@@ -18,14 +21,22 @@
 			float: right;
 			li {
 				display: inline-block;
-				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+				font-family: 'Adelle Sans', Helvetica, Arial, sans-serif;
 				a {
-					color: #000;
+					color: #fff;
 					font-size: 16px;
 					line-height: 45px;
 					padding: 10px 20px;
 					font-weight: 400;
 					border-top: none;
+				}
+				&.signup {
+					padding: 5px 15px;
+					a {
+					border: 1px solid #fff;
+					border-radius: 15px;
+					padding: 5px;
+					}
 				}
 			}
 		}
@@ -42,7 +53,7 @@
 			h1 {
 				font-weight: 600;
 				font-size: 24px;
-				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+				font-family: 'Adelle Sans', Helvetica, Arial, sans-serif;
 				margin: 0;
 				padding: 0 30px;
 				float: left;

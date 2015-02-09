@@ -29,7 +29,9 @@
 	<![endif]-->
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" type="image/x-icon">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="//use.typekit.net/plr0bzn.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
 	<?php wp_head(); ?>
 	
 	<script type="text/javascript">
@@ -50,16 +52,14 @@
 			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">			
 				
 				<ul class="nav navbar-nav">
-	                <li><a href="http://quill.org/about">About</a></li>
+	                <li><a href="http://quill.org/about">Discover</a></li>
 	                <li><a href="http://community.quill.org/">Community</a></li>
-	                <li><a href="http://quill.org/faq">Support</a></li>
-	                <li><a href="http://news.quill.org">News</a></li>
 	                
 					<?php if(is_user_logged_in()) { ?>
-						<li><a href="<?php echo(wp_logout_url(esc_url( home_url( '/' ) ))); ?>">Logout</a></li>
+						<li><a href="<?php echo(wp_logout_url(esc_url( home_url( '/' ) ))); ?>">Logout</a></li>
 					<?php } else { ?>
-						<li><a href="<?php echo(esc_url( home_url( '/signup' ) )); ?>">Register</a></li>
-						<li><a href="<?php echo(wp_login_url(esc_url( home_url( '/' ) ))); ?>">Login</a></li>
+						<li><a href="<?php echo(wp_login_url(esc_url( home_url( '/' ) ))); ?>">Login</a></li>
+						<li class="signup"><a href="<?php echo(esc_url( home_url( '/signup' ) )); ?>">Sign Up</a></li>
 					<?php } ?>
 	            </ul>
               

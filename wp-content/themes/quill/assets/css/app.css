@@ -1,10 +1,12 @@
 @charset "UTF-8";
 #masthead .header-main {
   min-height: 50px;
-  margin: 20px auto;
+  margin: 5px auto;
   overflow: auto; }
   #masthead .header-main .site-title {
     float: left; }
+    #masthead .header-main .site-title h1 {
+      padding-top: 15px; }
     #masthead .header-main .site-title a {
       background-image: url("../img/logo.png");
       background-repeat: no-repeat;
@@ -16,14 +18,20 @@
     float: right; }
     #masthead .header-main .navbar-nav.nav li {
       display: inline-block;
-      font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+      font-family: 'Adelle Sans', Helvetica, Arial, sans-serif; }
       #masthead .header-main .navbar-nav.nav li a {
-        color: #000;
+        color: #fff;
         font-size: 16px;
         line-height: 45px;
         padding: 10px 20px;
         font-weight: 400;
         border-top: none; }
+      #masthead .header-main .navbar-nav.nav li.signup {
+        padding: 5px 15px; }
+        #masthead .header-main .navbar-nav.nav li.signup a {
+          border: 1px solid #fff;
+          border-radius: 15px;
+          padding: 5px; }
 #masthead .header-bottom {
   padding: 12px 0;
   min-height: 25px;
@@ -36,7 +44,7 @@
     #masthead .header-bottom nav#sub-navigation h1 {
       font-weight: 600;
       font-size: 24px;
-      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      font-family: 'Adelle Sans', Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0 30px;
       float: left; }
