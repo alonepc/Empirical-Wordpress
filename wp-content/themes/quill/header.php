@@ -64,36 +64,52 @@
 	            </ul>
               
 			</nav>
+
+			<?php 
+			if(bp_current_item())
+			{
+				$active = bp_current_item();
+			} else {
+				$active = false;
+			}
+			
+			?>
+
+			<div class="tab-outer-wrap">
+			    <ul class="nav nav-tabs tabs-navigation-list" role="tablist">
+
+			      <li class="<?php if(is_front_page()){echo('active');} ?>">
+			        <a href="/">Home</a>
+			      </li>
+
+			      <li class="<?php if($active == 'quill-lms'){echo('active');} ?>">
+			        <a href="/teams/quill-lms">LMS</a>
+			      </li>
+
+
+			      <li class="<?php if($active == 'apps'){echo('active');} ?>">
+			        <a href="/teams/apps/">Apps</a>
+			      </li>
+
+			      <li class="<?php if($active == 'community-dashboard'){echo('active');} ?>">
+			        <a href="/teams/community-dashboard/">Community</a>
+			      </li>
+
+			      <li class="<?php if($active == 'outreach'){echo('active');} ?>">
+			        <a href="/teams/outreach/">Outreach</a>
+			      </li>
+
+			      <li class="<?php if($active == 'fundraising'){echo('active');} ?>">
+			        <a href="/teams/fundraising/">Fundraising</a>
+			      </li>
+			    
+			    </ul>
+
+			</div>
+
 		</div>
 		<div class="header-bottom">
 			<nav id="sub-navigation" class="site-navigation sub-navigation">
-			
-			<?php
-				$args = array(
-					'type' => 'alphabetical',
-					'per_page' => 99999,
-					'max' => false
-				);
-				if ( bp_has_groups($args) ) : ?>
-				<select class="group-selector">
-					<option>Quill Community</option>
-					<?php while ( bp_groups() ) : bp_the_group(); ?>
-						<?php
-							
-							if(bp_get_group_slug() == bp_current_item())
-							{
-								$selected = true;
-							} else {
-								$selected = false;
-							}
-							
-						?>
-						<option <?php if($selected){echo('selected="selected"');} ?> data-href="<?php bp_group_permalink() ?>">
-							<?php bp_group_name() ?>
-						</option>
-					<?php endwhile; ?>
-				</select>
-			<?php endif; ?>
 			
 			<?php if(bp_current_item()) : ?>
 				
