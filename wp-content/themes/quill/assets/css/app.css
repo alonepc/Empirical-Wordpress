@@ -44,7 +44,9 @@
       clear: both; }
   #masthead .header-main .tab-outer-wrap {
     clear: both;
-    display: block; }
+    display: block;
+    position: relative;
+    bottom: 50px; }
     #masthead .header-main .tab-outer-wrap ul.tabs-navigation-list {
       list-style: none;
       margin: 0; }
