@@ -52,7 +52,7 @@
 			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">			
 				
 				<ul class="nav navbar-nav">
-	                <li><a href="http://quill.org/about">Discover</a></li>
+	                <li><a href="http://quill.org/mission">Discover</a></li>
 	                <li><a href="http://community.quill.org/">Community</a></li>
 	                
 					<?php if(is_user_logged_in()) { ?>
