@@ -52,8 +52,12 @@
 			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">			
 				
 				<ul class="nav navbar-nav">
-	                <li><a href="http://quill.org/mission">Discover</a></li>
-	                <li><a href="http://community.quill.org/">Community</a></li>
+	                <li><a href="/">Contributors</a></li>
+	                <li><a href="/activity/">Activity</a></li>
+	                <li><a href="/teams/">Teams</a></li>
+	                <li><a href="/mailing-list/">Mailing List</a></li>
+	                <li><a href="/chat/">Chat</a></li>
+
 	                
 					<?php if(is_user_logged_in()) { ?>
 						<li><a href="<?php echo(wp_logout_url(esc_url( home_url( '/' ) ))); ?>">Logout</a></li>
