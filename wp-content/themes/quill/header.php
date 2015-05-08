@@ -122,6 +122,7 @@
 						);
 						$page = get_posts($args);
 						if($page[0]->ID){
+							$pageID = $page[0]->ID;
 							$args = array(
 								'post_parent' => $page[0]->ID,
 								'post_type' => 'page',
@@ -153,7 +154,7 @@
 							} else {
 								$class = '';
 							}
-							$firstItem = '<li class="' . $class . '"><a href="' . get_permalink($page[0]->ID) . '">Activity</a></li>';
+							$firstItem = '<li class="' . $class . '"><a href="' . get_permalink($pageID) . '">Activity</a></li>';
 
 							$listItems = $firstItem . $listItems;
 
