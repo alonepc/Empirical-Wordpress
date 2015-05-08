@@ -132,6 +132,15 @@
 							
 							echo('<ul class="menu">');
 
+							if($page[0]->ID == get_the_ID())
+							{
+								$class = 'active';
+							} else {
+								$class = '';
+							}
+
+							echo('<li class="' . $class . '"><a href="' . get_permalink($page[0]->ID) . '">Activity</a></li>');
+
 
 							foreach($subpages as $page)
 							{
