@@ -132,27 +132,32 @@
 							
 							echo('<ul class="menu">');
 
-							if($page[0]->ID == get_the_ID())
-							{
-								$class = 'active';
-							} else {
-								$class = '';
-							}
-
-							echo('<li class="' . $class . '"><a href="' . get_permalink($page[0]->ID) . '">Activity</a></li>');
-
+							$listItems = '';
+							$oneActive = false;
 
 							foreach($subpages as $page)
 							{
 								if($page->ID == get_the_ID())
 								{
 									$class = 'active';
+									$oneActive = true;
 								} else {
 									$class = '';
 								}
-								echo('<li class="' . $class . '"><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>');
+								$listItems .= '<li class="' . $class . '"><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>';
 							}
-							
+
+							if($oneActive == false)
+							{
+								$class = 'active';
+							} else {
+								$class = '';
+							}
+							$firstItem = '<li class="' . $class . '"><a href="' . get_permalink($page[0]->ID) . '">Activity</a></li>';
+
+							$listItems = $firstItem . $listItems;
+
+							echo($listItems);
 							echo('</ul>');
 						}
 					?>
