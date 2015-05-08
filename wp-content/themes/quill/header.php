@@ -132,9 +132,16 @@
 							
 							echo('<ul class="menu">');
 
+
 							foreach($subpages as $page)
 							{
-								echo('<li><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>');
+								if($page->ID == get_the_ID())
+								{
+									$class = 'active';
+								} else {
+									$class = '';
+								}
+								echo('<li class="' . $class . '"><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>');
 							}
 							
 							echo('</ul>');
@@ -142,12 +149,16 @@
 					?>
 				
 			<?php else: ?>
-				<ul class="menu">		
+				<?php
+					global $post;
+    				$post_slug=$post->post_name;
+				?>
+				<ul class="menu">
 	                <li><a href="/">Contributors</a></li>
-	                <li><a href="/activity/">Activity</a></li>
-	                <li><a href="/teams/">Teams</a></li>
-	                <li><a href="/mailing-list/">Mailing List</a></li>
-	                <li><a href="/chat/">Chat</a></li>
+	                <li class="<?php if($post_slug == 'activity') { echo 'active';} ?>"><a href="/activity/">Activity</a></li>
+	                <li class="<?php if($post_slug == 'teams') { echo 'active';} ?>"><a href="/teams/">Teams</a></li>
+	                <li class="<?php if($post_slug == 'mailing-list') { echo 'active';} ?>"><a href="/mailing-list/">Mailing List</a></li>
+	                <li class="<?php if($post_slug == 'chat') { echo 'active';} ?>"><a href="/chat/">Chat</a></li>
 				</ul>
 			<?php endif; ?>
 			</nav>

@@ -46,7 +46,7 @@
     clear: both;
     display: block;
     position: absolute;
-    bottom: 50px; }
+    bottom: 60px; }
     #masthead .header-main .tab-outer-wrap ul.tabs-navigation-list {
       list-style: none;
       margin: 0; }
@@ -77,7 +77,7 @@
           border-top: 2px solid #027360; }
 #masthead .header-bottom {
   padding: 12px 0;
-  min-height: 25px;
+  min-height: 35px;
   border-bottom: 1px solid #cecece;
   border-top: 1px solid #cecece;
   background: #fff; }
@@ -85,11 +85,14 @@
     margin: 0 auto;
     max-width: 964px; }
     #masthead .header-bottom nav#sub-navigation ul.menu {
-      padding: 0 30px; }
+      padding: 0 10px; }
       #masthead .header-bottom nav#sub-navigation ul.menu li {
         display: inline-block;
-        margin: 0 15px;
-        padding-left: 10px 16.5px; }
+        margin: 0 10px;
+        padding: 5px 10px; }
+        #masthead .header-bottom nav#sub-navigation ul.menu li.active {
+          background-color: #e6e6e6;
+          border-radius: 5px; }
 
 .buddypress-wrapper {
   padding-top: 50px; }

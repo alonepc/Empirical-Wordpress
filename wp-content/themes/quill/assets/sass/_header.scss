@@ -62,7 +62,7 @@
 			clear: both;
 			display: block;
 			position: absolute;
-			bottom: 50px;
+			bottom: 60px;
 			ul.tabs-navigation-list {
 				list-style: none;
 				margin: 0;
@@ -104,7 +104,7 @@
 	}
 	.header-bottom {
 		padding: 12px 0;
-		min-height: 25px;
+		min-height: 35px;
 		border-bottom: 1px solid #cecece;
 		border-top: 1px solid #cecece;
 		background: #fff;
@@ -112,11 +112,15 @@
 			margin: 0 auto;
 			max-width: 964px;
 			ul.menu {
-				padding: 0 30px;
+				padding: 0 10px;
 				li {
 					display: inline-block;
-					margin: 0 15px;
-					padding-left: 10px 16.5px;
+					margin: 0 10px;
+					padding: 5px 10px;
+					&.active {
+						background-color: #e6e6e6;
+						border-radius: 5px;
+					}
 				}
 			}
 		}
