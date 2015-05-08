@@ -144,7 +144,7 @@
 								} else {
 									$class = '';
 								}
-								$listItems .= '<li class="' . $class . '"><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>';
+								$listItems = $listItems . '<li class="' . $class . '"><a href="' . get_permalink($page->ID) . '">' . $page->post_title . '</a></li>';
 							}
 
 							if($oneActive == false)
