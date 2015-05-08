@@ -1,9 +1,4 @@
 <?php
-if( ! defined("MC4WP_LITE_VERSION") ) {
-	header( 'Status: 403 Forbidden' );
-	header( 'HTTP/1.1 403 Forbidden' );
-	exit;
-}
 
 class MC4WP_MailChimp {
 
@@ -54,7 +49,7 @@ class MC4WP_MailChimp {
 				}
 
 				// get merge vars for all lists at once
-				$merge_vars_data = $api->get_lists_with_merge_vars( array_keys($lists) );
+				$merge_vars_data = $api->get_lists_with_merge_vars( array_keys( $lists ) );
 				if ( $merge_vars_data ) {
 					foreach ( $merge_vars_data as $list ) {
 						// add merge vars to list
@@ -117,6 +112,72 @@ class MC4WP_MailChimp {
 	}
 
 	/**
+	 * Get the interest grouping object for a given list.
+	 *
+	 * @param string $list_id ID of MailChimp list that contains the grouping
+	 * @param string $grouping_id ID of the Interest Grouping
+	 *
+	 * @return object|null
+	 */
+	public function get_list_grouping( $list_id, $grouping_id ) {
+		$list = $this->get_list( $list_id, false, true );
+
+		if( is_object( $list ) && isset( $list->interest_groupings ) ) {
+			foreach( $list->interest_groupings as $grouping ) {
+
+				if( $grouping->id !== $grouping_id ) {
+					continue;
+				}
+
+				return $grouping;
+			}
+		}
+
+		return null;
+	}
+
+	/**
+	 * Get the name of a list grouping by its ID
+	 *
+	 * @param $list_id
+	 * @param $grouping_id
+	 *
+	 * @return string
+	 */
+	public function get_list_grouping_name( $list_id, $grouping_id ) {
+
+		$grouping = $this->get_list_grouping( $list_id, $grouping_id );
+		if( $grouping ) {
+			return $grouping->name;
+		}
+
+		return '';
+	}
+
+	/**
+	 * Get the group object for a group in an interest grouping
+	 *
+	 * @param string $list_id ID of MailChimp list that contains the grouping
+	 * @param string $grouping_id ID of the Interest Grouping containing the group
+	 * @param string $group_id_or_name ID or name of the Group
+	 * @return object|null
+	 */
+	public function get_list_grouping_group( $list_id, $grouping_id, $group_id_or_name ) {
+		$grouping = $this->get_list_grouping( $list_id, $grouping_id );
+		if( is_object( $grouping ) && isset( $grouping->groups ) ) {
+			foreach( $grouping->groups as $group ) {
+
+				if( $group->id == $group_id_or_name || $group->name === $group_id_or_name ) {
+					return $group;
+				}
+
+			}
+		}
+
+		return null;
+	}
+
+	/**
 	 * Returns number of subscribers on given lists.
 	 *
 	 * @param array $list_ids Array of list id's.
@@ -173,7 +234,7 @@ class MC4WP_MailChimp {
 	 */
 	public function strip_unnecessary_group_properties( $group ) {
 		return (object) array(
-			'name' => $group->name
+			'name' => $group->name,
 		);
 	}
 
@@ -188,7 +249,7 @@ class MC4WP_MailChimp {
 			'id' => $grouping->id,
 			'name' => $grouping->name,
 			'groups' => array_map( array( $this, 'strip_unnecessary_group_properties' ), $grouping->groups ),
-			'form_field' => $grouping->form_field
+			'form_field' => $grouping->form_field,
 		);
 	}
 
@@ -203,15 +264,15 @@ class MC4WP_MailChimp {
 			'name' => $merge_var->name,
 			'field_type' => $merge_var->field_type,
 			'req' => $merge_var->req,
-			'tag' => $merge_var->tag
+			'tag' => $merge_var->tag,
 		);
 
 		if ( isset( $merge_var->choices ) ) {
-			$array["choices"] = $merge_var->choices;
+			$array['choices'] = $merge_var->choices;
 		}
 
 		return (object) $array;
 
 	}
 
-} 
+}
