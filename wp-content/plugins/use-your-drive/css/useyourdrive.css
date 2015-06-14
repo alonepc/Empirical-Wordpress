@@ -1,0 +1,1045 @@
+@charset "UTF-8";
+
+/* Colors CSS */
+#UseyourDrive a{color: #666;}
+
+#UseyourDrive .list-container {border-color: #DDD;   background-color: #f9f9f9;}
+#UseyourDrive .loading{background-color: #f9f9f9;}
+
+/* ---Header */
+#UseyourDrive .nav-header{  border-bottom-color: #d1d1d1;  background: #DDD;}
+#UseyourDrive .nav-header a:hover,
+#UseyourDrive .nextimages a:hover,
+#UseyourDrive .column_names a:hover{color: #0e92c7;}
+#UseyourDrive .nav-search.inuse{  color: #29ADE2;}
+#UseyourDrive .column_names{  background-color: #EEE;}
+.UseyourDrive .search-remove:hover {color: #29ADE2;}
+
+/* ---File/Pictures entries */
+#UseyourDrive .entry.hasfocus, #UseyourDrive .entry.hasfocus a,
+#UseyourDrive .entry.popupopen, #UseyourDrive .entry.popupopen a,
+#UseyourDrive .entry.isselected, #UseyourDrive .entry.isselected a,
+#UseyourDrive .entry.isdragged, #UseyourDrive .entry.isdragged a,
+#UseyourDrive .entry:hover ,#UseyourDrive .entry:hover a{color: #FFF;}
+#UseyourDrive .entry:hover, #UseyourDrive .entry.hasfocus, #UseyourDrive .entry.isdragged, #UseyourDrive .entry.popupopen  { background-color: #29ADE2;}
+#UseyourDrive .entry.isselected { background-color: #0e92c7;}
+
+/* ---Load more button */
+#UseyourDrive .nextimages{border-color: #0e92c7;}
+#UseyourDrive .nextimages a:hover{color: #0e92c7;}
+
+/* ---Menus*/
+#UseyourDrive .uyd-grid .entry_edit { background-color: #29ADE2}
+#UseyourDrive .uyd-grid .entry.hasfocus .entry_edit,
+#UseyourDrive .uyd-grid .entry.popupopen .entry_edit { background-color: #29ADE2}
+#UseyourDrive .uyd-grid .entry.isselected .entry_edit { background-color: #0e92c7}
+#UseyourDrive .gridgallery .entry_edit  { background-color: rgba(86, 86, 86, 0.5)}
+#UseyourDrive .gridgallery .entry.hasfocus .entry_edit,
+#UseyourDrive .gridgallery .entry.popupopen .entry_edit{ background-color: rgba(86, 86, 86, 0.5)}
+#UseyourDrive .gridgallery .entry.isselected .entry_edit { background-color: rgba(86, 86, 86, 0.8)}
+#UseyourDrive .gridgallery a.entry_edit_menu,
+#UseyourDrive .gridgallery a.entry_description {color: #FFF;}
+
+.UseyourDrive .gear-menu li >a:hover,
+.UseyourDrive .download-zip-menu li >a:hover,
+.UseyourDrive .uyd-dropdown-menu li > a:hover {
+  background-color: #0e92c7;
+  color: #FFF;
+}
+
+/* ---Description popup*/
+.qtip-default.UseyourDrive.description .qtip-content .description_title{
+  background-color: #29ADE2;
+}
+/* ---Upload rows */
+#UseyourDrive .template-upload,
+#UseyourDrive .template-download{
+  border: 1px solid #EBEBEB;
+  background-color: #EEE;
+}
+
+/* ---Drag and Drop */
+#UseyourDrive .ajax-filelist.in {background: #DDD;}
+#UseyourDrive .ajax-filelist.hover {background: #CEE0E7;}
+
+/* End Color CSS */
+
+
+/* Basic layout */
+#UseyourDrive{
+  font-size:1.1em;
+  font-family:Verdana, Arial, sans-serif;
+  line-height:1.6;
+  color: #666;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#UseyourDrive div{
+  margin:0;
+  padding:0;
+}
+#UseyourDrive div, #UseyourDrive input{
+  box-sizing:border-box;
+  -moz-box-sizing: border-box;
+}
+
+#UseyourDrive a{
+  text-decoration: none;
+}
+#UseyourDrive a:hover{
+  text-decoration: none;
+}
+.UseyourDrive.jsdisabled,
+#UseyourDrive .jsdisabled{
+  display: none;
+}
+#UseyourDrive-nojsmessage{
+  font-style:italic;
+}
+
+#UseyourDrive .noaccess{
+  text-align: center;
+  min-height: initial!important;
+}
+
+/* Container */
+#UseyourDrive .list-container{
+  min-height: 240px;
+  position: relative;
+  padding: 0;
+  border-radius: 10px;
+}
+#UseyourDrive .list-container{
+  border-width: 3px;
+  border-style: solid;
+}
+#UseyourDrive .ajax-filelist{
+  font-size: 75%;
+  min-height: 32px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+/* Loading Divs*/
+#UseyourDrive .loading{
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  position: absolute;
+  z-index: 1000;
+  text-align: center;
+  padding-top: 5px;
+  background-image: url(clouds/cloud_loading_128.gif);
+  background-position: 50% 30px;
+  background-repeat: no-repeat;
+}
+#UseyourDrive .loading.initialize{  background-image: url(clouds/cloud_system_128.png);}
+#UseyourDrive .loading.upload{    background-image: url(clouds/cloud_upload_128.gif);  }
+#UseyourDrive .loading.search{  background-image: url(clouds/cloud_inspect_128.png);}
+#UseyourDrive .loading.error{  background-image: url(clouds/cloud_sad_128.png);}
+#UseyourDrive .gridgallery img.preloading,
+#UseyourDrive .uyd-grid .entry_thumbnail img.preloading{
+  background: url(clouds/cloud_loading_64.gif) 50% 50% no-repeat;
+}
+
+/* Header */
+#UseyourDrive .nav-header{
+  min-height:38px;
+  padding: 5px 15px;
+  clear: both;
+  overflow: visible;
+  position: relative;
+  border-width:0;
+  border-bottom-width: 1px;
+  border-style: solid;
+
+}
+#UseyourDrive .nav-header a:hover,
+#UseyourDrive .column_names a:hover{
+  font-weight: bold;
+}
+#UseyourDrive .nav-title{
+  margin-left: 26px;
+  margin-right: 180px;
+  margin-top: 3px;
+  font-size: 14px;
+  position: relative;
+}
+
+/* Header buttons */
+#UseyourDrive .nav-home{
+  float:left;
+}
+
+#UseyourDrive .nav-home i{
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#UseyourDrive .nav-refresh i,
+#UseyourDrive .nav-search i,
+#UseyourDrive .nav-gear i{
+  margin-top: 3px;
+  font-size: 1.2em;
+  margin-left: .5em;
+  cursor: pointer;
+}
+
+#UseyourDrive .nav-refresh,
+#UseyourDrive .nav-search,
+#UseyourDrive .nav-gear{
+  float:right;
+}
+
+#UseyourDrive .search-div{
+  display: none;
+}
+
+#UseyourDrive .download-zip{
+  position: relative;
+  right:0px;
+  float: right;
+}
+
+#UseyourDrive .zip-status{
+  font-size: 80%;
+}
+
+#UseyourDrive .zip-status .zip-bytes{
+  margin-left:10px;
+  font-style: italic;
+}
+
+/* Files and folders*/
+#UseyourDrive .files .entry,
+#UseyourDrive .files .column_names{
+  padding: 5px 15px 5px 15px;
+  margin: 0px;
+  clear: both;
+  min-height: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+#UseyourDrive .uyd-grid .layout-grid{
+  opacity: 0;
+}
+#UseyourDrive .uyd-grid .entry{
+  padding: 5px 0px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+  border-radius: 5px;
+  margin: 5px;
+  transition: all .2s ease-in-out;
+}
+#UseyourDrive .entry:hover, #UseyourDrive .entry.hasfocus, #UseyourDrive .entry.isdragged, #UseyourDrive .entry.popupopen  {
+  box-shadow: 2px 2px 4px #bbb;
+  -webkit-box-shadow: 2px 2px 4px #bbb;
+  -moz-box-shadow:    2px 2px 4px #bbb;
+}
+#UseyourDrive .uyd-grid .entry .entry_block{
+  padding: 5px;
+  width:200px;
+}
+#UseyourDrive .uyd-grid .entry_thumbnail{
+  width: 100%;
+  height:179px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+#UseyourDrive .uyd-grid .entry_thumbnail-view-bottom{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+#UseyourDrive .uyd-grid .entry_thumbnail-view-center{
+  text-align: center;
+  position: relative;
+}
+#UseyourDrive .uyd-grid .entry_thumbnail img{
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 1px;
+  vertical-align: top;
+  transition: opacity .3s ease-in;
+  -ms-interpolation-mode: bicubic;
+  box-shadow: none;
+}
+
+#UseyourDrive .uyd-grid .entry.hasfocus .entry_link,
+#UseyourDrive .uyd-grid .entry.popupopen .entry_link,
+#UseyourDrive .uyd-grid .entry:hover .entry_link{
+  font-weight: bold;
+}
+
+#UseyourDrive .uyd-list .entry_name{
+  margin-left: 6px;
+  margin-right: 5px;
+  text-align: left;
+  float: left;
+  word-wrap: break-word;
+  width: 40%;
+}
+
+#UseyourDrive .uyd-grid .entry_name{
+  line-height: 21px;
+  text-align: center;
+}
+
+#UseyourDrive .uyd-grid .entry_name .entry-name-view{
+  display: inline-block;
+  max-width: 80%;
+  padding-top: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+  overflow: hidden;
+}
+#UseyourDrive .uyd-grid .entry_name .entry-name-view span,
+#UseyourDrive .uyd-grid .entry_name .entry-name-view span strong{
+  white-space: nowrap;
+}
+
+#UseyourDrive .entry_link{
+  display: block;
+  width:100%;
+}
+#UseyourDrive .uyd-grid .entry_link{
+  display: inline;
+}
+
+#UseyourDrive .entry_size{
+  float: right;
+  font-size: 95%;
+  width: 75px;
+  text-align: right;
+}
+
+#UseyourDrive .entry_checkbox input[type="checkboxinput"]{
+  display: none;
+}
+
+#UseyourDrive .entry:hover .entry_checkbox,
+#UseyourDrive .entry.hasfocus .entry_checkbox,
+#UseyourDrive .entry.popupopen .entry_checkbox,
+#UseyourDrive .entry.isselected .entry_checkbox{
+  display:inline-block; 
+}
+
+#UseyourDrive .uyd-list .entry_checkbox,
+#UseyourDrive .uyd-list .entry_checkallbox{
+  float:right;
+  height: 16px;
+  width: 16px;
+  margin-left: 5px;
+  z-index: 10;
+  margin-top: 3px;
+}
+#UseyourDrive .gridgallery .entry_checkbox,
+#UseyourDrive .uyd-grid .entry_checkbox{
+  top: 3px;
+  margin-right: 5px;
+  position: relative;
+  display: none;
+}
+#UseyourDrive .gridgallery .entry_checkbox{
+  left: 5px;
+  top: 5px;
+}
+#UseyourDrive .entry_lastedit{
+  font-size: 95%;
+  min-width: 10%;
+  width: 185px;
+  text-align: left;
+  float:right;
+}
+
+#UseyourDrive .uyd-grid .entry_description,
+#UseyourDrive .gridgallery .entry_description{
+  right: 28px;
+  top: -3px;
+  position: absolute;
+  padding: 3px 5px;
+}
+#UseyourDrive .gridgallery .entry_description{
+  top: -2px;
+  right: 20px;
+}
+#UseyourDrive .description_textbox{
+  display: none;
+}
+
+#UseyourDrive .entry_foundpath{
+  font-size: 95%;
+}
+
+#UseyourDrive .no_results{
+  background:url(clouds/cloud_status_128.png) center top no-repeat;
+  padding-top: 120px;
+  text-align: center;
+  font-style: italic;
+  height: 140px;
+}
+
+/* Column Sorting */
+#UseyourDrive .column_names {
+  font-size: 80% !important;
+}
+#UseyourDrive .files.uyd-grid .column_names {
+  display:none;
+}
+
+#UseyourDrive .column_names .sortable{
+  cursor: pointer;
+}
+
+#UseyourDrive .column_names .entry_name,
+#UseyourDrive .column_names .entry_size,
+#UseyourDrive .column_names .entry_lastedit{
+  font-size: 100%;
+}
+
+#UseyourDrive .sort_icon{
+  width: 21px;
+  height: 4px;
+  top: 8px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+}
+#UseyourDrive .column_names .desc .sort_icon{
+  background-image:  url(images/desc.gif);
+}
+#UseyourDrive .column_names .asc .sort_icon{
+  background-image:  url(images/asc.gif);
+}
+
+/* Search Form */
+.UseyourDrive .search-remove{
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  top: 13px;
+  font-size: 140%;
+}
+
+.UseyourDrive .search-input{
+  width: 200px;
+  margin: 0 !important;
+  background:white url(images/search.png) 5px center no-repeat;
+  color:#666;
+  border: 1px solid #d1d1d1;
+  padding: 6px 25px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  font-size: 150%;
+}
+.UseyourDrive .search-div{
+  margin: 10px;
+}
+
+/* Menus*/
+#UseyourDrive .uyd-list .entry_edit_placheholder,
+#UseyourDrive .uyd-list .entry_edit {
+  float:right;
+  margin-left: 10px;
+  width: 30px;
+  height: 13px;
+  display: none;
+}
+
+#UseyourDrive .entry.hasfocus .entry_edit,
+#UseyourDrive .entry.popupopen .entry_edit,
+#UseyourDrive .gridgallery .entry.isselected .entry_edit{
+  opacity: 1;
+}
+
+#UseyourDrive .uyd-list .entry_edit_placheholder{
+  display: block;
+}
+
+#UseyourDrive .uyd-grid .entry_edit,
+#UseyourDrive .gridgallery .entry_edit {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  opacity: 0;
+}
+
+#UseyourDrive .uyd-grid .hasfocus .entry_edit,
+#UseyourDrive .gridgallery .hasfocus .entry_edit {
+  transition: all .4s ease-in;
+}
+
+#UseyourDrive .entry_edit_menu {
+  cursor: pointer;
+}
+#UseyourDrive .uyd-list .entry_edit_menu {
+  float:right;
+}
+#UseyourDrive .uyd-grid .entry_edit_menu,
+#UseyourDrive .gridgallery .entry_edit_menu {
+  right: 9px;
+  top: -3px;
+  position: absolute;
+  padding: 3px 5px;
+}
+#UseyourDrive .gridgallery .entry_edit_menu{
+  right:0px;
+  top: -2px;
+}
+
+.UseyourDrive .gear-menu,
+.UseyourDrive .download-zip-menu,
+.UseyourDrive .uyd-dropdown-menu{
+  display: none;
+  font-size: 150%;
+}
+.UseyourDrive .gear-menu ul,
+.UseyourDrive .download-zip-menu ul,
+.UseyourDrive .uyd-dropdown-menu ul{
+  list-style: none;
+  background: #FFF;
+  overflow: hidden;
+  padding: 4px 0;
+  margin: 0;
+  font-size: 60%;
+}
+.UseyourDrive .gear-menu li,
+.UseyourDrive .download-zip-menu li,
+.UseyourDrive .uyd-dropdown-menu li {
+  list-style: none;
+  padding: 0 0;
+  margin: 0;
+  line-height: 18px;
+}
+.UseyourDrive .gear-menu li > a,
+.UseyourDrive .download-zip-menu li > a,
+.UseyourDrive .uyd-dropdown-menu li > a{
+  display: block;
+  color: #555;
+  text-decoration: none;
+  line-height: 18px;
+  padding: 6px 10px;
+  white-space: nowrap;
+  width: 100%;
+}
+.UseyourDrive .gear-menu li >a:hover,
+.UseyourDrive .download-zip-menu li >a:hover,
+.UseyourDrive .uyd-dropdown-menu li > a:hover {
+  cursor: pointer;
+}
+.UseyourDrive .gear-menu  li i,
+.UseyourDrive .download-zip-menu li i,
+.UseyourDrive .uyd-dropdown-menu li i{
+  width:25px;
+}
+
+
+/* FileUpload Form */
+#UseyourDrive .fileupload-container{
+  font-size: 90%;
+  margin-top: 10px;
+}
+
+#UseyourDrive .fileupload-browse-button{
+  width: 100%;
+  height: 100%;
+  transform:none;
+}
+
+#UseyourDrive .fileupload-buttonbar{
+  margin-bottom: 10px;
+}
+
+#UseyourDrive .fileupload-buttonbar .ui-button{
+  float: none !important; /* overrule jQuery UI CSS */
+}
+#UseyourDrive .ui-button-text, #UseyourDrive .fileupload-browse-button{
+  cursor: pointer;
+}
+#UseyourDrive .template-upload,
+#UseyourDrive .template-download{
+  overflow: auto;
+  padding:5px;
+  margin-bottom: 5px;
+}
+
+#UseyourDrive .upload-name{
+  float: left;
+  word-wrap: break-word;
+  width: 70%;
+}
+
+#UseyourDrive .file-size{
+  font-size: 90%;
+  margin-left: 20px;
+}
+
+#UseyourDrive .upload-status{
+  float:right;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+#UseyourDrive .upload-status .queue{}
+#UseyourDrive .upload-status .error{}
+#UseyourDrive .upload-status .succes{}
+
+#UseyourDrive .upload-error{
+  clear: both;
+  text-decoration: underline;
+  float: right;
+}
+
+#UseyourDrive .upload-buttons{
+  display: none;
+}
+
+#UseyourDrive .upload-progress{
+  clear:both;
+}
+
+#UseyourDrive .upload-progress .progress{
+  height: 10px;
+}
+
+/* UseyourDrive Gallery */
+#UseyourDrive .image-collage{
+  /*This is where you set the padding you want between the images*/
+  padding:5px !important;
+  margin:0 !important;
+  border:0 !important;
+  font-size: 100% !important;
+  position: static;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#UseyourDrive .image-collage img{
+  margin:0;
+  padding:0;
+  /*display:inline-block;*/
+  vertical-align:bottom;
+  opacity:1;
+  max-width: none !important;
+  border-radius: 0 !important;
+  /*This is where you set the border you want for the image*/
+  border:0px solid #FFF;
+  transition: opacity .3s ease-in;
+  -webkit-transition: opacity .3s ease-in-out;
+}
+
+#UseyourDrive .image-container{
+  /* to get the fade in effect, set opacity to 0 on the first element within the gallery area */
+  opacity:1;
+  position: relative;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  float:left;
+}
+
+#UseyourDrive .image-container.hidden,
+#UseyourDrive .image-container img.hidden{
+  display:none;
+  opacity:0;
+}
+
+#UseyourDrive .image-container.entry{
+  padding:0 !important;
+}
+
+#UseyourDrive .folder-thumb{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
+  left: 0px;
+}
+
+#UseyourDrive .image-folder{
+  background-color: #808080;
+}
+
+#UseyourDrive .image-folder:hover{
+  background-color: #808080 !important;
+  cursor: pointer;
+}
+
+#UseyourDrive .image-folder img{
+  background: none !important;
+  z-index: 1;
+  position: absolute;
+}
+
+#UseyourDrive .image-rollover{
+  background:url(images/mag.png) center center no-repeat;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 4px #000;
+  -moz-box-shadow: 0px 0px 4px  #000;
+  box-shadow: 0px 0px 4px  #000;
+}
+
+#UseyourDrive .image-folder .folder-text {
+  position: absolute;
+  padding: 5px 0px 10px!important;
+  bottom: 0;
+  color: #FFF;
+  background:url(images/folder-title-bg.png) repeat;
+  font-size: 130%;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+#UseyourDrive .nextimages{
+  position:relative;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+  background: #FFF;
+  z-index: 100;
+  margin: 0 auto;
+  border: 1px solid #EFEFEF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#UseyourDrive .nextimages a:hover{
+  font-weight: bold;
+}
+
+/* iLightbox  Iframe*/
+.ilightbox-holder.UseyourDrive iframe,
+.ilightbox-holder.UseyourDrive .ilightbox-image{
+  background:none;
+  z-index: 2;
+  position: relative;
+}
+
+.ilightbox-holder.UseyourDrive .ilightbox-caption{
+  background: rgba(78, 78, 78, 0.7) !important;
+  text-shadow:none !important;
+  font-size: 1em !important;
+  color: #FFF !important;
+}
+
+.UseyourDrive .empty_iframe{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  background-image: url(images/iframearrow.png);
+  background-position: 50% 30px;
+  background-repeat: no-repeat;
+  padding-top:0;
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+.UseyourDrive .empty_iframe h1{
+  margin-top: 170px;
+}
+.UseyourDrive .empty_iframe span{
+  display: block;
+  /* position: relative; */
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*jQuery UI CSS overrule*/
+.UseyourDrive .ui-widget-content,
+.UseyourDrive .ui-dialog-titlebar{
+  padding:5px !important;
+}
+
+.UseyourDrive .ui-dialog-titlebar-close{
+  width: 20px !important;
+  height: 20px !important;
+}
+
+#UseyourDrive .fileupload-list .ui-icon{
+  float: right;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+.ui-dialog.UseyourDrive button{
+  float: right !important; /* overrule jQuery UI CSS */
+}
+
+.ui-front {
+  z-index:1000; /* The default is 100. !important overrides the default. */
+}
+.ui-widget-overlay.ui-front {
+  z-index: 1000000 !important;
+}
+
+.UseyourDrive .ui-droppable.entry {
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
+}
+.UseyourDrive .ui-droppable.entry.ui-state-hover{
+  border:0;
+  background: none;
+  opacity: 0.5;
+}
+.UseyourDrive .ui-droppable.entry.ui-state-active{
+  border:0;
+  background: none;
+  opacity: 0.9;
+}
+
+/* qTip custom CSS */
+.UseyourDrive .qtip-content {
+  padding: 0 !important;
+}
+
+.uyd-mobile .qtip-default.UseyourDrive{
+  max-width: 225px;
+}
+
+.qtip-default.UseyourDrive.description .qtip-content .description_title{
+  display: block;
+  color: #FFF;
+  font-weight: bold;
+  padding: 5px;
+  line-height: 1.4em;
+  font-size: 90%;
+}
+.qtip-default.UseyourDrive.description .qtip-content .description_text{
+  font-size: 70%;
+  padding:5px;
+  max-height: 150px;
+  overflow-y: auto;
+  color:#555;
+}
+.qtip-default.UseyourDrive.description .entry_edit_description{
+  float: right;
+  margin: 1px 6px 2px 6px;
+}
+.qtip-default.UseyourDrive.description .entry_edit_description a{
+  color:#FFF;
+  cursor:pointer;
+}
+.qtip-default.UseyourDrive.description .entry_edit_description a:hover{
+  color:#444;
+  text-decoration: none;
+}
+
+.qtip-default.UseyourDrive.description textarea{
+  width: 100%;
+  height: 100px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 80%;
+  color:#555;
+}
+.qtip-default.UseyourDrive.description input[type="button"]{
+  float: right;
+  margin-top: 5px;
+}
+
+.qtip-default.UseyourDrive.description .ajaxprocess {
+  float: right;
+  margin: 3px 5px 0 0;
+}
+.qtip-default.UseyourDrive.description,
+.qtip-default.UseyourDrive{
+  -webkit-box-shadow: 2px 3px 10px #878787;
+  -moz-box-shadow: 2px 3px 10px #878787;
+  box-shadow: 2px 3px 10px #878787;
+  border-radius: 5px;
+  border: 5px solid #FFF;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.qtip-default.UseyourDrive.search {
+  font-size: 70%;
+}
+
+/* Small screens */
+@media only screen and (max-width: 480px){
+
+  #UseyourDrive .nav-title {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 28px;
+  }
+  #UseyourDrive .uyd-list .entry_name {
+    margin-right: 0px;
+    width: 60%;
+  }
+  #UseyourDrive .entry_lastedit {
+    clear:both;
+    float:left;
+    margin-left: 23px;
+
+  }
+  #UseyourDrive .entry_size {
+    display: none;
+  }
+
+  #UseyourDrive .column_names .entry_lastedit{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width : 768px) {
+  #UseyourDrive .column_names .entry_lastedit{
+    display: none;
+  }
+
+  #UseyourDrive .entry_lastedit{
+    clear:both;
+    float:left;
+    margin-left: 23px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width : 990px) {
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+  #UseyourDrive .loading,
+  #UseyourDrive .jp-jplayer {
+    background-image: url(clouds/cloud_loading_256.gif);
+    background-size: 128px 128px;
+  }
+  #UseyourDrive .loading.initialize{
+    background-image: url(clouds/cloud_system_256.png);
+  }
+  #UseyourDrive .loading.upload{
+    background-image: url(clouds/cloud_upload_128.gif);
+  }
+  #UseyourDrive .loading.search{
+    background-image: url(clouds/cloud_inspect_256.png);
+  }
+  #UseyourDrive .loading.error{
+    background-image: url(clouds/cloud_sad_256.png);
+  }
+  #UseyourDrive .no_results{
+    background-image:url(clouds/cloud_status_256.png);
+    background-size: 128px 128px;
+  }
+  #UseyourDrive .gridgallery img.preloading,
+  #UseyourDrive .uyd-grid .entry_thumbnail img.preloading{
+    background-image: url(clouds/cloud_loading_128.gif);
+    background-size: 64px 64px;
+  }
+}
+
+/* Touch screens - Detected by WordPres */
+.uyd-mobile #UseyourDrive .entry_edit{
+  display: block;
+  background-color: transparent;
+}
+.uyd-mobile #UseyourDrive .gridgallery .entry_edit{
+  background-color: rgba(86, 86, 86, 0.5);
+}
+
+.uyd-mobile #UseyourDrive .entry_checkbox{
+  display: inline-block;
+}
+
+.uyd-mobile #UseyourDrive .files.uyd-list .entry{
+  padding: 5px 0px;
+}
+.uyd-mobile #UseyourDrive .files.uyd-list .column_names {
+  padding: 0px 5px;
+}
+
+/* Icons 16x16*/
+#UseyourDrive .entry_icon{
+  float: left;
+  margin-top: -1px;
+  height: 16px;
+  width: 16px;
+}
+
+/* Admin screen*/
+#icon-UseyourDrive {
+  background: transparent url( 'images/google_drive_logo.png' ) no-repeat;
+}
+.adminfilebrowser #UseyourDrive .ajax-filelist {
+  font-size: 100%;
+}
+
+/* CSS User-to-folder page */
+#UseyourDrive-UserToFolder .uyd-user{
+  float:left;
+  margin: 0 20px 20px 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #bbb;
+  padding: 10px ;
+  background: #DFDFDF;
+}
+
+#UseyourDrive-UserToFolder .uyd-user.guest{
+  background: #7DC7E4;
+}
+#UseyourDrive-UserToFolder .uyd-avatar{
+  float:left;
+}
+
+#UseyourDrive-UserToFolder .uyd-userinfo{
+
+}
+#UseyourDrive-UserToFolder .uyd-name{
+  margin-left: 45px;
+}
+
+#UseyourDrive-UserToFolder .uyd-linkedto{
+  font-style: italic;
+  margin-left: 45px;
+}
+
+#UseyourDrive-UserToFolder .uyd-linkbutton,
+#UseyourDrive-UserToFolder .uyd-unlinkbutton{
+  margin-top:10px;
+  margin-right: 3px;
+}
+
+#UseyourDrive .entry_linkto{
+  text-align: center;
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 30;
+  top: 160px;
+}
+#UseyourDrive .entry.hasfocus .entry_linkto,
+#UseyourDrive .entry.isselected .entry_linkto {
+  display:block;
+}

@@ -1,0 +1,2161 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Use-your-Drive\n"
+"POT-Creation-Date: 2015-02-02 03:48+0300\n"
+"PO-Revision-Date: 2015-02-02 05:14+0300\n"
+"Last-Translator: Mohammad Okfie <m-o984@hotmail.com>\n"
+"Language-Team: Mohammad Okfie <m-o984@hotmail.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n"
+"%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin_page.php:117 use-your-drive.php:217
+msgid "Settings"
+msgstr "الاعدادات"
+
+#: admin_page.php:118 includes/UseyourDrive_LinkUsers.php:18
+msgid "Link users to folder"
+msgstr "ربط المستخدمين بمجلد مخصص"
+
+#: admin_page.php:119 admin_page.php:206 templates/tinymce_popup.php:228
+msgid "File browser"
+msgstr "متصفح الملفات"
+
+#: admin_page.php:142
+msgid "You do not have sufficient permissions to access this page."
+msgstr "ليس لديك صلاحيات للتحكم في هذه الصفحة."
+
+#: admin_page.php:159
+msgid "Saved!"
+msgstr "<strong>تمّ الحفظ !</strong>"
+
+#: admin_page.php:163
+msgid "If you would like to receive updates, please insert your Purchase code"
+msgstr "اذا أردت الحصول على التحديثات، فرجاءً قم بوضع مفتاح الترخيص الخاص بك"
+
+#: admin_page.php:165
+msgid "Where do I find the purchase code?"
+msgstr "من أين أحصل على مفتاح الترخيص ؟"
+
+#: admin_page.php:170
+msgid "Purchase Code"
+msgstr "مفتاح الترخص"
+
+#: admin_page.php:233
+msgid "(Re) Authorize the Plugin!"
+msgstr "إعادة ربط الاضافة بحساب جوجل درايف"
+
+#: admin_page.php:234
+msgid "Revoke authorization"
+msgstr "إلغاء الربط بالحساب"
+
+#: admin_page.php:261 includes/UseyourDrive.php:32
+msgid ""
+"The plugin isn't yet authorized to use your Google Drive! Please (re)-authorize the "
+"plugin"
+msgstr "عفوًا الاضافة لم يتمّ مزامنتها بعد بحساب جوجل درايف! يُرجى ربطها بحساب مباشر."
+
+#: admin_page.php:272
+msgid "Plugin isn't linked to your Google Drive anymore... Please Reauthorize!"
+msgstr "الاضافة لا يمكنها الاتصال بحسابك في جوجل درايف .. أعد الربط مرةً أخرى!"
+
+#: admin_page.php:285
+msgid ""
+"Use-your-Drive can't access your Google Drive as the Google Drive App isn't properly "
+"configurated."
+msgstr ""
+"عفوًا الإضافة لم تتمكن من الوصول إلى حساب جوجل درايف وذلك لأنّ التطبيق غير مُعد بشكل "
+"صحيح."
+
+#: admin_page.php:289
+msgid "Use-your-Drive is succesfully authorized and linked with your Google account:"
+msgstr "تمّ ربط الاضافة بحساب جوجل درايف، حيث أنّ البيانات المُجمّعة هي :"
+
+#: admin_page.php:320 admin_page.php:357
+msgid "You need at least PHP 5.3 if you want to use Use-your-Drive"
+msgstr "أنت بحاجة إلى آخر نسخة من PHP 5.3 في حال أردت استخدام اضافتنا"
+
+#: admin_page.php:321
+msgid "You are using:"
+msgstr "أنت تستخدم :"
+
+#: admin_page.php:325
+msgid ""
+"We are not able to connect to the Google API as 'allow_url_fopen' is disabled and you "
+"don't have the cURL PHP extension installed"
+msgstr ""
+"لم نستطع الإتصال بجوجل API لأنّ خاصية 'allow_url_fopen' معطلة بالإضافة إلى أنّ ملحق "
+"cURL ليس مثبتًا "
+
+#: admin_page.php:326
+msgid "Please enable allow_url_fopen or install the cURL extension"
+msgstr "فضلاً قم بتمكين خاصية allow_url_fopen أو قم بتثبيت ملحق cURL "
+
+#: admin_page.php:331 use-your-drive.php:443
+msgid ""
+"We are not able to connect to the Google API as the plugin is interfering with an "
+"other plugin"
+msgstr ""
+"لم نستطع الاتصال بجوجل API لأنّ الإضافة الحالية متداخلة مع إضافة أخرى !، حاول التأكد "
+"من ذلك"
+
+#: admin_page.php:332
+msgid ""
+"The other plugin is using an old version of the Google-Api-PHP-client that isn't "
+"capable of running multiple configurations"
+msgstr ""
+"الإضافة الأخرى تستخدم نسخة قديمة من مكتبة Api-PHP-client لدى جوجل درايف، لذلك فإنّنا "
+"غير قادرين على تشغيل الإعدادات المتعددة نتيجةً للإصدار القديم الخاص بالمكتبة"
+
+#: admin_page.php:333
+msgid "Please disable this other plugin if you would like to use Use-your-Drive"
+msgstr "فضلاً عطل الاضافات الأخرى، اذا كنت ترغب في استخدام اضافتنا للربط بجوجل درايف"
+
+#: admin_page.php:334
+msgid "If you would like to use both plugins, ask the developer to update it's code"
+msgstr ""
+"اذا كنت ترغب في استخدام كل الاضافات معًا، فتوجه إلى المطوّر لسؤاله ما اذا كانت تحتوي "
+"على تحديثات متاحة أم لا"
+
+#: admin_page.php:346
+msgid "The plugin isn't autorized to use your Google Drive"
+msgstr "الاضافة لم تفوض بعد لإستخدام جوجل درايف"
+
+#: admin_page.php:347
+msgid "Authorize the plugin!"
+msgstr "تفويض وربط الاضافة!"
+
+#: admin_page.php:357 admin_page.php:359
+msgid "PHP version"
+msgstr "نسخة الـ PHP "
+
+#: admin_page.php:364 admin_page.php:366
+msgid "cURL PHP extension"
+msgstr "ملحق cURL PHP "
+
+#: admin_page.php:364
+msgid "You have the cURL PHP extension installed and we can access Google with cURL"
+msgstr "نعم، لديك ملحق cURL PHP مُثبت بشكل فعلي، وتستطيع اضافتنا التحكم في جوجل عبر cURL"
+
+#: admin_page.php:366
+msgid ""
+"You don't have the cURL PHP extension installed (couldn't find function \"curl_init"
+"\"), please enable or install this extension"
+msgstr ""
+"عفوًا ملحق cURL ليس مثبت لديك لذلك لا يمكننا استخدام دالة \"curl_init\"، فضلاً قم "
+"بتثبيت هذا المُلحق أو تفعيله إن وجد على خادمك."
+
+#: admin_page.php:371 admin_page.php:373
+msgid "Is allow_url_fopen enabled?"
+msgstr "دالة  allow_url_fopen مُمكنة ؟"
+
+#: admin_page.php:371
+msgid "Yes, we can access Google with fopen"
+msgstr "نعم، يمكننا أيضًا الإرتباط بجوجل fopen"
+
+#: admin_page.php:373
+msgid "No, we can't access Google with fopen"
+msgstr "لا، لا يمكننا الإرتباط بجوجل fopen"
+
+#: admin_page.php:379 admin_page.php:381
+msgid "Version Google Api Client"
+msgstr "نسخة تطبيق العميل في جوجل"
+
+#: admin_page.php:381
+msgid "Before version 1.0.0"
+msgstr "النسخة السابقة 1.0.0"
+
+#: admin_page.php:381
+msgid ""
+"Another plugin is loading an old Google Client library. Use-your-Drive isn't "
+"compatible with this version."
+msgstr ""
+"الاضافة الأخرى تقوم بتحميل النسخة القديمة من مكتبة العميل لدى جوجل درايف، لذلك فإنّ "
+"اضافتنا غير متوافقة مع هذا الإصدار."
+
+#: admin_page.php:388 admin_page.php:390
+msgid "Is TMP directory writable?"
+msgstr "الدليل المؤقت يدعم الكتابة ؟"
+
+#: admin_page.php:388
+msgid "TMP directory"
+msgstr "الدليل المؤقت "
+
+#: admin_page.php:388
+msgid "isn't writable. You are not able to upload files to Drive."
+msgstr "لا يدعم الكتابة، عفوًا ليس لديك القدرة لرفع الملفات إلى جوجل درايف."
+
+#: admin_page.php:388
+msgid "Make sure TMP directory is writable"
+msgstr "تأكد جيدًا بأنّ الدليل المؤقت في خادمك يدعم الكتابة."
+
+#: admin_page.php:390
+msgid "TMP directory is writable"
+msgstr "نعم، الدليل المؤقت يدعم الكتابة"
+
+#: admin_page.php:402 admin_page.php:404 admin_page.php:407
+msgid "Is CACHE directory writable?"
+msgstr "دليل الكاش يدعم الكتابة ؟"
+
+#: admin_page.php:402
+msgid "CACHE directory"
+msgstr "دليل الكاش"
+
+#: admin_page.php:402 admin_page.php:415
+msgid "isn't writable. The gallery will load very slowly."
+msgstr "لا يدعم الكتابة، عفوًا إنّ طريقة تحميل الملفات ستكون بطئية جدًا."
+
+#: admin_page.php:402
+msgid "Make sure CACHE directory is writable"
+msgstr "تأكد جيدًا بأنّ دليل الكاش يدعم الكتابة"
+
+#: admin_page.php:404
+msgid "CACHE directory is now writable"
+msgstr "دليل الكاش الان يدعم الكتابة"
+
+#: admin_page.php:407
+msgid "CACHE directory is writable"
+msgstr "نعم، دليل الكاش يدعم الكتابة"
+
+#: admin_page.php:415 admin_page.php:417 admin_page.php:420
+msgid "Is CACHE-index file writable?"
+msgstr "هل ملف الفهرس index يدعم الكتابة؟"
+
+#: admin_page.php:415
+msgid "-index file"
+msgstr "ملف الفهرس ( index  )"
+
+#: admin_page.php:415
+msgid "Make sure CACHE-index file is writable"
+msgstr "تأكيد جيدًا بأنّ ملف الـ index يدعم الكتابة"
+
+#: admin_page.php:417
+msgid "CACHE-index file is now writable"
+msgstr "كاش ملف الـ index يدعم الكتابة الآن"
+
+#: admin_page.php:420
+msgid "CACHE-index file is writable"
+msgstr "نعم، كاش ملف الـ index يدعم الكتابة"
+
+#: admin_page.php:425
+msgid "You can use the ZIP function"
+msgstr "نعم دالة ZIP مُفعلة وتقوم بهذه المُهمّة"
+
+#: admin_page.php:426 admin_page.php:429
+msgid "Download files as ZIP"
+msgstr "تنزيل الملفات بإمتداد ZIP ؟"
+
+#: admin_page.php:428
+msgid "You cannot download files as ZIP"
+msgstr "لا  دالة ZIP غير مُفعلة لن تستطيع تنزيل الملفات بهذا الامتداد"
+
+#: includes/UseyourDrive.php:11 includes/UseyourDrive.php:1481
+msgid "Something went wrong... See settings page"
+msgstr "حدث من خطأ ما!، تأكد من صفحة الإعدادات"
+
+#: includes/UseyourDrive.php:128
+msgid "Use-your-Drive authorization"
+msgstr "تفويض الإضافة"
+
+#: includes/UseyourDrive.php:137 includes/UseyourDrive.php:147
+msgid "Use-your-Drive isn't ready to run"
+msgstr "الاضافة غير جاهزة للتشغيل"
+
+#: includes/UseyourDrive.php:151
+msgid "Couldn't connect to Google API: "
+msgstr "تعذرت عملية الاتصال بتطبيقات جوجل API :"
+
+#: includes/UseyourDrive.php:216
+msgid "Could not start authorization: "
+msgstr "تعذر البدء في تفويض الاضافة:"
+
+#: includes/UseyourDrive.php:239 includes/UseyourDrive.php:340
+msgid "Error communicating with Google Drive API: "
+msgstr "خطأ في الاتصال مع جوجل درايف API : "
+
+#: includes/UseyourDrive.php:492
+msgid "Root folder not found "
+msgstr "لم يتمّ العثور على مُجلّد الجذر"
+
+#: includes/UseyourDrive.php:499 includes/UseyourDrive.php:553
+msgid "You are not authorized to upload files to this directory"
+msgstr "أنت غير مُخوّل برفع ملفات إلى هذا الدليل"
+
+#: includes/UseyourDrive.php:526
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr ""
+"الملف المرفوع تجاوز الحد المسموح به، والمنصوص في دالة upload_max_filesize والموجودة "
+"في ملف php.ini"
+
+#: includes/UseyourDrive.php:527
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML "
+"form"
+msgstr ""
+"الملف المرفوع تجاوز الحد المسموح به، المنصوص في الدالة  MAX_FILE_SIZE والذي تمّ تحديده "
+"مسبقًا في نموذج الرفع"
+
+#: includes/UseyourDrive.php:528
+msgid "The uploaded file was only partially uploaded"
+msgstr "تمّ رفع الملف ولكن جزئيًا فقط لم يرتفع بشكلٍ كامل"
+
+#: includes/UseyourDrive.php:529
+msgid "No file was uploaded"
+msgstr "لا يوجد ملف تمّ رفعه"
+
+#: includes/UseyourDrive.php:530
+msgid "Missing a temporary folder"
+msgstr "المُجلّد المؤقت مفقود"
+
+#: includes/UseyourDrive.php:531
+msgid "Failed to write file to disk"
+msgstr "تعذر إرسال الملف إلى القرص في جوجل درايف"
+
+#: includes/UseyourDrive.php:532
+msgid "A PHP extension stopped the file upload"
+msgstr "توقف ملحق الـ PHP عن رفع الملف"
+
+#: includes/UseyourDrive.php:533
+msgid "The uploaded file exceeds the post_max_size directive in php.ini"
+msgstr ""
+"الملف المرفوع يتجاوز الحد المسموح به، المنصوص في دالة post_max_size h والموجودة في "
+"ملف php.ini"
+
+#: includes/UseyourDrive.php:534
+msgid "File is too big"
+msgstr "الملف كبير جدًا"
+
+#: includes/UseyourDrive.php:535 templates/tinymce_popup.php:133 use-your-drive.php:329
+msgid "File is too small"
+msgstr "الملف صغير جدًا"
+
+#: includes/UseyourDrive.php:536
+msgid "Filetype not allowed"
+msgstr "نوع الملف غير مسموح به"
+
+#: includes/UseyourDrive.php:537 templates/tinymce_popup.php:130 use-your-drive.php:326
+msgid "Maximum number of files exceeded"
+msgstr "الحد الأقصى لعدد الملفات المُستثناة"
+
+#: includes/UseyourDrive.php:538
+msgid "Image exceeds maximum width"
+msgstr "الصورة تجاوزت الحد الأقصى للعرض"
+
+#: includes/UseyourDrive.php:539
+msgid "Image requires a minimum width"
+msgstr "الصورة تطلّب الحد الأدنى للعرض"
+
+#: includes/UseyourDrive.php:540
+msgid "Image exceeds maximum height"
+msgstr "الصورة تجاوزت الحد الأقصى للإرتفاع"
+
+#: includes/UseyourDrive.php:541
+msgid "Image requires a minimum height"
+msgstr "الصورة تطلّب الحد الأدنى للإرتفاع"
+
+#: includes/UseyourDrive.php:612
+msgid "Not uploaded to Google Drive"
+msgstr "لم يتمّ الرفع إلى جوجل درايف"
+
+#: includes/UseyourDrive.php:623
+msgid "Not succesfully uploaded to Google Drive"
+msgstr "لم تنجح عملية الرفع إلى جوجل درايف"
+
+#: includes/UseyourDrive.php:634 includes/UseyourDrive.php:636
+msgid "Uploading failed"
+msgstr "فشلت عملية الرفع"
+
+#: includes/UseyourDrive.php:658 includes/UseyourDrive.php:673
+#: includes/UseyourDrive.php:734 includes/UseyourDrive.php:760
+#: includes/UseyourDrive.php:803 includes/UseyourDrive_Processor.php:224
+msgid "Failed to delete entry"
+msgstr "تعذر حذف المدخلات"
+
+#: includes/UseyourDrive.php:671 includes/UseyourDrive.php:801
+#: includes/UseyourDrive.php:901
+msgid "Invalid entry"
+msgstr "ادخال خاطئ"
+
+#: includes/UseyourDrive.php:685
+msgid "You are not authorized to delete files from this directory"
+msgstr "أنت غير مُخوّل لحذف الملفات من هذا الدليل"
+
+#: includes/UseyourDrive.php:694
+msgid "You are not authorized to delete this file or folder"
+msgstr "أنت غير مُخوّل لحذف هذا الملف أو المُجلّد"
+
+#: includes/UseyourDrive.php:791
+msgid "No new name set"
+msgstr "لا يوجد اسم جديد"
+
+#: includes/UseyourDrive.php:805 includes/UseyourDrive.php:824
+#: includes/UseyourDrive.php:830 includes/UseyourDrive.php:836
+#: includes/UseyourDrive.php:842 includes/UseyourDrive.php:858
+#: includes/UseyourDrive_Processor.php:260
+msgid "Failed to rename entry"
+msgstr "تعذر تسمية المدخلات"
+
+#: includes/UseyourDrive.php:811
+msgid "You are not authorized to rename files in this directory"
+msgstr "أنت غير مُخوّل لتغيير تسمية الملفات في هذا الدليل"
+
+#: includes/UseyourDrive.php:819
+msgid "You are not authorized to rename this file or folder"
+msgstr "أنت غير مُخوّل لتغيير تسمية الملف في هذا الدليل"
+
+#: includes/UseyourDrive.php:887 includes/UseyourDrive.php:925
+#: includes/UseyourDrive.php:932 includes/UseyourDrive.php:956
+#: includes/UseyourDrive_Processor.php:291
+msgid "Failed to add folder"
+msgstr "تعذر اضافة مجلد"
+
+#: includes/UseyourDrive.php:891
+msgid "No new foldername set"
+msgstr "لا يوجد اسم جديد للمجلد"
+
+#: includes/UseyourDrive.php:903 includes/UseyourDrive.php:905
+msgid "Failed to add entry"
+msgstr "تعذر اضافة المدخل"
+
+#: includes/UseyourDrive.php:911
+msgid "You are not authorized to add folders in this directory"
+msgstr "أنت غير مُخوّل لإضافة مُجلّدات في هذا الدليل"
+
+#: includes/UseyourDrive.php:919
+msgid "You are not authorized to add a folder"
+msgstr "أنت غير مُخوّل لإضافة مجلد"
+
+#: includes/UseyourDrive.php:993
+msgid "Failed to add user folder"
+msgstr "تعذر اضافة مجلد المستخدم "
+
+#: includes/UseyourDrive.php:1432 includes/UseyourDrive.php:1441
+msgid "Requested directory isn't allowed"
+msgstr "الدليل المطلوب غير مسموح به"
+
+#: includes/UseyourDrive.php:1448
+msgid "Requested item isn't allowed"
+msgstr "العنصر المطلوب غير مسموح به"
+
+#: includes/UseyourDrive.php:1727
+msgid "Can't create link"
+msgstr "لا يمكن تكوين الرابط"
+
+#: includes/UseyourDrive_Filebrowser.php:147 includes/UseyourDrive_Gallery.php:119
+msgid "Results"
+msgstr "النتائج"
+
+#: includes/UseyourDrive_Filebrowser.php:168 includes/UseyourDrive_Gallery.php:140
+msgid "Back"
+msgstr "الخلف"
+
+#: includes/UseyourDrive_Filebrowser.php:214 includes/UseyourDrive_Filebrowser.php:221
+#: includes/UseyourDrive_Gallery.php:109
+msgid "No files or folders found"
+msgstr "لا توجد ملفات أو مجلدات"
+
+#: includes/UseyourDrive_Filebrowser.php:263
+msgid "Select folder"
+msgstr "تحديد المُجلّد"
+
+#: includes/UseyourDrive_Filebrowser.php:451
+msgid "Download as"
+msgstr "تنزيل كـ "
+
+#: includes/UseyourDrive_Filebrowser.php:459
+msgid "Preview"
+msgstr "معاينة"
+
+#: includes/UseyourDrive_Filebrowser.php:465
+msgid "Preview in new window"
+msgstr "معاينة في نافذة جديدة"
+
+#: includes/UseyourDrive_Filebrowser.php:471 includes/UseyourDrive_Gallery.php:258
+msgid "Download file"
+msgstr "تنزيل الملف"
+
+#: includes/UseyourDrive_Filebrowser.php:477 includes/UseyourDrive_Gallery.php:264
+msgid "Sharing link"
+msgstr "نشر الرابط"
+
+#: includes/UseyourDrive_Filebrowser.php:483 includes/UseyourDrive_Gallery.php:270
+#: templates/tinymce_popup.php:115 use-your-drive.php:310
+msgid "Rename"
+msgstr "اعادة تسمية"
+
+#: includes/UseyourDrive_Filebrowser.php:488 includes/UseyourDrive_Gallery.php:275
+#: templates/tinymce_popup.php:112 use-your-drive.php:306
+msgid "Delete"
+msgstr "حذف"
+
+#: includes/UseyourDrive_Filebrowser.php:506 includes/UseyourDrive_Filebrowser.php:526
+#: includes/UseyourDrive_Gallery.php:293 templates/tinymce_popup.php:118
+#: use-your-drive.php:313
+msgid "Add folder"
+msgstr "اضافة مجلد"
+
+#: includes/UseyourDrive_Filebrowser.php:507
+msgid "Add a new folder in this directory"
+msgstr "اضافة مجلد جديد في هذا المحث"
+
+#: includes/UseyourDrive_Filebrowser.php:755
+msgid "Previous folder"
+msgstr "المجلد السابق"
+
+#: includes/UseyourDrive_Gallery.php:162
+msgid "Load more..."
+msgstr "تحميل المزيد..."
+
+#: includes/UseyourDrive_LinkUsers.php:70 use-your-drive.php:325
+msgid "Not yet linked to a folder"
+msgstr "لم يتمّ الربط بعد إلى مجلد مخصص"
+
+#: includes/UseyourDrive_LinkUsers.php:77
+msgid "Link to folder"
+msgstr "ربط بمجلد مخصص"
+
+#: includes/UseyourDrive_LinkUsers.php:78
+msgid "Remove link"
+msgstr "إزالة الربط"
+
+#: includes/UseyourDrive_Processor.php:232
+msgid "Not all entries could be deleted"
+msgstr "لا يمكن حذف كافة المُدخلات"
+
+#: includes/UseyourDrive_Processor.php:236 includes/UseyourDrive_Processor.php:242
+msgid "Entry was deleted"
+msgstr "المدخلات تمّ حذفها"
+
+#: includes/UseyourDrive_Processor.php:274
+msgid "Entry was renamed"
+msgstr "المدخلات تمّ اعادة تسميتها"
+
+#: includes/UseyourDrive_Processor.php:305
+msgid "Folder"
+msgstr "المجلد"
+
+#: includes/UseyourDrive_Processor.php:305
+msgid "was added"
+msgstr "تمّت اضافته"
+
+#: includes/UseyourDrive_Processor.php:361 templates/tinymce_popup.php:110
+#: use-your-drive.php:304
+msgid "Start"
+msgstr "البداية"
+
+#: includes/UseyourDrive_Processor.php:437
+msgid "Please authorize Use-your-Drive"
+msgstr "فضلاً قم بتفويض الإضافة لإستخدام جوجل درايف"
+
+#: includes/UseyourDrive_Processor.php:586
+msgid ""
+"To view the Google Drive folders, you need to have JavaScript enabled in your browser"
+msgstr ""
+"لمشاهدة مجلدات جوجل درايف، فإنّك ستحتاج إلى أنْ تكون الجافا اسكربت مُفعلة في المتصفح "
+"الخاص بك"
+
+#: includes/UseyourDrive_Processor.php:587
+msgid "To do so, please follow these instructions"
+msgstr "لفعل ذلك، يُرجى اتباع هذه التعليمات"
+
+#: includes/UseyourDrive_Processor.php:596
+msgid "Selected folder"
+msgstr "المُجلّد المُحدد"
+
+#: includes/UseyourDrive_Processor.php:652
+msgid "Please update your mediaplayer shortcode"
+msgstr "فضلاً حدث الكود المختصر  لمكتبة الوسائط الخاصة بك"
+
+#: includes/UseyourDrive_Processor.php:804 templates/tinymce_popup.php:46
+msgid "Guest"
+msgstr "زائر"
+
+#: includes/UseyourDrive_Processor.php:841
+msgid "A guest"
+msgstr "الزائر"
+
+#: includes/UseyourDrive_Processor.php:853
+msgid "File downloaded"
+msgstr "تمّ تنزيل الملف"
+
+#: includes/UseyourDrive_Processor.php:863
+msgid "New file(s) on your Google Drive"
+msgstr "لا توجد ملفات في مساحتك بجوجل درايف"
+
+#: includes/UseyourDrive_Processor.php:879
+msgid "File deleted on your Google Drive"
+msgstr "الملف حُذف من جوجل درايف"
+
+#: includes/UseyourDrive_Processor.php:892
+msgid "File(s) deleted on your Google Drive"
+msgstr "الملفات حُذفت من جوجل درايف"
+
+#: skins/clean-jPlayer-skin.light/player.php:15 skins/clean-jPlayer-skin/player.php:15
+#: skins/default/player.php:9
+msgid "Wait..."
+msgstr "انتظر..."
+
+#: skins/clean-jPlayer-skin.light/player.php:44 skins/clean-jPlayer-skin/player.php:44
+#: skins/default/player.php:56 skins/ytube-jPlayer-skin/player.php:51
+msgid "Update Required"
+msgstr "تحديث إلزامي"
+
+#: skins/clean-jPlayer-skin.light/player.php:45 skins/clean-jPlayer-skin/player.php:45
+#: skins/default/player.php:57 skins/ytube-jPlayer-skin/player.php:52
+msgid ""
+"To play the media you will need to either update your browser to a recent version or "
+"update your"
+msgstr "لتشغيل الوسائط فإنّه يتطّب منك تحديث المتصفح إلى آخر اصدار أو تحديث "
+
+#: skins/default/player.php:10
+msgid "Busy loading playlist"
+msgstr "جارِ تحميل قائمة التشغيل"
+
+#: templates/admin.php:9
+msgid "Use-your-Drive"
+msgstr "جوجل درايف "
+
+#: templates/admin.php:12
+msgid "Authorization"
+msgstr "الربط والتفويض"
+
+#: templates/admin.php:13 templates/tinymce_popup.php:210
+msgid "Layout"
+msgstr "الأنماط"
+
+#: templates/admin.php:14 templates/tinymce_popup.php:208
+msgid "User Folders"
+msgstr "مجلدات المستخدم"
+
+#: templates/admin.php:15 templates/tinymce_popup.php:212
+msgid "Advanced"
+msgstr "اعدادات متقدمة"
+
+#: templates/admin.php:16 templates/tinymce_popup.php:215
+msgid "Notifications"
+msgstr "الاشعارات"
+
+#: templates/admin.php:17 templates/admin.php:238
+msgid "Statistics"
+msgstr "الاحصائيات"
+
+#: templates/admin.php:18 templates/admin.php:264
+msgid "Auto-updater"
+msgstr "التحديث التلقائي"
+
+#: templates/admin.php:19 templates/admin.php:286
+msgid "System information"
+msgstr "معلومات النظام"
+
+#: templates/admin.php:20
+msgid "Need help?"
+msgstr "المساعدة والدعم"
+
+#: templates/admin.php:35
+msgid "Own Google Drive App"
+msgstr "بيانات تطبيقك الخاص على جوجل درايف"
+
+#: templates/admin.php:39
+msgid "If you created your own Google Drive App, please enter your settings below. "
+msgstr ""
+"اذا كنت قد قمت بإنشاء تطبيق على جوجل درايف، فما عليك سوى ادخال الاعدادات بالأسفل"
+
+#: templates/admin.php:40
+msgid "How do I create a Google DriveApp?"
+msgstr "اضغط هنا لتتعرف على كيفية إنشاء تطبيق على جوجل درايف."
+
+#: templates/admin.php:46
+msgid "Google Client ID"
+msgstr "المُعرّف ( Client ID )"
+
+#: templates/admin.php:47
+msgid ""
+"If you want to use your own App, insert your Google Client ID here. You can find this "
+"key in the Cloud Console."
+msgstr ""
+"اذا كُنت ترغب في استخدام تطبيقك الخاص على جوجل درايف، فما عليك سوى إدخال رمز العميل "
+"( Client ID ) هنا لإتمام الربط والتحكم بسهولة ومرونة."
+
+#: templates/admin.php:54
+msgid "Google Client secret"
+msgstr "مفتاح ( Client secret )"
+
+#: templates/admin.php:55
+msgid ""
+"If you want to use your own App, insert your Google Client secret here. You can find "
+"this secret in the Cloud Console."
+msgstr ""
+"اذا كُنت ترغب في استخدام تطبيقك الخاص على جوجل درايف، فما عليك سوى إدخال رمز التشفير "
+"( Client secret ) لإتمام الربط والتحكم بسهولة ومرونة."
+
+#: templates/admin.php:62
+msgid "Send \"Lost Authorization\" notification to"
+msgstr "إرسال آخر تفويض للإضافة على البريد :"
+
+#: templates/admin.php:63
+msgid ""
+"If the plugin somehow loses its authorization, a notification will be send to the "
+"following email address."
+msgstr ""
+"إذا كانت الإضافة تواجه مشكلة ما في الربط والتفويض فإنّه سيتمّ إرسال إشعار إلى البريد "
+"المدوّن بالحقل."
+
+#: templates/admin.php:75
+msgid "Media player skin"
+msgstr "الشكل الافتراضي لمُشغل الوسائط"
+
+#: templates/admin.php:76
+msgid "Select which skin you want to use for the audio or media player"
+msgstr "حدد الشكل الذي تريد استخدامه لمُشغل الوسائط الصوتية والمرئية."
+
+#: templates/admin.php:101
+msgid "Custom CSS"
+msgstr "CSS مخصص"
+
+#: templates/admin.php:105
+msgid ""
+"If you want to modify the looks of the plugin slightly, you can insert here your "
+"custom CSS. Do not edit the CSS files itself, because those modifications will be "
+"lost during an update."
+msgstr ""
+"إذا كنت ترغب في اضافة العديد من التخصيصات الخاصة بك والتي تندرج في اللغة التخطيط CSS "
+"فإنّه بإمكانك إدارجها في الحقل أدناه. لا تقم بإضافتها في ملفات CSS التابعة للإضافة "
+"لأنّك ستفقدها عند صدور أيّ تحديثٍ قادم."
+
+#: templates/admin.php:112
+msgid "CSS"
+msgstr "CSS مخصص"
+
+#: templates/admin.php:113
+msgid "You can insert here your custom CSS"
+msgstr "يمكنك اضافة أكواد CSS المخصصة في الحقل."
+
+#: templates/admin.php:126
+msgid "User folder name"
+msgstr "اسم مجلد المستخدم"
+
+#: templates/admin.php:127
+msgid ""
+"Template name for automatically created user folders. You can use %user_login%, "
+"%user_email%, %display_name%, %ID%."
+msgstr ""
+"قالب إنشاء مجلد المستخدم تلقائيًا بناءً على دوال. يمكنك استخدام الدوال التالية :  "
+"%user_login%, %user_email%, %display_name%, %ID%."
+
+#: templates/admin.php:134
+msgid "Create user folders on registration"
+msgstr "انشاء مجلد المستخدم في سجل المستخدمين"
+
+#: templates/admin.php:135
+msgid "Create the a new user folder automatically after a new user has been created"
+msgstr "انشاء مجلد جديد للمستخدم تلقائيًا بعد أن يُصبح مستخدمًا نشط "
+
+#: templates/admin.php:139 templates/admin.php:150 templates/admin.php:161
+#: templates/admin.php:172 templates/admin.php:198 templates/admin.php:254
+msgid "Yes"
+msgstr "نعم"
+
+#: templates/admin.php:140 templates/admin.php:151 templates/admin.php:162
+#: templates/admin.php:173 templates/admin.php:199 templates/admin.php:255
+msgid "No"
+msgstr "لا"
+
+#: templates/admin.php:145
+msgid "Create all user folders on first visit"
+msgstr "انشاء كل مجلدات المستخدمين عند الزيارة الأولى"
+
+#: templates/admin.php:146
+msgid ""
+"Create all user folders on first visit. This takes around 1 sec per user, so it is "
+"not recommended if you have tons of users."
+msgstr "إنشاء جميع مجلدات المستخدم عند أول زيارة. علمًا أنّ ذلك سيتغرق ثانية لكل مستخدم."
+
+#: templates/admin.php:156
+msgid "Update user folders after profile update"
+msgstr "تحديث مجلدات المستخدم بعد تحديث ملفه الشخصي"
+
+#: templates/admin.php:157
+msgid "Update the folder name of the user after they update their profile."
+msgstr "تحديث اسم المجلد للمستخدم بعد تحديثه للملف الشخصي"
+
+#: templates/admin.php:167
+msgid "Remove user folders after deletion"
+msgstr "ازالة مجلدات المستخدم بعد حذفها"
+
+#: templates/admin.php:168
+msgid "Try to remove user folders after they are deleted."
+msgstr "محاولة ازالة مجلدات المستخدم بعد أنْ يتمّ حذفه"
+
+#: templates/admin.php:183
+msgid "Sharing Permissions"
+msgstr "صلاحيات وأذونات النشر"
+
+#: templates/admin.php:187
+msgid ""
+"To preview or download files from your Google Drive without loggin in, the files "
+"needs to have the sharing permission of at least <i>\"Anyone with link can view\"</"
+"i>. By default the plugin can change these settings for you if necessary. If you want "
+"your to manage the sharing permissions by yourself or if you want users to login to "
+"Google, disabled the \"Manage Permissions\" function."
+msgstr ""
+"عند معاينة أو تنزيل الملفات من مساحة جوجل درايف، فإنّه من السهل أنْ يقوم أيّ زائر "
+"بمعاينة ذلك ومشاهدته بكل سهولة ومرونة بمجرّد حصوله على الرابط، ولكن إضافتنا تسمح لك "
+"بإدارة تلك العمليات بأذونات وصلاحيات تمنعهم أو من رؤية تلك الملفات وتحميلها، يمكنك "
+"تفعيل نظام صلاحيات النشر لإدارة متكاملة."
+
+#: templates/admin.php:193
+msgid "Manage Permissions"
+msgstr "إدارة الصلاحيات والأذونات "
+
+#: templates/admin.php:194
+msgid ""
+"If you want your to manage the sharing permissions by yourself or if you want users "
+"to login to Google, disabled the \"Manage Permissions\" function."
+msgstr ""
+"إذا أردت إدارة الصلاحيات والأذونات للنشر بنفسك فقم بتفعيل هذه الخاصية أو إذا أردت "
+"السماح للمستخدمين بدخول إلى حساب جوجل درايف بكل يسر وسهولة ورؤية الملفات المنشورة "
+"فيمكنك تعطيلها."
+
+#: templates/admin.php:209
+msgid "Template download"
+msgstr "قالب اشعار عملية التنزيل"
+
+#: templates/admin.php:210 templates/admin.php:218 templates/admin.php:226
+msgid "Template for email notification"
+msgstr "قالب يُرسل عبر البريد الإلكتروني مباشرةً."
+
+#: templates/admin.php:217
+msgid "Template upload"
+msgstr "قالب اشعار عملية الرفع"
+
+#: templates/admin.php:225
+msgid "Template deletion"
+msgstr "قالب اشعار عملية الحذف"
+
+#: templates/admin.php:242
+msgid ""
+"Would you like to see some statistics about your files? Use-your-Drive can send all "
+"download/upload events to Google Analytics. If you enable this feature, please make "
+"sure you already added your <a href=\"https://support.google.com/analytics/"
+"answer/1008080?hl=en\">Google Analytics web tracking</a> code to your site."
+msgstr ""
+"هل ترغب في الحصول على احصائيات وتحليلات لملفاتك ؟، اضافتنا تقوم بإرسال كافة العمليات "
+"من تحميلات وتنزيلات إلى تحليلات واحصائيات جوجل، في حال قمت بتفعيل هذه الخاصية فيُرجى "
+"التأكد من إضافة <a href=\"https://support.google.com/analytics/answer/1008080?hl=en"
+"\"> تتبع تحليلات جوجل</a> للحصول على كود  التحليلات الخاص بموقعك "
+
+#: templates/admin.php:249
+msgid "Enable Google Analytics"
+msgstr "تفعيل تحليلات جوجل"
+
+#: templates/admin.php:250
+msgid "Enable Google Analytics to track all download/upload/stream events"
+msgstr "تفعيل تحليلات واحصائيات جوجل لتتبع عمليات التنزيل والتحميل وكافة الأحداث"
+
+#: templates/admin.php:268
+msgid ""
+"We recommend you to insert your Purchase code, so you can receive updates and "
+"bugfixes. <a href=\"http://support.envato.com/index.php?/Knowledgebase/Article/"
+"View/506/54/where-can-i-find-my-purchase-code\" target=\"_blank\">Where do I find the "
+"purchase code</a>?."
+msgstr ""
+"نحن نُوصي بإضافة مفتاح الترخيص، وذلك لتتمكن من استقبال التحديثات وحلّ المُشكلات الشائعة. "
+"<a href=\"http://support.envato.com/index.php?/Knowledgebase/Article/View/506/54/"
+"where-can-i-find-my-purchase-code\" target=\"_blank\"> أين يمكنني الحصول على مفتاح "
+"الترخيص ؟</a>."
+
+#: templates/admin.php:274
+msgid "Purchase code"
+msgstr "مفتاح الترخص"
+
+#: templates/admin.php:275
+msgid "If you want to receive updates (recommended), insert your purchase code."
+msgstr "إذا كنت ترغب في الحصول على التحديثات وحلول لمشكلاتك فيُرجى إضافة مفتاح الترخيص."
+
+#: templates/admin.php:301
+msgid "Support & Documentation"
+msgstr "الدعم والوثائق"
+
+#: templates/admin.php:304
+msgid "Visit the Use-your-Drive website"
+msgstr "اضغط هنا"
+
+#: templates/admin.php:304
+msgid "for documentation and installation details"
+msgstr ""
+"لرؤية وثائق استخدام الإضافة والإطلاع على المزيد من التفاصيل حول كيفية التركيب والإعداد"
+
+#: templates/admin.php:305
+msgid "Discovered a bug or just need some help with the plugin?"
+msgstr "هل لديك خلل ما ؟ أو تحتاج إلى مساعدة ؟ تفضل بـ "
+
+#: templates/admin.php:305
+msgid "Visit the support page"
+msgstr "زيارة صفحة الدعم الفني"
+
+#: templates/frontend.php:9 templates/gallery.php:9
+msgid "Back to our first folder"
+msgstr "العودة إلى المجلد الأول"
+
+#: templates/frontend.php:13 templates/gallery.php:13
+msgid "Refresh"
+msgstr "تحديث"
+
+#: templates/frontend.php:17 templates/gallery.php:23
+msgid "Options"
+msgstr "الخيارات"
+
+#: templates/frontend.php:22 templates/frontend.php:23
+msgid "View as grid"
+msgstr "عرض كشبكة"
+
+#: templates/frontend.php:26 templates/frontend.php:27
+msgid "View as list"
+msgstr "عرض كقائمة"
+
+#: templates/frontend.php:33 templates/gallery.php:31 templates/uploadform.php:11
+msgid "Upload files"
+msgstr "رفع ملفات"
+
+#: templates/frontend.php:39 templates/gallery.php:37
+msgid "Download all files"
+msgstr "تنزيل كل الملفات"
+
+#: templates/frontend.php:40 templates/gallery.php:38
+msgid "Download selected files"
+msgstr "تنزيل الملفات المحددة"
+
+#: templates/frontend.php:45 templates/gallery.php:43
+msgid "Delete selected files"
+msgstr "حذف الملفات المُحددة"
+
+#: templates/frontend.php:49 templates/gallery.php:47
+msgid "No options..."
+msgstr "لا توجد خيارات..."
+
+#: templates/frontend.php:63 templates/gallery.php:61
+msgid "Search filenames"
+msgstr "بحث بالاسم"
+
+#: templates/frontend.php:63 templates/gallery.php:61
+msgid "and within contents"
+msgstr "مع المحتويات"
+
+#: templates/frontend.php:67 templates/gallery.php:65
+msgid "Loading..."
+msgstr "تحميل ..."
+
+#: templates/frontend.php:74 templates/tinymce_popup.php:688
+msgid "Name"
+msgstr "الاسم"
+
+#: templates/frontend.php:86 templates/tinymce_popup.php:691
+msgid "Size"
+msgstr "الحجم"
+
+#: templates/frontend.php:92 templates/tinymce_popup.php:694
+msgid "Date modified"
+msgstr "تاريخ الاضافة"
+
+#: templates/noaccess.php:4
+msgid "Your account doesn't have the right permissions to use this"
+msgstr "عفوًا حسابك لا يملك صلاحيات صحيحة لإستخدام هذه"
+
+#: templates/noaccess.php:4
+msgid "Contact the webmaster if you would like to have access"
+msgstr "اتصل بمسؤول الموقع إذا أردت الحصول على ترخيص بالوصول والتحكم"
+
+#: templates/tinymce_popup.php:104 use-your-drive.php:298
+msgid "Success"
+msgstr "تمّ بنجاح!"
+
+#: templates/tinymce_popup.php:105 templates/tinymce_popup.php:108
+#: use-your-drive.php:299 use-your-drive.php:302
+msgid "Error"
+msgstr "خطأ !"
+
+#: templates/tinymce_popup.php:106 use-your-drive.php:300
+msgid "In queue"
+msgstr "في قائمة الانتظار "
+
+#: templates/tinymce_popup.php:107 use-your-drive.php:301
+msgid "Uploading"
+msgstr "جارِ الرفع"
+
+#: templates/tinymce_popup.php:109 use-your-drive.php:303
+msgid "Close"
+msgstr "إغلاق"
+
+#: templates/tinymce_popup.php:111 templates/tinymce_popup.php:1100
+#: use-your-drive.php:305
+msgid "Cancel"
+msgstr "الغاء الأمر"
+
+#: templates/tinymce_popup.php:113 use-your-drive.php:307
+msgid "Create zip file"
+msgstr "إنشاء الملف المضغوط"
+
+#: templates/tinymce_popup.php:114 use-your-drive.php:308
+msgid "Do you really want to delete:"
+msgstr "هل أنت متأكد بأنك ترغب حذف : "
+
+#: templates/tinymce_popup.php:116 use-your-drive.php:311
+msgid "Rename to:"
+msgstr "إعادة تسمية إلى : "
+
+#: templates/tinymce_popup.php:117
+msgid "Can't receive filelist"
+msgstr "لا يمكن الحصول على قائمة الملفات"
+
+#: templates/tinymce_popup.php:119 use-your-drive.php:314
+msgid "New folder"
+msgstr "مجلد جديد"
+
+#: templates/tinymce_popup.php:120 use-your-drive.php:315
+msgid "No files found or selected"
+msgstr "لا توجد ملفات محددة"
+
+#: templates/tinymce_popup.php:121 use-your-drive.php:316
+msgid "Creating zip file"
+msgstr "جارِ إنشاء الملف المضغوط"
+
+#: templates/tinymce_popup.php:122 use-your-drive.php:317
+msgid "Share file"
+msgstr "مشاركة الملف"
+
+#: templates/tinymce_popup.php:123 use-your-drive.php:318
+msgid "Creating shared link..."
+msgstr "جارِ مشاركة الرابط ..."
+
+#: templates/tinymce_popup.php:124 use-your-drive.php:319
+msgid "Previous"
+msgstr "« السابق"
+
+#: templates/tinymce_popup.php:125 use-your-drive.php:320
+msgid "Next"
+msgstr "التالي »"
+
+#: templates/tinymce_popup.php:126 use-your-drive.php:321
+msgid "This content failed to load"
+msgstr "تعذر تحميل هذا المحتوى"
+
+#: templates/tinymce_popup.php:127 use-your-drive.php:322
+msgid "This image failed to load"
+msgstr "تعذر تحميل هذه الصورة"
+
+#: templates/tinymce_popup.php:128 use-your-drive.php:323
+msgid "Start slideshow"
+msgstr "بدء عارض الشرائح"
+
+#: templates/tinymce_popup.php:129 use-your-drive.php:324
+msgid "Stop slideshow"
+msgstr "إيقاف عارض الشرائح"
+
+#: templates/tinymce_popup.php:131 use-your-drive.php:327
+msgid "File type not allowed"
+msgstr "نوع الملف غير مقبول"
+
+#: templates/tinymce_popup.php:132 use-your-drive.php:328
+msgid "File is too large"
+msgstr "الملف كبير جدًا"
+
+#: templates/tinymce_popup.php:145
+msgid "Create Shortcode"
+msgstr "إنشاء الكود المختصر"
+
+#: templates/tinymce_popup.php:148
+msgid "Insert direct links to files or folders"
+msgstr "ادخل الروابط المباشرة إلى الملفات أو المجلدات"
+
+#: templates/tinymce_popup.php:151
+msgid "Embed files"
+msgstr "تضمين الملفات"
+
+#: templates/tinymce_popup.php:169
+msgid "Loading Shortcode Generator"
+msgstr "تحميل مكوّن الكود المختصر"
+
+#: templates/tinymce_popup.php:179
+msgid "Please note that the embedded files need to be public (with link)"
+msgstr "يرجى ملاحظة أنّ الملفات المُضمّنة جزءًا مرتبط بالملفات العامة "
+
+#: templates/tinymce_popup.php:207
+msgid "General"
+msgstr "عام"
+
+#: templates/tinymce_popup.php:209
+msgid "Media files"
+msgstr "ملفات الوسائط"
+
+#: templates/tinymce_popup.php:211
+msgid "Sorting"
+msgstr "التصفية والفرز"
+
+#: templates/tinymce_popup.php:213
+msgid "Exclusions"
+msgstr "الاستثناءات"
+
+#: templates/tinymce_popup.php:214
+msgid "Upload Form"
+msgstr "نموذج رفع الملفات"
+
+#: templates/tinymce_popup.php:216 templates/tinymce_popup.php:937
+msgid "File Manipulation"
+msgstr "التعامل والمعالجة "
+
+#: templates/tinymce_popup.php:217
+msgid "User Permissions"
+msgstr "الصلاحيات والأذونات"
+
+#: templates/tinymce_popup.php:222
+msgid "Use plugin as"
+msgstr "نوع البيانات المرغوب استخدامه "
+
+#: templates/tinymce_popup.php:223
+msgid "Select how you want to use Use-your-Drive in your post or page"
+msgstr "حدد ما النظام الذي تريده من إضافتنا لإضافته مباشرةً."
+
+#: templates/tinymce_popup.php:231
+msgid "Photo gallery"
+msgstr "معرض الصور"
+
+#: templates/tinymce_popup.php:234
+msgid "Audio player"
+msgstr "مُشغل صوتي"
+
+#: templates/tinymce_popup.php:237
+msgid "Video player"
+msgstr "مُشغل وصلات الفيديو"
+
+#: templates/tinymce_popup.php:243
+msgid "Select root folder"
+msgstr "تحديد مُجلّد الجذر"
+
+#: templates/tinymce_popup.php:244
+msgid ""
+"What should be the start folder of the plugin? The user can not browse below this "
+"folder"
+msgstr ""
+"ما هو مُجلّد الرئيسية ( البداية ) الذي تريد جعله افتراضيًا للمستخدمين ؟ علمًا أنّ المستخدم "
+"لن يستطيع التصفح إلا بوجود هذا المُجلّد"
+
+#: templates/tinymce_popup.php:278
+msgid "You are using User-Linked user folders. You can't select a root folder."
+msgstr "أنت تستخدم ألية ربط المستخدمين بمجلدات مخصصة لذلك لن تستطيع تحديد مُجلّد الجذر."
+
+#: templates/tinymce_popup.php:287
+msgid "User folders"
+msgstr "مجلدات المستخدم"
+
+#: templates/tinymce_popup.php:291
+msgid "User folders can be useful in some situations, for example"
+msgstr "مجلدات المستخدم قد تكون مفيدة في بعض الحالات، على سبيل المثال "
+
+#: templates/tinymce_popup.php:293
+msgid "Each user should only be able to access their own files in their own folder"
+msgstr "كل مستخدم يجب أن يكون قادرًا على الوصول إلى ملفاته ومجلداته الشخصية."
+
+#: templates/tinymce_popup.php:294
+msgid "Users and guests on your site want to upload files to their own folder"
+msgstr "المستخدمين والزوّار في موقعك يرغبون في رفع الملفات إلى مجلداتهم الخاصة."
+
+#: templates/tinymce_popup.php:295
+msgid ""
+"Your clients should get their own personal folder if they register, already filled "
+"with some files from template folder"
+msgstr ""
+"عُملائك يجب عليهم الحصول على مُجلدات شخصية منفصلة اذا كانوا مُسجلين، مع تعبئة المُجلدات "
+"ببعض الملفات من قالب المُجلد "
+
+#: templates/tinymce_popup.php:297
+msgid ""
+"You can use the plugin in two ways to create folders that are linked to the users"
+msgstr "بإمكانك استخدام الإضافة بطريقتين لإنشاء المُجلدات وربطها بالمستخدم"
+
+#: templates/tinymce_popup.php:298
+msgid ""
+"You can let the plugin automatically create user folders in the, by you selected, "
+"root folder"
+msgstr "تستطيع جعل الإضافة تقوم تلقائيًا بإنشاء مجلدات المُستخدم بتحديدك لمُجلد الجذر"
+
+#: templates/tinymce_popup.php:299
+msgid "Or you can link each user to their own folder via the plugin settings menu"
+msgstr ""
+"أو تستطيع ربط كل مستخدم بمجلد مخصص من خلال اعدادات الإضافة في ربط المستخدمين بمجلد "
+"مخصص"
+
+#: templates/tinymce_popup.php:300
+msgid "here"
+msgstr "هنا"
+
+#: templates/tinymce_popup.php:306
+msgid "Use user specific folders"
+msgstr "استخدام مجلدات مُخصصة للمستخدم"
+
+#: templates/tinymce_popup.php:307
+msgid ""
+"Let users only browser through the their own folder (automatically or were you have "
+"linked them to)"
+msgstr ""
+"تمكين المستخدمين من تصفح مجلدات مخصصة سواءًا بشكل آلي أو من خلال ربطهم بمجلدات مخصصة."
+
+#: templates/tinymce_popup.php:317
+msgid "Method"
+msgstr "الطريقة"
+
+#: templates/tinymce_popup.php:318
+msgid "Select the method that should be used"
+msgstr "حدد الألية أو الطريقة التي تنفيذها واستخدامها."
+
+#: templates/tinymce_popup.php:319
+msgid "Use the user-folder link that you have created via the plugin settings menu"
+msgstr ""
+"علمًا أنّه اذا قمت بتحديد الطريقة الأولى فإنّه يمكنك التحكم بها من خلال لوحة تحكم "
+"الإضافة "
+
+#: templates/tinymce_popup.php:320
+msgid "Or let the plugin automatically create the user folders"
+msgstr "أو يمكنك اختيار الطريقة الثانية وهي الإنشاء الآلي والذاتي للمجلدات"
+
+#: templates/tinymce_popup.php:329
+msgid "Use my own created User-Folder link"
+msgstr "استخدام المُجلد الذي تمّ انشاؤه وربطه بالمستخدم"
+
+#: templates/tinymce_popup.php:332
+msgid "Automatically create the user folders"
+msgstr "إنشاء مجلدات المستخدم تلقائيًا"
+
+#: templates/tinymce_popup.php:335
+msgid "By default guests (not logged in users) will also get their own folder"
+msgstr ""
+"افتراضيًا الزوّار الذين لم يقوموا بتسجيل الدخول كالمستخدمين فإنّهم أيضًا سيحصلون على مُجلّد "
+"خاص بهم"
+
+#: templates/tinymce_popup.php:336
+msgid ""
+"Remove 'Guest' from View Roles on the 'User Permissions' tab to prevent guests to use "
+"the plugin"
+msgstr "أزل الزوّار من قائمة من يشاهدون الإضافة لمنعهم من خلال تبويب الصلاحيات والأذونات"
+
+#: templates/tinymce_popup.php:343
+msgid "Use a template folder"
+msgstr "استخدام مُجلد كقالب "
+
+#: templates/tinymce_popup.php:344
+msgid ""
+"If you would like to create the user folders based on another folder. The content of "
+"the template folder will be copied to the user folder"
+msgstr ""
+"إذا كنت ترغب في إنشاء مجلدات المستخدم إستنادًا إلى مُجلّد آخر فإنّه سيتمّ نسخ محتويات "
+"المُجلّد الآخر إلى مُجلّد المستخدم"
+
+#: templates/tinymce_popup.php:353
+msgid "Template folder"
+msgstr "مُجلّد القالب"
+
+#: templates/tinymce_popup.php:354
+msgid "Select the template folder"
+msgstr "حدد مُجلّد الذي سيكون قالبًا لمُجلّد المستخدم "
+
+#: templates/tinymce_popup.php:389
+msgid "Who can access all user folders"
+msgstr "من يستطيع الوصول إلى كل المُجلّدات ؟"
+
+#: templates/tinymce_popup.php:390
+msgid "Select which WordPress Roles can browse through all folders and access all files"
+msgstr ""
+"حدد الصلاحيات والأذونات الخاصة بمن يستطيعون رؤية والوصول إلى كافة المجلدات والملفات"
+
+#: templates/tinymce_popup.php:407
+msgid "Media Files"
+msgstr "ملفات الوسائط"
+
+#: templates/tinymce_popup.php:411
+msgid ""
+"The mediaplayer will decided, based on the provided formats, if the user will have a "
+"HTML5 player or a Flash Player"
+msgstr ""
+"المُشغل سوف يعمل بناءً على الصيغ التي قمت بإختيارها، فإذا كان المستخدم لديه مُشغل يعمل "
+"بـ HTML5 أو لديه الفلاش بلاير فإنّه يمكنك اختيار اكثر من صيغة لجعل الدعم واسعًا على "
+"نطاق تلك المُشغلات"
+
+#: templates/tinymce_popup.php:411
+msgid ""
+"You may provide the same file with different extensions to increase cross-browser "
+"support"
+msgstr "يمكنك تقديم نفس الملف مع صيغ متعددة لزيادة الدعم من المتصفحات"
+
+#: templates/tinymce_popup.php:411
+msgid "Do always supply a mp3 (audio) or m4v/mp4 (video)file to support all browsers"
+msgstr ""
+"ملاحظة : إنّ صيغة mp3 المُضمّنة ضمن الصوتيات وكذلك m4v/mp4 الخاصة بالفيديو مدعومة من "
+"جميع المتصفحات"
+
+#: templates/tinymce_popup.php:417 templates/tinymce_popup.php:435
+msgid "Provided formats"
+msgstr "الصيغ المُقدمة"
+
+#: templates/tinymce_popup.php:418 templates/tinymce_popup.php:436
+msgid "Select which sort of media files you will provide"
+msgstr "حدد نوع ملفات الوسائط التي ستقوم بتقديمها"
+
+#: templates/tinymce_popup.php:453
+msgid "Automatically start playing"
+msgstr "تشغيل تلقائي"
+
+#: templates/tinymce_popup.php:454
+msgid "Autoplay - Automatically start playing"
+msgstr "يمكنك تفعيل هذه الميزة لجعل الصوتيات تعمل تلقائيًا عند البدء."
+
+#: templates/tinymce_popup.php:464
+msgid "Allow download"
+msgstr "السماح بالتحميل"
+
+#: templates/tinymce_popup.php:465
+msgid "Show direct download link to media file in the playlist"
+msgstr "عرض الرابط المباشر لملف الوسائط في قائمة التشغيل."
+
+#: templates/tinymce_popup.php:475
+msgid "Allow purchase"
+msgstr "السماح بالشراء"
+
+#: templates/tinymce_popup.php:476
+msgid "Show link to webshop in the playlist"
+msgstr "عرض رابط للشراء من المتجر في قائمة التشغيل."
+
+#: templates/tinymce_popup.php:486
+msgid "Link to webshop"
+msgstr "رابط المتجر"
+
+#: templates/tinymce_popup.php:487
+msgid "Insert link to your webshop here"
+msgstr "ادخل رابط المتجر الخاص بك في الحقل"
+
+#: templates/tinymce_popup.php:499
+msgid "Container width"
+msgstr "عرض المحتوى"
+
+#: templates/tinymce_popup.php:500
+msgid "Set max width for the Use-your-Drive container"
+msgstr "تخصيص أقصى عرض للمحتوى"
+
+#: templates/tinymce_popup.php:500
+msgid "You can use pixels or percentages, eg '360px', '480px', '70%'"
+msgstr ""
+"يمكنك استخدام الـ ( px ) أو علامة % في القياسات على سبيل المثال :  '360px', '480px', "
+"'70%'"
+
+#: templates/tinymce_popup.php:500 templates/tinymce_popup.php:667
+msgid "Leave empty for default value"
+msgstr "اتركه فارغًا للقيمة الافتراضية"
+
+#: templates/tinymce_popup.php:508
+msgid "Hide playlist on start"
+msgstr "اخفاء قائمة التشغيل عند البدء"
+
+#: templates/tinymce_popup.php:509
+msgid "Would you like to hide the playlist"
+msgstr "هل ترغب في اخفاء قائمة التشغيل ؟"
+
+#: templates/tinymce_popup.php:520
+msgid "Album or audio file covers"
+msgstr "الألبوم أو اغلفة الملفات الصوتية"
+
+#: templates/tinymce_popup.php:523
+msgid "You can show covers of your audio files in the Audio Player"
+msgstr "تستطيع عرض أغلفة الملفات الصوتيات في مشغل الصوتيات مباشرةً"
+
+#: templates/tinymce_popup.php:523
+msgid ""
+"Add a *.png or *.jpg file with the same name as your audio file in the same folder as "
+"your audio files. You can also add a cover with the name of the folder to show the "
+"cover for all audio files in the album"
+msgstr ""
+"أضف صورة من نوع png أو jpg داخل مُجلد الملف الصوتي وسيتمّ عرضها مباشرةً، أيضًا يمكنك "
+"اضافة غلاف للألبوم لعرضه في جميع الملفات الصوتية بجعل هذه الصورة بنفس اسم المجلد "
+"لعرضها."
+
+#: templates/tinymce_popup.php:523
+msgid "If no cover is available, a placeholder will be used"
+msgstr "اذا لم يوجد غلاف فإنّ التسمية التوضيحية بمرور الماوس سوف تعمل تلقائيًا"
+
+#: templates/tinymce_popup.php:529
+msgid "Display covers"
+msgstr "عرض الغلاف"
+
+#: templates/tinymce_popup.php:530
+msgid "Do you have covers (*.png, *.jpg) available and should they be displayed?"
+msgstr "هل لديك أغلفة من نوع (*.png, *.jpg) موجودة وترغب في عرضها ؟"
+
+#: templates/tinymce_popup.php:540
+msgid "Display files and folders"
+msgstr "عرض الملفات والمجلدات"
+
+#: templates/tinymce_popup.php:541
+msgid "How do you want to display the files and folders? With or without thumbnails"
+msgstr "كيف تريد عرض الملفات والمجلدات ؟ مع الصورة البارزة أم بدونها ؟"
+
+#: templates/tinymce_popup.php:549
+msgid "with thumbnails in a grid"
+msgstr "مع عرض الصورة البارزة"
+
+#: templates/tinymce_popup.php:552
+msgid "In a file list"
+msgstr "قائمة ملفات فقط"
+
+#: templates/tinymce_popup.php:559
+msgid "Display breadcrumb"
+msgstr "عرض مسار التنقل"
+
+#: templates/tinymce_popup.php:560
+msgid "Do you want to display a breadcrumb in the file browser?"
+msgstr "هل تريد عرض مسار التنقل في متصفح الملفات ؟"
+
+#: templates/tinymce_popup.php:570
+msgid "Root breadcrumb title"
+msgstr "عنوان مسار الجذر"
+
+#: templates/tinymce_popup.php:571
+msgid ""
+"What should be the breadcrumb title of the root folder? Leave empty for default value."
+msgstr "ما هو المسار الذي تريد عرضه ؟ اترك الحقل فارغًا لجعل القيمة الافتراضية تعمل."
+
+#: templates/tinymce_popup.php:580
+msgid "Display columnnames"
+msgstr "عرض اسماء الأعمدة"
+
+#: templates/tinymce_popup.php:581
+msgid "Do you want to display the columnnames of the date and filesize?"
+msgstr "هل ترغب في عرض اسماء الأعمدة من تاريخ وحجم للملف ؟"
+
+#: templates/tinymce_popup.php:591
+msgid "Display refresh button"
+msgstr "عرض زرّ التحديث"
+
+#: templates/tinymce_popup.php:592
+msgid ""
+"Do you want to display a refresh button so users can update the file list and refresh "
+"the cache?"
+msgstr ""
+"هل ترغب في عرض زرّ التحديث لتمكين المستخدمين من تحديث قائمة الملفات وكذلك تحديث الكاش ؟"
+
+#: templates/tinymce_popup.php:602
+msgid "Display files in folder"
+msgstr "عرض الملفات في المُجلّد"
+
+#: templates/tinymce_popup.php:603
+msgid ""
+"Do you want to display files in the folder so the user can preview and download them?"
+msgstr "هل ترغب في عرض الملفات في المُجلّد لتمكين الزوّار من المعاينة وتحميلها ؟"
+
+#: templates/tinymce_popup.php:613
+msgid "Display child folders in folder"
+msgstr "عرض المُجلدات الفرعية في المُجلّد "
+
+#: templates/tinymce_popup.php:614
+msgid "Do you want to display the child folders in the selected root folder?"
+msgstr "هل ترغب في عرض المُجلّدات الفرعية في مُجلّد الجذر المحدد ؟"
+
+#: templates/tinymce_popup.php:624
+msgid "Display file size"
+msgstr "عرض حجم الملف"
+
+#: templates/tinymce_popup.php:625
+msgid "Do you want to display a column with the file size?"
+msgstr "هل ترغب في عرض العمود مع حجم الملف ؟"
+
+#: templates/tinymce_popup.php:635
+msgid "Display date last modified"
+msgstr "عرض تاريخ اخر اضافة"
+
+#: templates/tinymce_popup.php:636
+msgid "Do you want to display a column with the last modified date?"
+msgstr "هل ترغب في عرض العمود مع آخر تاريخ للتحديث ؟"
+
+#: templates/tinymce_popup.php:646
+msgid "Display file extension"
+msgstr "عرض امتداد الملف"
+
+#: templates/tinymce_popup.php:647
+msgid "Do you want to display the file extensions (.pdf, .txt)?"
+msgstr "هل ترغب في عرض امتداد الملف مثلاً (.pdf, .txt) ؟"
+
+#: templates/tinymce_popup.php:657
+msgid "Number of images"
+msgstr "عدد الصور"
+
+#: templates/tinymce_popup.php:658
+msgid "Number of images to be loaded each time"
+msgstr "عدد الصور التي يمكن تحميلها كل مرة"
+
+#: templates/tinymce_popup.php:658
+msgid "Set to 0 to load all images at once"
+msgstr "ضع الرقم صفر لتحميل كل الصور دفعة واحدة"
+
+#: templates/tinymce_popup.php:666
+msgid "Gallery row height"
+msgstr "ارتفاع الصف للمعرض"
+
+#: templates/tinymce_popup.php:667
+msgid "The ideal height you want your grid rows to be"
+msgstr "يمكنك وضع الإرتفاع المناسب لصفوف الشبكة لتصبح حسب رغبتك"
+
+#: templates/tinymce_popup.php:667
+msgid ""
+"It won't set it exactly to this as plugin adjusts the row height to get the correct "
+"width"
+msgstr ""
+"اذا لم تقم بضبط الارتفاع بحسب ما تريد فإنّ الإضافة تقوم بوضع الإرتفاع المثالي للحصول "
+"على العرض الصحيح"
+
+#: templates/tinymce_popup.php:679
+msgid "Sort by"
+msgstr "فرز بواسطة"
+
+#: templates/tinymce_popup.php:680
+msgid "Sort files and folders by their properties"
+msgstr "فرز الملفات والمجلدات بواسطة خواصها"
+
+#: templates/tinymce_popup.php:697
+msgid "Shuffle/Random"
+msgstr "عشوائي"
+
+#: templates/tinymce_popup.php:704
+msgid "Sort order"
+msgstr "ترتيب الفرز"
+
+#: templates/tinymce_popup.php:705
+msgid "Sort order: ascending or descending"
+msgstr "ترتيب الفرز إمّا تصاعديا أو تنازليًا "
+
+#: templates/tinymce_popup.php:713
+msgid "Ascending"
+msgstr "تصاعديًا"
+
+#: templates/tinymce_popup.php:716
+msgid "Descending"
+msgstr "تنازليًا"
+
+#: templates/tinymce_popup.php:726
+msgid "Enable search"
+msgstr "تفعيل البحث"
+
+#: templates/tinymce_popup.php:727
+msgid "Should users be able to use the search function"
+msgstr "هل ترغب بأن يكون لدى المستخدمين القدرة على استخدام دالة البحث؟"
+
+#: templates/tinymce_popup.php:737
+msgid "Search for"
+msgstr "نتائج البحث لـ "
+
+#: templates/tinymce_popup.php:738
+msgid "Should users be able to search in the content?"
+msgstr "هل ترغب في جعل المستخدمين يقومون بالبحث في المحتوى ؟"
+
+#: templates/tinymce_popup.php:746
+msgid "Search only on filename"
+msgstr "البحث فقط بإسم الملف"
+
+#: templates/tinymce_popup.php:749
+msgid "Search on filename and contents"
+msgstr "البحث بإسم الملف ومحتوياته"
+
+#: templates/tinymce_popup.php:756
+msgid "Search from selected root"
+msgstr "البحث من مُجلّد الجذر"
+
+#: templates/tinymce_popup.php:757
+msgid "Search only in the current folder or search from the selected root folder  "
+msgstr "البحث داخل المجلد الحالي أو البحث من خلال مجلد الجذر؟"
+
+#: templates/tinymce_popup.php:767
+msgid "Enable link sharing"
+msgstr "تمكين روابط النشر"
+
+#: templates/tinymce_popup.php:768
+msgid "Should users be able to generate permanent direct links to the files?"
+msgstr "هل ترغب في جعل المستخدمين يقومون بتكوين الروابط المباشرة للملفات ؟"
+
+#: templates/tinymce_popup.php:778
+msgid "Open preview inline"
+msgstr "فتح المعاينة في نافذة منبثقة "
+
+#: templates/tinymce_popup.php:779
+msgid ""
+"Do you want to open the preview in an inline popup or should it open in a new window"
+msgstr "هل ترغب في فتح المعاينة في نافذة منبثقة أم في نافذة جديد ؟"
+
+#: templates/tinymce_popup.php:789
+msgid "Force a 'Save as'"
+msgstr "فرض ' الحفظ بإسم'"
+
+#: templates/tinymce_popup.php:790
+msgid "Force a 'Save as' Dialog on downloading file"
+msgstr "فرض ' الحفظ بإسم' في مربع حوار تنزيل الملف"
+
+#: templates/tinymce_popup.php:800
+msgid "Enable ZIP-download"
+msgstr "تفعيل تنزيل كملفات مضغوطة ( zip )"
+
+#: templates/tinymce_popup.php:801
+msgid "Should users be able to use download multiple files as zip?"
+msgstr ""
+"هل ترغب في جعل المستخدمين بأنْ يكون لديهم القدرة في تنزيل الملفات المتعددة في ملف واحد "
+"مضغوط ( zip ) ؟"
+
+#: templates/tinymce_popup.php:815
+msgid "Limit by extension"
+msgstr "استثناء عرض الملفات بالامتدادات"
+
+#: templates/tinymce_popup.php:816 templates/tinymce_popup.php:869
+msgid "Add extensions separated with | e.g. (jpg|png|gif)"
+msgstr "أضف الامتدادات بالفصل بينها بالرمز ( | ) مثال : (jpg|png|gif)"
+
+#: templates/tinymce_popup.php:816
+msgid "Leave empty to show all files"
+msgstr "اتركه فارغًا لعرض جميع الملفات"
+
+#: templates/tinymce_popup.php:824
+msgid "Limit by name"
+msgstr "استثناء عرض الملفات بالأسم"
+
+#: templates/tinymce_popup.php:825 templates/tinymce_popup.php:834
+msgid "Add files or folders separated with | e.g. (file1.jpg|long folder name)"
+msgstr ""
+"أضف الملفات أو المجلدات بالفصل بينها بالرمز ( | ) على سبيل المثال : (file1.jpg|long "
+"folder name)"
+
+#: templates/tinymce_popup.php:833
+msgid "Exclude by name"
+msgstr "استثناء بالاسم"
+
+#: templates/tinymce_popup.php:846
+msgid "Include upload form"
+msgstr "تفعيل نموذج رفع الملفات"
+
+#: templates/tinymce_popup.php:847
+msgid ""
+"Should users be able to upload files? You can manage the permissions under 'User "
+"Permissions'"
+msgstr ""
+"هل ترغب في السماح للمستخدمين برفع الملفات ؟ يمكنك إدارة الصلاحيات الخاصة بهذا النموذج "
+"من خلال تبويب ( الصلاحيات والأذونات )"
+
+#: templates/tinymce_popup.php:857
+msgid "Simple upload"
+msgstr "رفع الملفات تلقائيًا"
+
+#: templates/tinymce_popup.php:858
+msgid "Start uploading automatically (no start/cancel buttons)"
+msgstr "البدء في الرفع تلقائيًا"
+
+#: templates/tinymce_popup.php:868
+msgid "Limit upload by extension"
+msgstr "استثناء امتدادات مُعينة"
+
+#: templates/tinymce_popup.php:869
+msgid "Leave empty for no restricion"
+msgstr "اتركه فارغًا للقيمة الافتراضية"
+
+#: templates/tinymce_popup.php:878
+msgid "Max. upload size"
+msgstr "الحد الأقصى لحجم الملف"
+
+#: templates/tinymce_popup.php:879
+msgid "Max filesize for uploading in bytes"
+msgstr "الحد الأقصى لحجم الملف المرفوع بالبايت"
+
+#: templates/tinymce_popup.php:879
+msgid "Leave empty for server maximum "
+msgstr "اتركه فارغًا للإعتماد على الحد الأقصى المخصص من الخادم"
+
+#: templates/tinymce_popup.php:879
+msgid "How to calculate?"
+msgstr "كيفية حساب ذلك؟"
+
+#: templates/tinymce_popup.php:891
+msgid "Download notification"
+msgstr "اشعار تنزل ملف"
+
+#: templates/tinymce_popup.php:892
+msgid "Would you like to receive a notification email when someone downloads a file?"
+msgstr "هل ترغب في الحصول على اشعارًا بريديًا عندما يقوم أحدٌ ما بتنزيل ملف ؟"
+
+#: templates/tinymce_popup.php:902
+msgid "Upload notification"
+msgstr "اشعار رفع ملف"
+
+#: templates/tinymce_popup.php:903
+msgid "Would you like to receive a notification email when someone uploads a file?"
+msgstr "هل ترغب في الحصول على اشعارًا بريديًا عندما يقوم أحدٌ ما برفع ملف ؟"
+
+#: templates/tinymce_popup.php:913
+msgid "Delete notification"
+msgstr "اشعار حذف ملف"
+
+#: templates/tinymce_popup.php:914
+msgid "Would you like to receive a notification email when someone deletes a file?"
+msgstr ""
+"هل ترغب في الحصول على اشعار عبر البريد البريد الالكتروني اذا قام أحد ما بحذف ملف ؟"
+
+#: templates/tinymce_popup.php:924
+msgid "Send notification to"
+msgstr "ارسال الاشعارات إلى :"
+
+#: templates/tinymce_popup.php:925
+msgid "On which email address would you like to receive the notification?"
+msgstr "ما هو البريد الإلكتروني الذي تريد  أن يُرسل إليه الإشعارات ؟"
+
+#: templates/tinymce_popup.php:925
+msgid "Default value is:"
+msgstr "القيمة الافتراضية :"
+
+#: templates/tinymce_popup.php:941
+msgid "Use-your-Drive uses Wordpress Roles to determine how an user can use the plugin"
+msgstr "نحن نستخدم نظام الصلاحيات لتحديد مُهمّة كل فئة على حدى في استخدام الاضافة"
+
+#: templates/tinymce_popup.php:942
+msgid "You set these under 'User Permissions'"
+msgstr ""
+"قم بتحديد ما ترغب من هذه القائمة ثمّ تحكم بصلاحياتها مباشرةً عبر تبويب ( الصلاحيات "
+"والأذونات )"
+
+#: templates/tinymce_popup.php:948
+msgid "Rename files and folders"
+msgstr "اعادة تسمية الملفات والمجلدات"
+
+#: templates/tinymce_popup.php:949
+msgid "Should it be possible to rename files and folders?"
+msgstr "هل بالإمكان إعادة تسمية الملفات والمجلدات ؟"
+
+#: templates/tinymce_popup.php:959
+msgid "Delete files and folders"
+msgstr "حذف الملفات والمجلدات"
+
+#: templates/tinymce_popup.php:960
+msgid "Should it be possible to delete files and folders?"
+msgstr "هل بالإمكان حذف الملفات والمجلدات ؟"
+
+#: templates/tinymce_popup.php:970
+msgid "Delete to trash"
+msgstr "حذف إلى سلّة المُهملات"
+
+#: templates/tinymce_popup.php:971
+msgid "Should the files be deleted permanently or moved to the trash bin?"
+msgstr "هل ترغب في جعل الملفات تُحذف بشكل يدوي أم تُنقل إلى سلّة المُهملات ؟"
+
+#: templates/tinymce_popup.php:982
+msgid "Create new folders"
+msgstr "إنشاء مجلدات جديدة"
+
+#: templates/tinymce_popup.php:983
+msgid "Should it be possible to create new folders?"
+msgstr "هل بالإمكان إشاء مجلدات جديدة ؟"
+
+#: templates/tinymce_popup.php:996
+msgid "Who can view"
+msgstr "من يستطيع المشاهدة ؟"
+
+#: templates/tinymce_popup.php:997
+msgid "Select which WordPress Roles can view and use the plugin"
+msgstr "حدد صلاحيات من يستطيع استخدام ورؤية الاضافة "
+
+#: templates/tinymce_popup.php:1010
+msgid "Who can download"
+msgstr "من يستطيع التنزيل ؟"
+
+#: templates/tinymce_popup.php:1011
+msgid "Select which WordPress Roles can download files"
+msgstr "حدد صلاحيات من يستطيع تنزيل الملفات من الدرايف"
+
+#: templates/tinymce_popup.php:1025
+msgid "Who can upload"
+msgstr "من يستطيع الرفع ؟"
+
+#: templates/tinymce_popup.php:1026
+msgid "Select which WordPress Roles can upload files"
+msgstr "حدد صلاحيات من يستطيع رفع الملفات إلى الدرايف"
+
+#: templates/tinymce_popup.php:1039
+msgid "Who can rename"
+msgstr "من يستطيع اعادة التسمية ؟"
+
+#: templates/tinymce_popup.php:1040
+msgid "Select which WordPress Roles can rename files and folders"
+msgstr "حدد صلاحيات من يستطيع اعادة تسمية الملفات والمجلدات"
+
+#: templates/tinymce_popup.php:1054
+msgid "Who can delete"
+msgstr "من يستطيع الحذف ؟"
+
+#: templates/tinymce_popup.php:1055
+msgid "Select which WordPress Roles can delete files and folders"
+msgstr "حدد صلاحيات من يستطيع حذف الملفات والمجلدات"
+
+#: templates/tinymce_popup.php:1068
+msgid "Who can create new folders"
+msgstr "من يستطيع انشاء مجلدات جديدة ؟"
+
+#: templates/tinymce_popup.php:1069
+msgid "Select which WordPress Roles can create new folders"
+msgstr "حدد صلاحيات من يستطيع انشاء المجلدات الجديدة"
+
+#: templates/tinymce_popup.php:1092
+msgid "Insert"
+msgstr "اضف"
+
+#: templates/tinymce_popup.php:1094
+msgid "Insert links"
+msgstr "اضف روابط"
+
+#: templates/tinymce_popup.php:1096
+msgid "Embed"
+msgstr "تضمين"
+
+#: templates/uploadform.php:9
+msgid "Add files"
+msgstr "اضافة ملفات"
+
+#: templates/uploadform.php:31
+msgid "Start upload"
+msgstr "ابدأ عملية الرفع"
+
+#: templates/uploadform.php:34
+msgid "Cancel upload"
+msgstr "الغاء عملية الرفع"
+
+#: templates/uploadform.php:37
+msgid "Max. "
+msgstr " الحد الأقصى "
+
+#: use-your-drive.php:309
+msgid "Do you really want to delete these files?"
+msgstr "هل أنت متأكد من أنّك ترغب في هذه الملفات ؟"
+
+#: use-your-drive.php:312
+msgid "Oops! This shouldn't happen... Try again!"
+msgstr "عفوًا! هنالك خلل ما، حاول مرةً أخرى."
+
+#: use-your-drive.php:330
+msgid "Still Waiting?"
+msgstr "هل لازلت مُنتظرًا ؟"
+
+#: use-your-drive.php:330
+msgid ""
+"If the document doesn't open, you are probably trying to access a protected file "
+"which requires you to be logged in on Google. Try to open the file in a new window by "
+"clicking on the title below"
+msgstr ""
+"اذا لم يتمّ فتح المستند، فإنّه قد يكون هنالك احتمال بأنّك ترغب في الوصول إلى ملف محمي أو "
+"يتطلّب أذونات أخرى وهذا يتوجب عليك تسجيل الدخول إلى جوجل لمحاولة فتح هذا الملف، يمكنك "
+"النقر على الرابط أدناه "
+
+#: wp-updates-plugin.php:76
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?\" "
+"onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr ""
+"خطأ HTTP غير متوقع أثناء الطلب والربط بـ  API !  <a href=\"?\" onclick=\"document."
+"location.reload(); return false;\">حاول مرة أخرى</a> "
+
+#: wp-updates-plugin.php:80
+msgid "An unknown error occurred"
+msgstr "خطأ غير معروف !"
+
+#~ msgid ""
+#~ "Would you like to see some statistics about your files? Use-your-Drive can send "
+#~ "all download/upload events to Google Analytics. \n"
+#~ "                If you enable this feature, please make sure you already added "
+#~ "your <a href=\"https://support.google.com/analytics/answer/1008080?hl=en\">Google "
+#~ "Analytics web tracking</a> code to your site."
+#~ msgstr ""
+#~ "هل ترغب في الحصول على احصائيات وتحليلات لملفاتك ؟، اضافتنا تقوم بإرسال كافة "
+#~ "العمليات من تحميلات وتنزيلات إلى تحليلات واحصائيات جوجل، في حال قمت بتفعيل هذه "
+#~ "الخاصية فيُرجى التأكد من إضافة <a href=\"https://support.google.com/analytics/"
+#~ "answer/1008080?hl=en\">كود  تحليلات جوجل الخاص بموقعك </a> "
+
+#~ msgid "Own Google Drive App?"
+#~ msgstr "هل تمتلك تطبيق على جوجل درايف ؟"
+
+#~ msgid "Advanced settings"
+#~ msgstr "الاعدادات المتقدمة"
+
+#~ msgid "Enable auto-updater"
+#~ msgstr "تفعيل الرفع التلقائي"
+
+#~ msgid "Notify email templates"
+#~ msgstr "قوالب اشعارات البريد الالكتروني"
+
+#~ msgid "Create user folder on user registration"
+#~ msgstr "انشاء مجلد المستخدم في سجل المستخدمين"
+
+#~ msgid "Create all user folders on first visit (takes ~1 sec/user)"
+#~ msgstr "انشاء كل مجلدات المستخدمين عند الزيارة الأولى"
+
+#~ msgid "Update user folders after they update their profile"
+#~ msgstr "تحديث مجلدات المستخدم بعد تحديث ملفه الشخصي"
+
+#~ msgid "Try to remove user folders after they are deleted"
+#~ msgstr "محاولة ازالة مجلدات المستخدم بعد حذفها"
+
+#~ msgid "Your custom CSS"
+#~ msgstr "كود CSS الخاص بك"
+
+#~ msgid "Template download notification "
+#~ msgstr "قالب اشعار عملية التنزيل"
+
+#~ msgid "Template upload notification "
+#~ msgstr "قالب اشعار عملية الرفع"
+
+#~ msgid "If you created your own Google Drive App, please enter your settings below"
+#~ msgstr ""
+#~ "اذا كنت قد قمت بإنشاء تطبيق على جوجل درايف، فما عليك سوى ادخال الاعدادات بالأسفل"
+
+#~ msgid "<strong>To create your own Google App complete these steps:</strong>"
+#~ msgstr "<strong> لإنشاء تطبيك الخاص على جوجل درايف يتطلّب منك بعض الخطوات : </strong>"
+
+#~ msgid ""
+#~ "Go to the <a href=\"https://cloud.google.com/console\">Google Developers Console</"
+#~ "a>."
+#~ msgstr ""
+#~ "اذهب أولاً إلى <a href=\"https://cloud.google.com/console\">صفحة مطوري جوجل</a>."
+
+#~ msgid "Create a project."
+#~ msgstr "قم بإنشاء مشروع."
+
+#~ msgid "In the sidebar on the left, select <strong>APIs &amp; auth</strong>."
+#~ msgstr "في الجانب الأيسر اضغط على  <strong>APIs &amp; auth</strong>."
+
+#~ msgid ""
+#~ "In the displayed list of available APIs, find the Drive API <em>and</em> URL "
+#~ "Shortener and set their statuses to <strong>ON</strong>."
+#~ msgstr ""
+#~ "عند عرض قائمة الـ APIs ، قم بالبحث عن Drive API وكذلك URL Shortener API ثم قم بجعل "
+#~ "أوضاعها مُفعلة."
+
+#~ msgid "In the sidebar on the left, select <strong>Credentials</strong>."
+#~ msgstr ""
+#~ "ثم توجّه إلى نفس القائمة <strong>APIs &amp; auth</strong>في الجانب الأيسر واضغط على "
+#~ "<strong>Credentials</strong>."
+
+#~ msgid "Create a New Client ID for a \"Web application\""
+#~ msgstr "انشأ مُعرّف عميل جديد من نوع  \"تطبيق ويب | Web application \" "
+
+#~ msgid ""
+#~ "Add to \"Authorized redirect URI\": <a href=\"http://www.florisdeleeuw.nl/use-your-"
+#~ "drive/index.php\">http://www.florisdeleeuw.nl/use-your-drive/index.php</a>"
+#~ msgstr ""
+#~ "أضف  رابط التوجيه المُصرّح للتطبيق مباشرةً على سبيل المثال : <a href=\"http://www."
+#~ "example.com/index.php\">http://www.example.com/index.php</a>"
+
+#~ msgid "Insert the \"Client id\" and \"Client secret\" here and Authorize the Plugin."
+#~ msgstr ""
+#~ "أضف مُعرّف العميل و كذلك مفتاح التشفير للعميل ( \"Client id\"  + \"Client secret\" ) "
+#~ "في الخانات الموجودة بالأسفل ثمّ قم بعمل تفويض للإضافة لتعمل بشكل متكامل."
+
+#~ msgid "You can use"
+#~ msgstr "يمكنك استخدام "
+
+#~ msgid "Shortcode"
+#~ msgstr "الكود المختصر"
+
+#~ msgid "Use-your-Drive uses the following shortcode:"
+#~ msgstr "استخدم الكود التالي :"
+
+#~ msgid ""
+#~ "To make things easier for you, we added a <u>Shortcode button</u> in the MCE editor"
+#~ msgstr ""
+#~ "أيضًا لتسهيل المُهمّة نحن قمنا بإضافة <u> أيقونات وأزرار أوامر لإضافة الكود المختصر</"
+#~ "u> في المحرر البصري مباشرةً بسهولةٍ ومرونة"
+
+#~ msgid "Documentation"
+#~ msgstr "الوثائق"
+
+#~ msgid "Overview of your system settings"
+#~ msgstr "نظرة عامة حول اعدادات النظام"
+
+#~ msgid "<strong>Use-your-Drive - Error: </strong>"
+#~ msgstr "<strong> خطأ : </strong>"
+
+#~ msgid "Use-you-Drive isn't ready to run"
+#~ msgstr "الاضافة غير جاهزة للتشغيل"
+
+#~ msgid "Couldn't create zip file"
+#~ msgstr "لا يمكن انشاء الملف المضغوط zip"
+
+#~ msgid "Switch between grid and list"
+#~ msgstr "تبديل بين العرض الشبكي والقائمة"
+
+#~ msgid "Download multiple files at once"
+#~ msgstr "تنزيل ملفات متعددة دفعة واحدة"
+
+#~ msgid "Use-your-Drive should behave as"
+#~ msgstr "نوع البيانات والوضع المرغوب استخدامه"
+
+#~ msgid "Filelist"
+#~ msgstr "ملفات"
+
+#~ msgid "Photogallery"
+#~ msgstr "معرض الصور"
+
+#~ msgid "Selected root folder"
+#~ msgstr "مُجلّد الجذر المحدد"
+
+#~ msgid "Show files as:"
+#~ msgstr "عرض الملفات كـ :"
+
+#~ msgid "Files with thumbnails in a grid"
+#~ msgstr "شبكة"
+
+#~ msgid "A list of files"
+#~ msgstr "قائمة"
+
+#~ msgid "Show folders breadcrumb"
+#~ msgstr "عرض مسار المجلدات"
+
+#~ msgid "Show searchbox"
+#~ msgstr "عرض صندوق البحث"
+
+#~ msgid "Sort files and folders by:"
+#~ msgstr "تصفية الملفات والمجلدات بواسطة:"
+
+#~ msgid "Show columnnames"
+#~ msgstr "عرض اسماء الأعمدة"
+
+#~ msgid "Show download button (zip-archive)"
+#~ msgstr "عرض زر التحميل ( ملف مضغوط zip )"
+
+#~ msgid "Show share button"
+#~ msgstr "عرض ازرار النشر"
+
+#~ msgid "Do always supply a mp3 file to support all browsers"
+#~ msgstr "اختر من ضمن أنواع الوسائط الصوتية mp3 لدعمه من جميع المتصفحات"
+
+#~ msgid "Do always supply a m4v/mp4 file to support all browsers"
+#~ msgstr "اختر من ضمن أنواع وسائط الفيديو m4v/mp4 لدعمهم من جميع المتصفحات"
+
+#~ msgid "Sort order:"
+#~ msgstr "ترتيب الفرز :"
+
+#~ msgid "Filelist options"
+#~ msgstr "خيارات قائمة الملفات"
+
+#~ msgid "Show files in folder"
+#~ msgstr "عرض الملفات في المجلد"
+
+#~ msgid "Show folders in folder"
+#~ msgstr "عرض المجلدات في المجلد"
+
+#~ msgid "Show filesize"
+#~ msgstr "عرض حجم الملف"
+
+#~ msgid "Show date last modified"
+#~ msgstr "عرض تاريخ اخر اضافة"
+
+#~ msgid "Show file extensions"
+#~ msgstr "عرض  امتداد الملف"
+
+#~ msgid "Gallery options"
+#~ msgstr "خيارات معرض الوسائط"
+
+#~ msgid "Row height"
+#~ msgstr "ارتفاع الصف"
+
+#~ msgid "Don't stretch last row to fit grid width"
+#~ msgstr "لا تقم بتمديد الصف الأخير لتوافق العرض الشبكي"
+
+#~ msgid "Shuffle images"
+#~ msgstr "خلط الصور"
+
+#~ msgid "Limit files by extension"
+#~ msgstr "حد عرض الملفات بالامتدادات"
+
+#~ msgid "Include files or folders (only show these items)"
+#~ msgstr "استدعاء الملفات أو المجلدات ( عرض هذه العناصر فقط ) "
+
+#~ msgid "Exclude files or folders"
+#~ msgstr "استثناء الملفات أو المجلدات"
+
+#~ msgid "Upload form options"
+#~ msgstr "نموذج خيارات الرفع"
+
+#~ msgid "Email notifications"
+#~ msgstr "اشعارات البريد الإلكتروني"
+
+#~ msgid "Edit files &amp; folders"
+#~ msgstr "تحرير الملفات والمجلدات"
+
+#~ msgid "Files &amp; folders can be renamed"
+#~ msgstr "الملفات والمجلدات يمكن أن تعاد تسميتها"
+
+#~ msgid "Files &amp; folders can be deleted"
+#~ msgstr "الملفات والمجلدات يمكن أن يتمّ حذفها "
+
+#~ msgid "Can add new folders"
+#~ msgstr "يمكن اضافة مجلدات جديدة"
+
+#~ msgid "User management"
+#~ msgstr "إدارة المستخدم "
+
+#~ msgid "View Use-your-Drive"
+#~ msgstr "يُشاهدة الإضافة "
+
+#~ msgid "Download files"
+#~ msgstr "تنزيل الملفات"
+
+#~ msgid "Rename files & folders"
+#~ msgstr "اعادة تسمية الملفات والمجلدات"
+
+#~ msgid "Delete files & folders"
+#~ msgstr "حذف الملفات والمجلدات"
+
+#~ msgid "Add folders"
+#~ msgstr "اضافة مجلدات"
+
+#~ msgid "Users can only use their own folder within the selected rootfolder"
+#~ msgstr "يمكن للأعضاء فقط استخدام مجلداتهم الخاصة ضمن مجلد الجذر المحدد"
+
+#~ msgid "Note"
+#~ msgstr "ملاحظة "
+
+#~ msgid "Remove 'Guest' from View Roles to disable guests to use the plugin"
+#~ msgstr "أزل الزوّار من قائمة من يشاهدون الإضافة لمنعهم من استخدام الاضافة"
+
+#~ msgid "See and edit all user folders"
+#~ msgstr "المشاهدة والتحرير لمجلدات كل المستخدمين"
+
+#~ msgid ""
+#~ "Hi!\n"
+#~ "\n"
+#~ "%visitor% has downloaded a file from your site: %filename% (%filesize%)"
+#~ msgstr ""
+#~ "مرحبا ! \n"
+#~ "\n"
+#~ "%visitor% قد قام بتنزيل ملف من الموقع الخاص بك، حيث أنّ بيانات هذا الملف "
+#~ "كالتالي : \n"
+#~ "\vاسم الملف : %filename%\n"
+#~ "حجم الملف : %filesize%"
+
+#~ msgid ""
+#~ "Hi!\n"
+#~ "\n"
+#~ "%visitor% has uploaded the following file(s) to your Google Drive:\n"
+#~ "\n"
+#~ "%filelist%"
+#~ msgstr ""
+#~ "مرحبا ! \n"
+#~ "\n"
+#~ "%visitor% قد قام برفع ملفات إلى جوجل درايف الخاص بك، حيث أنّ هذه الملفات "
+#~ "كالتالي : \n"
+#~ "%filelist%"
+
+#~ msgid "administrator|editor|author|contributor"
+#~ msgstr "المدراء|editor|author|contributor"

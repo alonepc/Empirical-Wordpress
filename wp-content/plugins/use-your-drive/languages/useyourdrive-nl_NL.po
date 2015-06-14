@@ -1,0 +1,2099 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Use-your-Drive\n"
+"POT-Creation-Date: 2014-06-27 16:00+0100\n"
+"PO-Revision-Date: 2014-06-27 16:01+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin_page.php:86 ../use-your-drive.php:173
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../admin_page.php:87 ../includes/UseyourDrive_LinkUsers.php:18
+msgid "Link users to folder"
+msgstr ""
+
+#: ../admin_page.php:88 ../admin_page.php:573
+#: ../templates/tinymce_popup.php:219
+msgid "File browser"
+msgstr "Bestandslijst"
+
+#: ../admin_page.php:106
+msgid "Own Google Drive App?"
+msgstr "Eigen Google Drive App?"
+
+#: ../admin_page.php:148
+msgid "Advanced settings"
+msgstr "Geavanceerd"
+
+#: ../admin_page.php:154
+msgid "Enable auto-updater"
+msgstr "Auto-updater gebruiken"
+
+#: ../admin_page.php:171
+msgid "Google Analytics"
+msgstr ""
+
+#: ../admin_page.php:177
+msgid "Media player"
+msgstr ""
+
+#: ../admin_page.php:183 ../templates/tinymce_popup.php:273
+msgid "User folders"
+msgstr "Gebruikersmappen"
+
+#: ../admin_page.php:189
+msgid "Custom CSS"
+msgstr "Eigen CSS"
+
+#: ../admin_page.php:195
+msgid "Notify email templates"
+msgstr "Templates email meldingen"
+
+#: ../admin_page.php:305
+msgid ""
+"If you created your own Google Drive App, please enter your settings below"
+msgstr ""
+"Vul de App key & secret in als je een eigen Google Drive App hebt aangemaakt."
+
+#: ../admin_page.php:306
+msgid "How do I create a Google DriveApp?"
+msgstr "Hoe moet ik een Google DriveApp aanmaken?"
+
+#: ../admin_page.php:310 ../admin_page.php:530
+msgid "If you would like to receive updates, please insert your Purchase code"
+msgstr ""
+"Als je gebruik wilt maken van de auto-update functie, geef dan de "
+"'Purchasecode' op"
+
+#: ../admin_page.php:312 ../admin_page.php:532
+msgid "Where do I find the purchase code?"
+msgstr "Waar kan ik de 'purchase code' vinden?"
+
+#: ../admin_page.php:316
+msgid ""
+"Would you like to see some statistics about your files? Use-your-Drive can "
+"send all preview/download/upload events to Google Analytics"
+msgstr ""
+
+#: ../admin_page.php:318
+msgid ""
+"If you enable this feature, please make sure you already added your Google "
+"Analytics web tracking code to your site."
+msgstr ""
+
+#: ../admin_page.php:411
+msgid "You can use"
+msgstr "Gebruik"
+
+#: ../admin_page.php:451
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Je hebt onvoldoende rechten om deze pagina te bekijken."
+
+#: ../admin_page.php:459
+msgid "System information"
+msgstr "Systeem informatie"
+
+#: ../admin_page.php:484
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: ../admin_page.php:485
+msgid "Use-your-Drive uses the following shortcode:"
+msgstr "Use-your-Drive gebruikt de volgende shortcode:"
+
+#: ../admin_page.php:485
+msgid ""
+"To make things easier for you, we added a <u>Shortcode button</u> in the MCE "
+"editor"
+msgstr ""
+"Om het wat gemakkelijker te makken hebben we een <u>Shortcode button</u> "
+"toegevoegd aan de MCE editor"
+
+#: ../admin_page.php:487
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: ../admin_page.php:488
+msgid "Visit the Use-your-Drive website"
+msgstr "Bezoek de Use-your-Drive website"
+
+#: ../admin_page.php:488
+msgid "for documentation and installation details"
+msgstr "voor documentatie en installatie gegevens"
+
+#: ../admin_page.php:492
+msgid "Overview of your system settings"
+msgstr "Overzicht van je systeem"
+
+#: ../admin_page.php:526
+msgid "Saved!"
+msgstr ""
+
+#: ../admin_page.php:537
+msgid "Purchase Code"
+msgstr ""
+
+#: ../admin_page.php:614
+msgid "(Re) Authorize the Plugin!"
+msgstr "Volmachtig de App"
+
+#: ../admin_page.php:615
+msgid "Revoke authorization"
+msgstr "Authorizatie terugtrekken"
+
+#: ../admin_page.php:642 ../includes/UseyourDrive.php:42
+msgid ""
+"The plugin isn't yet authorized to use your Google Drive! Please (re)-"
+"authorize the plugin"
+msgstr ""
+"De plugin is nog niet gemachtigt om gebruik te kunnen maken van je Google "
+"Drive! Volmacht daarvoor de Plugin"
+
+#: ../admin_page.php:653
+msgid "Plugin isn't linked to your Google Drive anymore... Please Reauthorize!"
+msgstr ""
+"De plugin is niet langer gelinkt met Google Drive. Doe de App goedkeuring "
+"opnieuw!"
+
+#: ../admin_page.php:666
+msgid ""
+"Use-your-Drive can't access your Google Drive as the Google Drive App isn't "
+"properly configurated."
+msgstr ""
+
+#: ../admin_page.php:670
+msgid ""
+"Use-your-Drive is succesfully authorized and linked with your Google account:"
+msgstr "Use-your-Drive is aan het volgende Google Drive account gelinkt:"
+
+#: ../admin_page.php:701 ../admin_page.php:738
+msgid "You need at least PHP 5.3 if you want to use Use-your-Drive"
+msgstr "Om Use-your-Drive te kunnen gebruiken moet je minstens PHP 5.3 hebben"
+
+#: ../admin_page.php:702
+msgid "You are using:"
+msgstr "Je gebruikt:"
+
+#: ../admin_page.php:706
+msgid ""
+"We are not able to connect to the Google API as 'allow_url_fopen' is "
+"disabled and you don't have the cURL PHP extension installed"
+msgstr ""
+
+#: ../admin_page.php:707
+msgid "Please enable allow_url_fopen or install the cURL extension"
+msgstr ""
+
+#: ../admin_page.php:712 ../use-your-drive.php:387
+msgid ""
+"We are not able to connect to the Google API as the plugin is interfering "
+"with an other plugin"
+msgstr ""
+
+#: ../admin_page.php:713
+msgid ""
+"The other plugin is using an old version of the Google-Api-PHP-client that "
+"isn't capable of running multiple configurations"
+msgstr ""
+
+#: ../admin_page.php:714
+msgid ""
+"Please disable this other plugin if you would like to use Use-your-Drive"
+msgstr "Als je Use-your-Drive wilt gebruiken de-activeer dan de andere plugin."
+
+#: ../admin_page.php:715
+msgid ""
+"If you would like to use both plugins, ask the developer to update it's code"
+msgstr ""
+"Als je gebruik wilt maken van beide plugins, vraag de ontwikkelaar om de "
+"code te updaten"
+
+#: ../admin_page.php:727
+msgid "The plugin isn't autorized to use your Google Drive"
+msgstr "De plugin is niet gelinkt met Google Drive."
+
+#: ../admin_page.php:728
+msgid "Authorize the plugin!"
+msgstr "Volmachtig de App"
+
+#: ../admin_page.php:738 ../admin_page.php:740
+msgid "PHP version"
+msgstr "PHP versie"
+
+#: ../admin_page.php:745 ../admin_page.php:747
+msgid "cURL PHP extension"
+msgstr "cURL PHP extensie"
+
+#: ../admin_page.php:745
+msgid ""
+"You have the cURL PHP extension installed and we can access Google with cURL"
+msgstr ""
+
+#: ../admin_page.php:747
+msgid ""
+"You don't have the cURL PHP extension installed (couldn't find function "
+"\"curl_init\"), please enable or install this extension"
+msgstr ""
+"Je hebt de cURL PHP extensie niet geinstalleerd (kan de functie \"curl_init"
+"\" niet vinden). Installeer deze extensie"
+
+#: ../admin_page.php:752 ../admin_page.php:754
+msgid "Is allow_url_fopen enabled?"
+msgstr ""
+
+#: ../admin_page.php:752
+msgid "Yes, we can access Google with fopen"
+msgstr ""
+
+#: ../admin_page.php:754
+msgid "No, we can't access Google with fopen"
+msgstr ""
+
+#: ../admin_page.php:760 ../admin_page.php:762
+msgid "Version Google Api Client"
+msgstr ""
+
+#: ../admin_page.php:762
+msgid "Before version 1.0.0"
+msgstr ""
+
+#: ../admin_page.php:762
+msgid ""
+"Another plugin is loading an old Google Client library. Use-your-Drive isn't "
+"compatible with this version."
+msgstr ""
+
+#: ../admin_page.php:769 ../admin_page.php:771
+msgid "Is TMP directory writable?"
+msgstr "Is de TMP folder beschrijfbaar?"
+
+#: ../admin_page.php:769
+msgid "TMP directory"
+msgstr "TMP folder"
+
+#: ../admin_page.php:769
+msgid "isn't writable. You are not able to upload files to Drive."
+msgstr ""
+"kan niet worden beschreven. Het is niet mogelijk om bestanden naar Google "
+"Drivete uploaden."
+
+#: ../admin_page.php:769
+msgid "Make sure TMP directory is writable"
+msgstr "Zorg ervoor dat de TMP folder beschrijfbaar is"
+
+#: ../admin_page.php:771
+msgid "TMP directory is writable"
+msgstr "TMP folder is beschrijfbaar"
+
+#: ../admin_page.php:783 ../admin_page.php:785 ../admin_page.php:788
+msgid "Is CACHE directory writable?"
+msgstr "Is de CACHE folder beschrijfbaar?"
+
+#: ../admin_page.php:783
+msgid "CACHE directory"
+msgstr "CACHE folder"
+
+#: ../admin_page.php:783 ../admin_page.php:796
+msgid "isn't writable. The gallery will load very slowly."
+msgstr ""
+"kan niet worden beschreven. De fotogalerij en audio/video speler zal traag "
+"laden."
+
+#: ../admin_page.php:783
+msgid "Make sure CACHE directory is writable"
+msgstr "Zorg ervoor dat de CACHE folder beschrijfbaar is"
+
+#: ../admin_page.php:785
+msgid "CACHE directory is now writable"
+msgstr "CACHE folder is nu beschrijfbaar"
+
+#: ../admin_page.php:788
+msgid "CACHE directory is writable"
+msgstr "CACHE folder is beschrijfbaar"
+
+#: ../admin_page.php:796 ../admin_page.php:798 ../admin_page.php:801
+msgid "Is CACHE-index file writable?"
+msgstr "Is het CACHE-index bestand beschrijfbaar?"
+
+#: ../admin_page.php:796
+msgid "-index file"
+msgstr "-index bestand"
+
+#: ../admin_page.php:796
+msgid "Make sure CACHE-index file is writable"
+msgstr ""
+"Zorg er voor dat het CACHE-index bestand bestaat en dat deze schrijfbaar is"
+
+#: ../admin_page.php:798
+msgid "CACHE-index file is now writable"
+msgstr "CACHE-index bestand is nu beschrijfbaar"
+
+#: ../admin_page.php:801
+msgid "CACHE-index file is writable"
+msgstr "CACHE-index bestand is beschrijfbaar"
+
+#: ../admin_page.php:806
+msgid "You can use the ZIP function"
+msgstr "Je kunt de ZIP functionaliteit gebruiken"
+
+#: ../admin_page.php:807 ../admin_page.php:810
+msgid "Download files as ZIP"
+msgstr "Bestanden downloaden als ZIP"
+
+#: ../admin_page.php:809
+msgid "You cannot download files as ZIP"
+msgstr "Je kunt geen bestanden downloaden als ZIP"
+
+#: ../use-your-drive.php:243 ../templates/tinymce_popup.php:98
+msgid "Success"
+msgstr "Succes"
+
+#: ../use-your-drive.php:244 ../use-your-drive.php:247
+#: ../templates/tinymce_popup.php:99 ../templates/tinymce_popup.php:102
+msgid "Error"
+msgstr "Fout"
+
+#: ../use-your-drive.php:245 ../templates/tinymce_popup.php:100
+msgid "In queue"
+msgstr "In wachtrij"
+
+#: ../use-your-drive.php:246 ../templates/tinymce_popup.php:101
+msgid "Uploading"
+msgstr "Uploaden"
+
+#: ../use-your-drive.php:248 ../templates/tinymce_popup.php:103
+msgid "Close"
+msgstr "Sluiten"
+
+#: ../use-your-drive.php:249 ../includes/UseyourDrive_Processor.php:361
+#: ../templates/tinymce_popup.php:104
+msgid "Start"
+msgstr "Start"
+
+#: ../use-your-drive.php:250 ../templates/tinymce_popup.php:105
+#: ../templates/tinymce_popup.php:967
+msgid "Cancel"
+msgstr "Terug"
+
+#: ../use-your-drive.php:251 ../includes/UseyourDrive_Filebrowser.php:477
+#: ../includes/UseyourDrive_Gallery.php:275 ../templates/tinymce_popup.php:106
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: ../use-your-drive.php:252 ../templates/tinymce_popup.php:107
+msgid "Create zip file"
+msgstr "Zip file genereren"
+
+#: ../use-your-drive.php:253 ../templates/tinymce_popup.php:108
+msgid "Do you really want to delete:"
+msgstr "Weet je zeker dat je dit wilt verwijderen:"
+
+#: ../use-your-drive.php:254
+msgid "Do you really want to delete these files?"
+msgstr ""
+
+#: ../use-your-drive.php:255 ../includes/UseyourDrive_Filebrowser.php:472
+#: ../includes/UseyourDrive_Gallery.php:270 ../templates/tinymce_popup.php:109
+msgid "Rename"
+msgstr "Hernoemen"
+
+#: ../use-your-drive.php:256 ../templates/tinymce_popup.php:110
+msgid "Rename to:"
+msgstr "Hernoemen naar:"
+
+#: ../use-your-drive.php:257
+msgid "Oops! This shouldn't happen... Try again!"
+msgstr "Oeps... Dit had niet mogen gebeuren. Probeer het opnieuw!"
+
+#: ../use-your-drive.php:258 ../includes/UseyourDrive_Filebrowser.php:495
+#: ../includes/UseyourDrive_Filebrowser.php:515
+#: ../includes/UseyourDrive_Gallery.php:293 ../templates/tinymce_popup.php:112
+msgid "Add folder"
+msgstr "Nieuwe map toevoegen"
+
+#: ../use-your-drive.php:259 ../templates/tinymce_popup.php:113
+msgid "New folder"
+msgstr "Nieuwe map"
+
+#: ../use-your-drive.php:260 ../templates/tinymce_popup.php:114
+msgid "No files found or selected"
+msgstr "Geen bestanden gevonden of geselecteerd"
+
+#: ../use-your-drive.php:261 ../templates/tinymce_popup.php:115
+msgid "Creating zip file"
+msgstr "Zip file genereren"
+
+#: ../use-your-drive.php:262 ../templates/tinymce_popup.php:116
+msgid "Share file"
+msgstr "Bestand delen"
+
+#: ../use-your-drive.php:263 ../templates/tinymce_popup.php:117
+msgid "Creating shared link..."
+msgstr "Link genereren"
+
+#: ../use-your-drive.php:264 ../templates/tinymce_popup.php:118
+msgid "Previous"
+msgstr "Vorige"
+
+#: ../use-your-drive.php:265 ../templates/tinymce_popup.php:119
+msgid "Next"
+msgstr "Volgende"
+
+#: ../use-your-drive.php:266 ../templates/tinymce_popup.php:120
+msgid "This content failed to load"
+msgstr "Deze inhoud kan niet worden geladen"
+
+#: ../use-your-drive.php:267 ../templates/tinymce_popup.php:121
+msgid "This image failed to load"
+msgstr "Deze afbeelding kan niet worden geladen"
+
+#: ../use-your-drive.php:268 ../templates/tinymce_popup.php:122
+msgid "Start slideshow"
+msgstr "Start slideshow"
+
+#: ../use-your-drive.php:269 ../templates/tinymce_popup.php:123
+msgid "Stop slideshow"
+msgstr "Stop slideshow"
+
+#: ../use-your-drive.php:270 ../includes/UseyourDrive_LinkUsers.php:70
+msgid "Not yet linked to a folder"
+msgstr ""
+
+#: ../use-your-drive.php:271 ../includes/UseyourDrive.php:528
+#: ../templates/tinymce_popup.php:124
+msgid "Maximum number of files exceeded"
+msgstr "Maximale aantal uploads is bereikt"
+
+#: ../use-your-drive.php:272 ../templates/tinymce_popup.php:125
+msgid "File type not allowed"
+msgstr "Dit bestandtype is niet toegestaan"
+
+#: ../use-your-drive.php:273 ../templates/tinymce_popup.php:126
+msgid "File is too large"
+msgstr "Het bestand is te groot"
+
+#: ../use-your-drive.php:274 ../includes/UseyourDrive.php:526
+#: ../templates/tinymce_popup.php:127
+msgid "File is too small"
+msgstr "Het bestand is te klein"
+
+#: ../wp-updates-plugin.php:76
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr ""
+
+#: ../wp-updates-plugin.php:80
+msgid "An unknown error occurred"
+msgstr "Er is iets fout gegaan"
+
+#: ../includes/UseyourDrive.php:132 ../includes/UseyourDrive.php:142
+msgid "Use-your-Drive isn't ready to run"
+msgstr "Use-your-Drive is niet goed ingesteld"
+
+#: ../includes/UseyourDrive.php:146
+msgid "Couldn't connect to Google API: "
+msgstr "Kan geen verbinding maken met Google API:"
+
+#: ../includes/UseyourDrive.php:211
+msgid "Could not start authorization: "
+msgstr "Kan de authorizatie niet uitvoeren"
+
+#: ../includes/UseyourDrive.php:235 ../includes/UseyourDrive.php:335
+msgid "Error communicating with Google Drive API: "
+msgstr "Er is een fout opgetreden tijdens het gebruik maken van de Google API"
+
+#: ../includes/UseyourDrive.php:483
+msgid "Root folder not found "
+msgstr "Startmap niet gevonden"
+
+#: ../includes/UseyourDrive.php:490 ../includes/UseyourDrive.php:544
+msgid "You are not authorized to upload files to this directory"
+msgstr ""
+"Je bent niet bevoegd om bestanden naar deze Google Drive folder te uploaden."
+
+#: ../includes/UseyourDrive.php:517
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr ""
+"Dit bestand is te groot om te worden verzonden (php upload_max_filesize)"
+
+#: ../includes/UseyourDrive.php:518
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form"
+msgstr "Dit bestand is te groot om te worden verzonden (html max_file_size)"
+
+#: ../includes/UseyourDrive.php:519
+msgid "The uploaded file was only partially uploaded"
+msgstr "Het bestand is slechts gedeeltelijk geüpload"
+
+#: ../includes/UseyourDrive.php:520
+msgid "No file was uploaded"
+msgstr "Er zijn geen bestanden geüpload"
+
+#: ../includes/UseyourDrive.php:521
+msgid "Missing a temporary folder"
+msgstr "Het bestand kan niet worden weggeschreven (missing temp dir)"
+
+#: ../includes/UseyourDrive.php:522
+msgid "Failed to write file to disk"
+msgstr "Het bestand kan niet worden weggeschreven (no writeable temp dir )"
+
+#: ../includes/UseyourDrive.php:523
+msgid "A PHP extension stopped the file upload"
+msgstr "De bestandsoverdacht is gestopt"
+
+#: ../includes/UseyourDrive.php:524
+msgid "The uploaded file exceeds the post_max_size directive in php.ini"
+msgstr "Dit bestand is te groot om te worden verzonden (php post_max_filesize)"
+
+#: ../includes/UseyourDrive.php:525
+msgid "File is too big"
+msgstr "Het bestand is te groot"
+
+#: ../includes/UseyourDrive.php:527
+msgid "Filetype not allowed"
+msgstr "Dit bestandtype is niet toegestaan"
+
+#: ../includes/UseyourDrive.php:529
+msgid "Image exceeds maximum width"
+msgstr "Afbeelding is te breed"
+
+#: ../includes/UseyourDrive.php:530
+msgid "Image requires a minimum width"
+msgstr "Afbeelding is te smal"
+
+#: ../includes/UseyourDrive.php:531
+msgid "Image exceeds maximum height"
+msgstr "Afbeelding is te hoog"
+
+#: ../includes/UseyourDrive.php:532
+msgid "Image requires a minimum height"
+msgstr "Afbeeldingshoogte is te laag"
+
+#: ../includes/UseyourDrive.php:603
+msgid "Not uploaded to Google Drive"
+msgstr "Niet geüpload naar Drive"
+
+#: ../includes/UseyourDrive.php:614
+msgid "Not succesfully uploaded to Google Drive"
+msgstr "Niet succesvol upgeload naar Google Drive"
+
+#: ../includes/UseyourDrive.php:624 ../includes/UseyourDrive.php:626
+msgid "Uploading failed"
+msgstr "Uploaden mislukt"
+
+#: ../includes/UseyourDrive.php:648 ../includes/UseyourDrive.php:663
+#: ../includes/UseyourDrive.php:718 ../includes/UseyourDrive.php:746
+#: ../includes/UseyourDrive.php:788 ../includes/UseyourDrive_Processor.php:225
+msgid "Failed to delete entry"
+msgstr "Het bestand kan niet worden verwijderd"
+
+#: ../includes/UseyourDrive.php:661 ../includes/UseyourDrive.php:786
+#: ../includes/UseyourDrive.php:886
+msgid "Invalid entry"
+msgstr "Ongeldig bestand"
+
+#: ../includes/UseyourDrive.php:675
+msgid "You are not authorized to delete files from this directory"
+msgstr "Je bent niet bevoegd om bestanden in deze map te verwijderen"
+
+#: ../includes/UseyourDrive.php:684
+msgid "You are not authorized to delete this file or folder"
+msgstr "Je bent niet bevoegd om dit te verwijderen"
+
+#: ../includes/UseyourDrive.php:776
+msgid "No new name set"
+msgstr "Geen geldige nieuwe naam"
+
+#: ../includes/UseyourDrive.php:790 ../includes/UseyourDrive.php:809
+#: ../includes/UseyourDrive.php:815 ../includes/UseyourDrive.php:821
+#: ../includes/UseyourDrive.php:827 ../includes/UseyourDrive.php:843
+#: ../includes/UseyourDrive_Processor.php:261
+msgid "Failed to rename entry"
+msgstr "Het bestand kan niet worden hernoemd"
+
+#: ../includes/UseyourDrive.php:796
+msgid "You are not authorized to rename files in this directory"
+msgstr "Je bent niet bevoegd om bestanden in deze map te hernoemen"
+
+#: ../includes/UseyourDrive.php:804
+msgid "You are not authorized to rename this file or folder"
+msgstr "Je bent niet bevoegd om dit te hernoemen"
+
+#: ../includes/UseyourDrive.php:872 ../includes/UseyourDrive.php:910
+#: ../includes/UseyourDrive.php:917 ../includes/UseyourDrive.php:941
+#: ../includes/UseyourDrive_Processor.php:292
+msgid "Failed to add folder"
+msgstr "De map kan niet worden aangemaakt"
+
+#: ../includes/UseyourDrive.php:876
+msgid "No new foldername set"
+msgstr "Geen geldige naam"
+
+#: ../includes/UseyourDrive.php:888 ../includes/UseyourDrive.php:890
+msgid "Failed to add entry"
+msgstr "Het bestand kan niet worden toegevoegd"
+
+#: ../includes/UseyourDrive.php:896
+msgid "You are not authorized to add folders in this directory"
+msgstr "Je bent niet bevoegd om folders in deze map toe te voegen"
+
+#: ../includes/UseyourDrive.php:904
+msgid "You are not authorized to add a folder"
+msgstr "Je bent niet bevoegd om een folder toe tevoegen in deze map"
+
+#: ../includes/UseyourDrive.php:986
+msgid "Failed to add user folder"
+msgstr "De gebruikersmap kan niet worden aangemaakt"
+
+#: ../includes/UseyourDrive.php:1408 ../includes/UseyourDrive.php:1417
+msgid "Requested directory isn't allowed"
+msgstr "Opgevraagde map is niet toegestaan"
+
+#: ../includes/UseyourDrive.php:1424
+msgid "Requested item isn't allowed"
+msgstr "Bestand kan niet worden opgevraagd"
+
+#: ../includes/UseyourDrive.php:1581
+msgid "Couldn't create zip file"
+msgstr "Kan geen Zip file creëren"
+
+#: ../includes/UseyourDrive.php:1777
+msgid "Can't create link"
+msgstr "Kan geen link creëren"
+
+#: ../includes/UseyourDrive_Filebrowser.php:147
+#: ../includes/UseyourDrive_Gallery.php:119
+msgid "Results"
+msgstr "Resultaten"
+
+#: ../includes/UseyourDrive_Filebrowser.php:168
+#: ../includes/UseyourDrive_Gallery.php:140
+msgid "Back"
+msgstr "Terug"
+
+#: ../includes/UseyourDrive_Filebrowser.php:214
+#: ../includes/UseyourDrive_Filebrowser.php:221
+#: ../includes/UseyourDrive_Gallery.php:109
+msgid "No files or folders found"
+msgstr "Geen bestanden of mappen gevonden"
+
+#: ../includes/UseyourDrive_Filebrowser.php:263
+msgid "Select folder"
+msgstr "Selecteer map"
+
+#: ../includes/UseyourDrive_Filebrowser.php:440
+msgid "Download as"
+msgstr "Download als"
+
+#: ../includes/UseyourDrive_Filebrowser.php:448
+msgid "Preview"
+msgstr "Bekijken"
+
+#: ../includes/UseyourDrive_Filebrowser.php:454
+msgid "Preview in new window"
+msgstr "Bekijk in nieuw tabblad"
+
+#: ../includes/UseyourDrive_Filebrowser.php:460
+#: ../includes/UseyourDrive_Gallery.php:258
+msgid "Download file"
+msgstr "Download bestand"
+
+#: ../includes/UseyourDrive_Filebrowser.php:466
+#: ../includes/UseyourDrive_Gallery.php:264
+msgid "Sharing link"
+msgstr "Link delen"
+
+#: ../includes/UseyourDrive_Filebrowser.php:496
+msgid "Add a new folder in this directory"
+msgstr "Voeg een nieuwe map toe in deze map"
+
+#: ../includes/UseyourDrive_Filebrowser.php:734
+msgid "Previous folder"
+msgstr "Vorige map"
+
+#: ../includes/UseyourDrive_Gallery.php:162
+msgid "Load more..."
+msgstr "Meer..."
+
+#: ../includes/UseyourDrive_GravityForms.php:12
+msgid "Drive Upload"
+msgstr ""
+
+#: ../includes/UseyourDrive_GravityForms.php:26
+msgid "Use-your-Drive Upload"
+msgstr "Use-your-Drive upload"
+
+#: ../includes/UseyourDrive_GravityForms.php:89
+msgid "Select Use-your-Drive options"
+msgstr "Selecteer Use-your-Drive opties"
+
+#: ../includes/UseyourDrive_LinkUsers.php:77
+msgid "Link to folder"
+msgstr ""
+
+#: ../includes/UseyourDrive_LinkUsers.php:78
+msgid "Remove link"
+msgstr ""
+
+#: ../includes/UseyourDrive_Processor.php:233
+msgid "Not all entries could be deleted"
+msgstr ""
+
+#: ../includes/UseyourDrive_Processor.php:237
+#: ../includes/UseyourDrive_Processor.php:243
+msgid "Entry was deleted"
+msgstr "Gegevens zijn verwijderd"
+
+#: ../includes/UseyourDrive_Processor.php:275
+msgid "Entry was renamed"
+msgstr "Gegevens zijn hernoemd"
+
+#: ../includes/UseyourDrive_Processor.php:306
+msgid "Folder"
+msgstr "Map"
+
+#: ../includes/UseyourDrive_Processor.php:306
+msgid "was added"
+msgstr "is toegevoegd"
+
+#: ../includes/UseyourDrive_Processor.php:569
+msgid ""
+"To view the Google Drive folders, you need to have JavaScript enabled in "
+"your browser"
+msgstr "Om de Google Drive te bekijken moet Javascript zijn ingeschakeld"
+
+#: ../includes/UseyourDrive_Processor.php:570
+msgid "To do so, please follow these instructions"
+msgstr "Volg deze instructies om Javascript in te schakelen"
+
+#: ../includes/UseyourDrive_Processor.php:579
+msgid "Selected folder"
+msgstr "Geselecteerde map"
+
+#: ../includes/UseyourDrive_Processor.php:643
+msgid "Please update your mediaplayer shortcode"
+msgstr ""
+
+#: ../includes/UseyourDrive_Processor.php:795
+#: ../templates/tinymce_popup.php:40
+msgid "Guest"
+msgstr "Gast"
+
+#: ../includes/UseyourDrive_Processor.php:829
+msgid "A guest"
+msgstr "Een gast"
+
+#: ../includes/UseyourDrive_Processor.php:842
+msgid "File downloaded"
+msgstr "Bestand gedownload"
+
+#: ../includes/UseyourDrive_Processor.php:851
+msgid "New file(s) on your Google Drive"
+msgstr "Nieuwe bestanden op je Google Drive"
+
+#: ../includes/UseyourDrive_Processor.php:866
+msgid "File deleted on your Google Drive"
+msgstr ""
+
+#: ../includes/UseyourDrive_Processor.php:878
+msgid "File(s) deleted on your Google Drive"
+msgstr "Bestanden verwijderd op je Google Drive"
+
+#: ../skins/clean-jPlayer-skin/player.php:15
+#: ../skins/clean-jPlayer-skin.light/player.php:15
+#: ../skins/default/player.php:9
+msgid "Wait..."
+msgstr "Even geduld..."
+
+#: ../skins/clean-jPlayer-skin/player.php:44
+#: ../skins/clean-jPlayer-skin.light/player.php:44
+#: ../skins/default/player.php:56 ../skins/ytube-jPlayer-skin/player.php:51
+#: ../_customizations/custom.dark-with-numbers/player.php:59
+msgid "Update Required"
+msgstr "Update nodif"
+
+#: ../skins/clean-jPlayer-skin/player.php:45
+#: ../skins/clean-jPlayer-skin.light/player.php:45
+#: ../skins/default/player.php:57 ../skins/ytube-jPlayer-skin/player.php:52
+#: ../_customizations/custom.dark-with-numbers/player.php:60
+msgid ""
+"To play the media you will need to either update your browser to a recent "
+"version or update your"
+msgstr "Om media af te spelen moet je je browser updaten of update"
+
+#: ../skins/default/player.php:10
+msgid "Busy loading playlist"
+msgstr ""
+
+#: ../templates/frontend.php:9 ../templates/gallery.php:9
+msgid "Back to our first folder"
+msgstr "Terug naar de eerste map"
+
+#: ../templates/frontend.php:13 ../templates/gallery.php:13
+msgid "Refresh"
+msgstr "Vernieuwen"
+
+#: ../templates/frontend.php:17 ../templates/gallery.php:23
+msgid "Options"
+msgstr "Opties"
+
+#: ../templates/frontend.php:22 ../templates/frontend.php:23
+msgid "View as grid"
+msgstr "Iconen weergeven"
+
+#: ../templates/frontend.php:26 ../templates/frontend.php:27
+msgid "View as list"
+msgstr "Bestandenlijst"
+
+#: ../templates/frontend.php:33 ../templates/gallery.php:31
+#: ../templates/uploadform.php:11
+msgid "Upload files"
+msgstr "Bestanden uploaden"
+
+#: ../templates/frontend.php:39 ../templates/gallery.php:37
+msgid "Download all files"
+msgstr "Alle bestanden downloaden"
+
+#: ../templates/frontend.php:40 ../templates/gallery.php:38
+msgid "Download selected files"
+msgstr "Download geselecteerde bestanden"
+
+#: ../templates/frontend.php:45 ../templates/gallery.php:43
+msgid "Delete selected files"
+msgstr "Verwijder geselecteerde bestanden"
+
+#: ../templates/frontend.php:49 ../templates/gallery.php:47
+msgid "No options..."
+msgstr "Geen opties..."
+
+#: ../templates/frontend.php:63 ../templates/gallery.php:61
+msgid "Search filenames"
+msgstr "Zoek op bestandsnaam"
+
+#: ../templates/frontend.php:63 ../templates/gallery.php:61
+msgid "and within contents"
+msgstr "en inhoud"
+
+#: ../templates/frontend.php:67 ../templates/gallery.php:65
+#: ../_customizations/custom.dark-with-numbers/player.php:48
+msgid "Loading..."
+msgstr "Laden..."
+
+#: ../templates/frontend.php:74 ../templates/tinymce_popup.php:612
+msgid "Name"
+msgstr "Naam"
+
+#: ../templates/frontend.php:84 ../templates/tinymce_popup.php:615
+msgid "Size"
+msgstr "Grootte"
+
+#: ../templates/frontend.php:90 ../templates/tinymce_popup.php:618
+msgid "Date modified"
+msgstr "Laatst gewijzigd"
+
+#: ../templates/noaccess.php:4
+msgid "Your account doesn't have the right permissions to use this"
+msgstr "Je hebt onvoldoende rechten om dit te bekijken."
+
+#: ../templates/noaccess.php:4
+msgid "Contact the webmaster if you would like to have access"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:111
+msgid "Can't receive filelist"
+msgstr "Kan geen bestanden weergeven"
+
+#: ../templates/tinymce_popup.php:137
+msgid "Create Shortcode"
+msgstr "Shortcode genereren"
+
+#: ../templates/tinymce_popup.php:140
+msgid "Insert direct links to files or folders"
+msgstr "Links naar bestanden of folders toevoegen"
+
+#: ../templates/tinymce_popup.php:143
+msgid "Embed files"
+msgstr "Bestanden insluiten"
+
+#: ../templates/tinymce_popup.php:161
+msgid "Loading Shortcode Generator"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:171
+msgid "Please note that the embedded files need to be public (with link)"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:213
+msgid "Use plugin as"
+msgstr "Gebruik de plugin als"
+
+#: ../templates/tinymce_popup.php:222
+msgid "Photo gallery"
+msgstr "Afbeeldingengalerij"
+
+#: ../templates/tinymce_popup.php:225
+msgid "Audio player"
+msgstr "Audio player"
+
+#: ../templates/tinymce_popup.php:228
+msgid "Video player"
+msgstr "Video player"
+
+#: ../templates/tinymce_popup.php:234
+msgid "Select root folder"
+msgstr "Selecteer startmap"
+
+#: ../templates/tinymce_popup.php:264
+msgid "You are using User-Linked user folders. You can't select a root folder."
+msgstr ""
+
+#: ../templates/tinymce_popup.php:277
+msgid "User folders can be useful in some situations, for example"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:279
+msgid ""
+"Each user should only be able to access their own files in their own folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:280
+msgid "Users and guests on your site want to upload files to their own folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:281
+msgid ""
+"Your clients should get their own personal folder if they register, already "
+"filled with some files from template folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:283
+msgid ""
+"You can use the plugin in two ways to create folders that are linked to the "
+"users"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:284
+msgid ""
+"You can let the plugin automatically create user folders in the, by you "
+"selected, root folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:285
+msgid ""
+"Or you can link each user to their own folder via the plugin settings menu"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:286
+msgid "here"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:292
+msgid "Use user specific folders"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:293
+msgid ""
+"Let users only browser through the their own folder (automatically or were "
+"you have linked them to)"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:303
+msgid "Method"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:304
+msgid "Select the method that should be used"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:305
+msgid ""
+"Use the user-folder link that you have created via the plugin settings menu"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:306
+msgid "Or let the plugin automatically create the user folders"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:312
+msgid "Use my own created User-Folder link"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:315
+msgid "Automatically create the user folders"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:318
+msgid "By default guests (not logged in users) will also get their own folder"
+msgstr "Standaard krijgen niet ingelogde gebruikers krijgen ook een eigen map"
+
+#: ../templates/tinymce_popup.php:319
+msgid ""
+"Remove 'Guest' from View Roles on the 'User Permissions' tab to prevent "
+"guests to use the plugin"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:326
+msgid "Use a template folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:327
+msgid ""
+"If you would like to create the user folders based on another folder. The "
+"content of the template folder will be copied to the user folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:336
+msgid "Template folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:337
+msgid "Select the template folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:368
+msgid "Who can access all user folders"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:369
+msgid ""
+"Select which WordPress Roles can browse through all folders and access all "
+"files"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:383
+msgid "Media Files"
+msgstr "Media bestanden"
+
+#: ../templates/tinymce_popup.php:387
+msgid ""
+"The mediaplayer will decided, based on the provided formats, if the user "
+"will have a HTML5 player or a Flash Player"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:387
+msgid ""
+"You may provide the same file with different extensions to increase cross-"
+"browser support"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:387
+msgid ""
+"Do always supply a mp3 (audio) or m4v/mp4 (video)file to support all browsers"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:393 ../templates/tinymce_popup.php:408
+msgid "Provided formats"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:394 ../templates/tinymce_popup.php:409
+msgid "Select which sort of media files you will provide"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:423
+msgid "Automatically start playing"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:424
+msgid "Autoplay - Automatically start playing"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:434
+msgid "Hide playlist on start"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:435
+msgid "Would you like to hide the playlist"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:445
+msgid "Allow download"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:446
+msgid "Show direct download link to media file in the playlist"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:460
+msgid "Container width"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:461
+msgid "Set max width for the Use-your-Drive container"
+msgstr "Maximale breedte van de Use-your-Drive container"
+
+#: ../templates/tinymce_popup.php:461
+msgid "You can use pixels or percentages, eg '360px', '480px', '70%'"
+msgstr "Gebuik pixels of percentages: '360px', '480px', '70%'"
+
+#: ../templates/tinymce_popup.php:461 ../templates/tinymce_popup.php:594
+msgid "Leave empty for default value"
+msgstr "Laat leeg om de standaardwaarde te gebruiken"
+
+#: ../templates/tinymce_popup.php:469
+msgid "Display files and folders"
+msgstr "Mappen &amp; bestanden weergeven"
+
+#: ../templates/tinymce_popup.php:470
+msgid ""
+"How do you want to display the files and folders? With or without thumbnails"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:475
+msgid "with thumbnails in a grid"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:478
+msgid "In a file list"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:485
+msgid "Display breadcrumb"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:486
+msgid "Do you want to display a breadcrumb in the file browser?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:496
+msgid "Root breadcrumb title"
+msgstr "Titel start breadcrumb folder"
+
+#: ../templates/tinymce_popup.php:497
+msgid ""
+"What should be the breadcrumb title of the root folder? Leave empty for "
+"default value."
+msgstr ""
+
+#: ../templates/tinymce_popup.php:506
+msgid "Display columnnames"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:507
+msgid "Do you want to display the columnnames of the date and filesize?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:517
+msgid "Display refresh button"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:518
+msgid ""
+"Do you want to display a refresh button so users can update the file list "
+"and refresh the cache?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:529
+msgid "Display files in folder"
+msgstr "Bestanden weergeven in map"
+
+#: ../templates/tinymce_popup.php:530
+msgid ""
+"Do you want to display files in the folder so the user can preview and "
+"download them?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:540
+msgid "Display child folders in folder"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:541
+msgid "Do you want to display the child folders in the selected root folder?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:551
+msgid "Display file size"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:552
+msgid "Do you want to display a column with the file size?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:562
+msgid "Display date last modified"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:563
+msgid "Do you want to display a column with the last modified date?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:573
+msgid "Display file extension"
+msgstr "Bestandsextensies weergeven"
+
+#: ../templates/tinymce_popup.php:574
+msgid "Do you want to display the file extensions (.pdf, .txt)?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:584
+msgid "Number of images"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:585
+msgid "Number of images to be loaded each time"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:585
+msgid "Set to 0 to load all images at once"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:593
+msgid "Gallery row height"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:594
+msgid "The ideal height you want your grid rows to be"
+msgstr "De ideale rij hoogte van het grid"
+
+#: ../templates/tinymce_popup.php:594
+msgid ""
+"It won't set it exactly to this as plugin adjusts the row height to get the "
+"correct width"
+msgstr ""
+"De plugin zal de rijhoogte wat aanpassen als dat nodig is om goede breedte "
+"te krijgen"
+
+#: ../templates/tinymce_popup.php:606
+msgid "Sort by"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:607
+msgid "Sort files and folders by their properties"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:621
+msgid "Shuffle/Random"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:628
+msgid "Sort order"
+msgstr "Volgorde:"
+
+#: ../templates/tinymce_popup.php:629
+msgid "Sort order: ascending or descending"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:634
+msgid "Ascending"
+msgstr "Oplopend"
+
+#: ../templates/tinymce_popup.php:637
+msgid "Descending"
+msgstr "Aflopend"
+
+#: ../templates/tinymce_popup.php:647
+msgid "Enable search"
+msgstr "Zoekfunctie gebruiken"
+
+#: ../templates/tinymce_popup.php:648
+msgid "Should users be able to use the search function"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:658
+msgid "Search for"
+msgstr "Zoeken in"
+
+#: ../templates/tinymce_popup.php:659
+msgid "Should users be able to search in the content?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:664
+msgid "Search only on filename"
+msgstr "Zoek alleen op bestandsnaam"
+
+#: ../templates/tinymce_popup.php:667
+msgid "Search on filename and contents"
+msgstr "Zoek op bestandsnaam en inhoud"
+
+#: ../templates/tinymce_popup.php:674
+msgid "Enable link sharing"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:675
+msgid "Should users be able to generate permanent direct links to the files?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:685
+msgid "Force a 'Save as'"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:686
+msgid "Force a 'Save as' Dialog on downloading file"
+msgstr "'Opslaan als' forceren bij downloaden"
+
+#: ../templates/tinymce_popup.php:696
+msgid "Enable ZIP-download"
+msgstr "ZIP downloads toestaan"
+
+#: ../templates/tinymce_popup.php:697
+msgid "Should users be able to use download multiple files as zip?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:710
+msgid "Limit by extension"
+msgstr "Limiteer bestanden met extensie"
+
+#: ../templates/tinymce_popup.php:711 ../templates/tinymce_popup.php:764
+msgid "Add extensions separated with | e.g. (jpg|png|gif)"
+msgstr "Voeg extensies gescheiden met | toe (jpg|png|gif)."
+
+#: ../templates/tinymce_popup.php:711
+msgid "Leave empty to show all files"
+msgstr "Laat leeg om alle bestanden weer te geven"
+
+#: ../templates/tinymce_popup.php:719
+msgid "Limit by name"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:720 ../templates/tinymce_popup.php:729
+msgid "Add files or folders separated with | e.g. (file1.jpg|long folder name)"
+msgstr ""
+"Voeg bestanden of mappen gescheiden met | toe (file1.jpg|Lange folder naam)."
+
+#: ../templates/tinymce_popup.php:728
+msgid "Exclude by name"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:741
+msgid "Include upload form"
+msgstr "Uploaden toestaan"
+
+#: ../templates/tinymce_popup.php:742
+msgid ""
+"Should users be able to upload files? You can manage the permissions under "
+"'User Permissions'"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:752
+msgid "Simple upload"
+msgstr "Eenvoudige upload"
+
+#: ../templates/tinymce_popup.php:753
+msgid "Start uploading automatically (no start/cancel buttons)"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:763
+msgid "Limit upload by extension"
+msgstr "Limiteer upload bestanden met extensie"
+
+#: ../templates/tinymce_popup.php:764
+msgid "Leave empty for no restricion"
+msgstr "Laat leeg om alle bestanden weer te geven"
+
+#: ../templates/tinymce_popup.php:773
+msgid "Max. upload size"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:774
+msgid "Max filesize for uploading in bytes"
+msgstr "Maximale bestandgrootte voor uploaden"
+
+#: ../templates/tinymce_popup.php:774
+msgid "Leave empty for server maximum "
+msgstr "Laat leeg om de maximale waarde te gebruiken"
+
+#: ../templates/tinymce_popup.php:774
+msgid "How to calculate?"
+msgstr "Hoe reken ik in bytes?"
+
+#: ../templates/tinymce_popup.php:786
+msgid "Download notification"
+msgstr "Download meldingen"
+
+#: ../templates/tinymce_popup.php:787
+msgid ""
+"Would you like to receive a notification email when someone downloads a file?"
+msgstr "Wil je een melding ontvangen als iemand een bestand download?"
+
+#: ../templates/tinymce_popup.php:797
+msgid "Upload notification"
+msgstr "Upload meldingen"
+
+#: ../templates/tinymce_popup.php:798
+msgid ""
+"Would you like to receive a notification email when someone uploads a file?"
+msgstr "Wil je een melding ontvangen als iemand een bestand upload?"
+
+#: ../templates/tinymce_popup.php:808
+msgid "Delete notification"
+msgstr "Verwijder meldingen"
+
+#: ../templates/tinymce_popup.php:809
+msgid ""
+"Would you like to receive a notification email when someone deletes a file?"
+msgstr "Wil je een melding ontvangen als iemand een bestand verwijderd?"
+
+#: ../templates/tinymce_popup.php:819
+msgid "Send notification to"
+msgstr "Stuur melding naar"
+
+#: ../templates/tinymce_popup.php:820
+msgid "On which email address would you like to receive the notification?"
+msgstr "Op welk emailadres wil je de meldingen ontvangen"
+
+#: ../templates/tinymce_popup.php:820
+msgid "Default value is:"
+msgstr "Standaard waarde:"
+
+#: ../templates/tinymce_popup.php:832
+msgid "File Manipulation"
+msgstr "Wijzigen"
+
+#: ../templates/tinymce_popup.php:836
+msgid ""
+"Use-your-Drive uses Wordpress Roles to determine how an user can use the "
+"plugin"
+msgstr ""
+"Use-your-Drive gebruikt Wordpress Rollen om te bepalen hoe een gebruiker de "
+"plugin kan gebruiekn"
+
+#: ../templates/tinymce_popup.php:837
+msgid "You set these under 'User Permissions'"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:843
+msgid "Rename files and folders"
+msgstr "Mappen &amp; bestanden hernoemen"
+
+#: ../templates/tinymce_popup.php:844
+msgid "Should it be possible to rename files and folders?"
+msgstr "Moeten bestanden en mappen kunnen worden hernoemd?"
+
+#: ../templates/tinymce_popup.php:854
+msgid "Delete files and folders"
+msgstr "Mappen &amp; bestanden verwijderen"
+
+#: ../templates/tinymce_popup.php:855
+msgid "Should it be possible to delete files and folders?"
+msgstr "Moeten bestanden en mappen kunnen worden verwijderd"
+
+#: ../templates/tinymce_popup.php:865
+msgid "Create new folders"
+msgstr "Nieuwe mappen aanmaken"
+
+#: ../templates/tinymce_popup.php:866
+msgid "Should it be possible to create new folders?"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:879
+msgid "Who can view"
+msgstr "Wie mag het gebruiken"
+
+#: ../templates/tinymce_popup.php:880
+msgid "Select which WordPress Roles can view and use the plugin"
+msgstr "Selecteer welke WordPress Rolen de plugin mogen gebruiken"
+
+#: ../templates/tinymce_popup.php:890
+msgid "Who can download"
+msgstr ""
+
+#: ../templates/tinymce_popup.php:891
+msgid "Select which WordPress Roles can download files"
+msgstr "Selecteer welke WordPress Rolen bestanden mogen downloaden"
+
+#: ../templates/tinymce_popup.php:902
+msgid "Who can upload"
+msgstr "Wie mag uploaden"
+
+#: ../templates/tinymce_popup.php:903
+msgid "Select which WordPress Roles can upload files"
+msgstr "Selecteer welke WordPress Rolen bestanden mogen uploaded"
+
+#: ../templates/tinymce_popup.php:913
+msgid "Who can rename"
+msgstr "Wie mag hernoemen"
+
+#: ../templates/tinymce_popup.php:914
+msgid "Select which WordPress Roles can rename files and folders"
+msgstr "Selecteer welke WordPress Rolen bestanden en mappen mogen hernoemen"
+
+#: ../templates/tinymce_popup.php:925
+msgid "Who can delete"
+msgstr "Wie mag bestanden verwijderen"
+
+#: ../templates/tinymce_popup.php:926
+msgid "Select which WordPress Roles can delete files and folders"
+msgstr "Selecteer welke WordPress Rolen bestanden en mappen mogen verwijderen"
+
+#: ../templates/tinymce_popup.php:938
+msgid "Who can create new folders"
+msgstr "Wie kan nieuwe mappen aanmaken"
+
+#: ../templates/tinymce_popup.php:939
+msgid "Select which WordPress Roles can create new folders"
+msgstr "Selecteer welke WordPress Rolen nieuwe mappen mogen aanmaken"
+
+#: ../templates/tinymce_popup.php:959
+msgid "Insert"
+msgstr "Toevoegen"
+
+#: ../templates/tinymce_popup.php:961
+msgid "Insert links"
+msgstr "Links toevoegen"
+
+#: ../templates/tinymce_popup.php:963
+msgid "Embed"
+msgstr ""
+
+#: ../templates/uploadform.php:9
+msgid "Add files"
+msgstr "Voeg bestanden toe"
+
+#: ../templates/uploadform.php:31
+msgid "Start upload"
+msgstr "Start upload"
+
+#: ../templates/uploadform.php:34
+msgid "Cancel upload"
+msgstr "Upload afbreken"
+
+#: ../templates/uploadform.php:37
+msgid "Max. "
+msgstr "Max."
+
+#~ msgid "Use-your-Drive should behave as"
+#~ msgstr "Gebruik Use-your-Drive als"
+
+#~ msgid "Filelist"
+#~ msgstr "Bestandenlijst"
+
+#~ msgid "Photogallery"
+#~ msgstr "Afbeeldingengalerij"
+
+#~ msgid "Layout"
+#~ msgstr "Opmaak"
+
+#~ msgid "Show files as:"
+#~ msgstr "Bestanden weergeven als:"
+
+#~ msgid "Files with thumbnails in a grid"
+#~ msgstr "Bestanden met thumbnails"
+
+#~ msgid "A list of files"
+#~ msgstr "Lijst van bestanden"
+
+#~ msgid "Show folders breadcrumb"
+#~ msgstr "Breadcrumb weergeven"
+
+#~ msgid "Show searchbox"
+#~ msgstr "Zoekbox weergeven"
+
+#~ msgid "Sort files and folders by:"
+#~ msgstr "Sorteer bestanden en mappen bij:"
+
+#~ msgid "Show columnnames"
+#~ msgstr "Kolomnamen weergeven"
+
+#~ msgid "Show download button (zip-archive)"
+#~ msgstr "Download knop weergeven (zip-file)"
+
+#~ msgid "Show share button"
+#~ msgstr "Bestanden delen weergeven"
+
+#~ msgid "Show refresh button"
+#~ msgstr "Vernieuw knop weergeven"
+
+#~ msgid "Media files"
+#~ msgstr "Media bestanden"
+
+#~ msgid "Sorting"
+#~ msgstr "Sorteren"
+
+#~ msgid "Sort order:"
+#~ msgstr "Volgorde:"
+
+#~ msgid "Filelist options"
+#~ msgstr "Bestandenlijst opties"
+
+#~ msgid "Show files in folder"
+#~ msgstr "Bestanden weergeven in map"
+
+#~ msgid "Show filesize"
+#~ msgstr "Bestandsgrootte weergeven"
+
+#~ msgid "Show date last modified"
+#~ msgstr "Laatste wijziging bestand weergeven"
+
+#~ msgid "Show file extensions"
+#~ msgstr "Bestandsextensies weergeven"
+
+#~ msgid "Gallery options"
+#~ msgstr "Galerij opties"
+
+#~ msgid "Row height"
+#~ msgstr "Rij hoogte"
+
+#~ msgid "Don't stretch last row to fit grid width"
+#~ msgstr "Laatste afbeelding niet uitrekken om rij te vullen"
+
+#~ msgid "Shuffle images"
+#~ msgstr "Shuffle  afbeeldingen"
+
+#~ msgid "Exclusions"
+#~ msgstr "Uitsluiten"
+
+#~ msgid "Limit files by extension"
+#~ msgstr "Limiteer bestanden met extensie"
+
+#~ msgid "Include files or folders (only show these items)"
+#~ msgstr "Alleen deze bestanden of folders weergeven"
+
+#~ msgid "Exclude files or folders"
+#~ msgstr "Mappen of bestanden uitsluiten"
+
+#~ msgid "Upload form options"
+#~ msgstr "Upload opties"
+
+#~ msgid "Email notifications"
+#~ msgstr "Email meldingen"
+
+#~ msgid "Edit files &amp; folders"
+#~ msgstr "Wijzig bestanden &amp; mappen"
+
+#~ msgid "Files &amp; folders can be renamed"
+#~ msgstr "Bestanden &amp; mappen kunnen worden hernoemd"
+
+#~ msgid "Files &amp; folders can be deleted"
+#~ msgstr "Bestanden &amp; mappen kunnen worden verwijderd"
+
+#~ msgid "Can add new folders"
+#~ msgstr "Nieuwe mappen toevoegen"
+
+#~ msgid "User management"
+#~ msgstr "Gebruikrechten"
+
+#~ msgid "View Use-your-Drive"
+#~ msgstr "Use-your-Drive gebruiken"
+
+#~ msgid "Download files"
+#~ msgstr "Bestanden downloaden"
+
+#~ msgid "Rename files & folders"
+#~ msgstr "Mappen &amp; bestanden hernoemen"
+
+#~ msgid "Delete files & folders"
+#~ msgstr "Mappen &amp; bestanden verwijderen"
+
+#~ msgid "Add folders"
+#~ msgstr "Nieuwe mappen toevoegen"
+
+#~ msgid "Users can only use their own folder within the selected rootfolder"
+#~ msgstr ""
+#~ "Gebruikers kunnen alleen een eigen folder binnen de geselecteerde "
+#~ "startmap gebruiken"
+
+#~ msgid "Note"
+#~ msgstr "Opmerking"
+
+#~ msgid "Remove 'Guest' from View Roles to disable guests to use the plugin"
+#~ msgstr ""
+#~ "Vink de 'Gast' rol uit als gasten geen gebruik mogen maken van Use-your-"
+#~ "Drive"
+
+#~ msgid "See and edit all user folders"
+#~ msgstr "Alle gebruikers mappen beheren"
+
+#~ msgid "Select template folder"
+#~ msgstr "Selecteer template map"
+
+#~ msgid "With selected files"
+#~ msgstr "Geselect"
+
+#~ msgid "Switch between grid and list"
+#~ msgstr "Verander de weergave"
+
+#~ msgid "Download multiple files at once"
+#~ msgstr "Alle bestanden downloaden"
+
+#~ msgid ""
+#~ "After you created a Google DriveApp, please enter your settings below."
+#~ msgstr ""
+#~ "Vul de App key & secret in als je een eigen Google Drive App hebt "
+#~ "aangemaakt."
+
+#~ msgid "You have the cURL PHP extension installed"
+#~ msgstr "De cURL PHP extensie is aanwezig"
+
+#~ msgid "Something went wrong... See settings page"
+#~ msgstr ""
+#~ "Oeps... er is wat fout gegaan. Controleer de plugin instellingen pagina."
+
+#~ msgid "Could not write to tmp dir. Make sure it exists and is writable"
+#~ msgstr ""
+#~ "Kan bestand niet wegschrijven naar tmp folder. Zorg er voor dat deze "
+#~ "schrijfbaar is"
+
+#~ msgid "Share"
+#~ msgstr "Delen"
+
+#~ msgid "No valid Google Drive token found... Please Authorize!"
+#~ msgstr ""
+#~ "Er is geen geldige Google Drive token gevonden. Doe de App goedkeuring "
+#~ "opnieuw!"
+
+#~ msgid "Crop images for a squared grid"
+#~ msgstr "Afbeeldingen uitsnijden voor een vierkant grid"
+
+#~ msgid "Shortlinks"
+#~ msgstr "Shortlinks"
+
+#~ msgid "Image gallery thumbnails"
+#~ msgstr "Afbeeldingen thumbnails"
+
+#~ msgid ""
+#~ "This field is set when you authorize your Google DriveApp. Only change "
+#~ "this if you know what your doing."
+#~ msgstr ""
+#~ "Dit veld wordt automatisch ingevuld als je je Google DriveApp toegang "
+#~ "hebt verleend. Verander dit alleen als je weet wat je aan doet."
+
+#~ msgid "Sign up by Bitly"
+#~ msgstr "Meld je aan bij Bitly"
+
+#~ msgid "and"
+#~ msgstr "en"
+
+#~ msgid "get your apiKey"
+#~ msgstr "gebruik je apiKey"
+
+#~ msgid "Authorize Google DriveAPI"
+#~ msgstr "Volmachtig de App"
+
+#~ msgid "SSL is required for authentication with the Google DriveAPI."
+#~ msgstr "SSL is nodig voor het creeren van een geldige Token."
+
+#~ msgid ""
+#~ "See our documentation how to obtain a SSL certificate or how to use Out-"
+#~ "of-the-Box without one."
+#~ msgstr ""
+#~ "Bekijk onze documentatie hoe je een SSL certificaat kunt bemachtigen of "
+#~ "hoe je Use-your-Drive kunt gebruiken zonder een certificaat."
+
+#~ msgid "Using SSL"
+#~ msgstr "Gebruikt SSL"
+
+#~ msgid "You are using a secure connection"
+#~ msgstr "Je gebruikt een beveiligde verbinding!"
+
+#~ msgid "You are using running a server on 'localhost'."
+#~ msgstr "Je draait WordPress momenteel op localhost."
+
+#~ msgid ""
+#~ "If your using this Plugin somewhere else, you need a SSL certificate to "
+#~ "ensure a secure connection."
+#~ msgstr ""
+#~ "Als je de Plugin ergens anders gaat gebruiken, heb je een SSL certificaat "
+#~ "nodig voor een veilige verbinding."
+
+#~ msgid ""
+#~ "The Google DriveSDK uses 64-bit integers, but it looks like we're running "
+#~ "on a version of PHP that doesn't support 64-bit integers"
+#~ msgstr ""
+#~ "The Google DriveSDK uses 64-bit integers, but it looks like we're running "
+#~ "on a version of PHP that doesn't support 64-bit integers"
+
+#~ msgid ""
+#~ "Because you can still use the Google DriveSDK with 32-bit integers we "
+#~ "disabled the 64-bit check"
+#~ msgstr ""
+#~ "Because you can still use the Google DriveSDK with 32-bit integers we "
+#~ "disabled the 64-bit check"
+
+#~ msgid "64-bit integers"
+#~ msgstr "64-bit integers"
+
+#~ msgid ""
+#~ "It looks like we're running on a version of PHP that does support 64-bit "
+#~ "integers"
+#~ msgstr ""
+#~ "It looks like we're running on a version of PHP that does support 64-bit "
+#~ "integers"
+
+#~ msgid "Can resize the following images"
+#~ msgstr "De volgende afbeeldingen kunnen op de server worden bewerkt"
+
+#~ msgid ""
+#~ "If your server doesn't support resizing an image type, we try to use "
+#~ "Google Driveown thumbnails"
+#~ msgstr ""
+#~ "Als de server een bepaalde afbeelding niet kan bewerken dan zal Drive's "
+#~ "eigen thumbnail worden gebruikt"
+
+#~ msgid "Couldn't load Google DriveSDK libary"
+#~ msgstr "Kan de Google DriveSDK niet laden"
+
+#~ msgid ""
+#~ "No Token found! Please enter your App key and secret and re-authorize"
+#~ msgstr ""
+#~ "Geen token gevonden! Vul een geldige Google DriveApp key en secret in en "
+#~ "verleen de App opnieuw toestemming"
+
+#~ msgid ""
+#~ "Google DriveApp settings are not complete. Please insert Key and Secret "
+#~ "values below."
+#~ msgstr "Vul een geldige Google DriveApp key en secret in."
+
+#~ msgid "Your Google DriveApp key or token seems to be invalid: "
+#~ msgstr "Je Google DriveApp key of secret lijkt ongeldig te zijn"
+
+#~ msgid "Error in getClient: "
+#~ msgstr "Error in getClient: "
+
+#~ msgid "/dropbox-auth-finish: bad request: "
+#~ msgstr "/dropbox-auth-finish: bad request: "
+
+#~ msgid "/dropbox-auth-finish: CSRF mismatch: "
+#~ msgstr "/dropbox-auth-finish: CSRF mismatch: "
+
+#~ msgid "/dropbox-auth-finish: not approved: "
+#~ msgstr "/dropbox-auth-finish: not approved: "
+
+#~ msgid "/dropbox-auth-finish: error redirect from Drive: "
+#~ msgstr "/dropbox-auth-finish: error redirect from Drive: "
+
+#~ msgid "Invalid <dropbox-path>"
+#~ msgstr "Ongeldige Google Drivemap"
+
+#~ msgid "already exists"
+#~ msgstr "bestaat al"
+
+#~ msgid "Guests"
+#~ msgstr "Gasten"
+
+#~ msgid "Show parents of root folder in breadcrumb"
+#~ msgstr "Mappen onder startmap weergeven"
+
+#~ msgid "Overwrite existing files"
+#~ msgstr "Overschrijf bestaande bestanden"
+
+#~ msgid "System settings"
+#~ msgstr "Systeeminstellingen"
+
+#~ msgid "Renaming"
+#~ msgstr "Hernoemen"
+
+#~ msgid "Deleting"
+#~ msgstr "Verwijderen"
+
+#~ msgid "Adding folders"
+#~ msgstr "Mappen toevoegen"
+
+#~ msgid "Minimum Role to view Use-your-Drive"
+#~ msgstr "Minimale Rol om Use-your-Drive te kunnen gebruiken"
+
+#~ msgid "Everyone"
+#~ msgstr "Iedereen"
+
+#~ msgid "Minimum Role for upload files"
+#~ msgstr "Minimale Rol om bestanden te kunnen uploaden"
+
+#~ msgid "Minimum Role for renaming"
+#~ msgstr "Minimale Rol om te hernoemen"
+
+#~ msgid "Minimum Role for deleting"
+#~ msgstr "Minimale Rol om te verwijderen"
+
+#~ msgid "Minimum Role for adding folders"
+#~ msgstr "Minimale Rol om mappen te kunnen aanmaken"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrator"
+
+#~ msgid "Load how many images each time?"
+#~ msgstr "Hoeveel afbeeldingen per keer laden?"
+
+#~ msgid "Sessions"
+#~ msgstr "Sessies"
+
+#~ msgid ""
+#~ "Use-your-Drive cannot save information if sessions are disabled. You "
+#~ "cannot use Use-your-Drive"
+#~ msgstr ""
+#~ "Use-your-Drive kan geen informatie opslaan als Sessies zijn "
+#~ "uitgeschakeld. Zorg er voor dat het mogelijk is om Sessies te gebruiken. "
+#~ "Momenteel kan Use-your-Drive niet worden gebruikt"
+
+#~ msgid ""
+#~ "The Google DriveSDK requires the cURL PHP extension, but it looks like "
+#~ "you don't have it (couldn't find function \"curl_init\")"
+#~ msgstr ""
+#~ "The Google DriveSDK requires the cURL PHP extension, but it looks like "
+#~ "you don't have it (couldn't find function \"curl_init\")"
+
+#~ msgid "Show columnnames so you can sort your files and folders"
+#~ msgstr "Kolomnamen weergeven zodat je de bestanden en mappen kan sorteren"
+
+#~ msgid "Last edited on "
+#~ msgstr "Laatst gewijzigd op"
+
+#~ msgid "Gallery"
+#~ msgstr "Galerij"
+
+#~ msgid "Media player (audio &amp; video)"
+#~ msgstr "Media player (audio &amp; video)"
+
+#~ msgid "Show name of root directory"
+#~ msgstr "Naam hoofdmap weergeven"
+
+#~ msgid "Check documentation for more details"
+#~ msgstr "Bekijk de documentatie voor meer details"
+
+#~ msgid "play"
+#~ msgstr "Afspelen"
+
+#~ msgid "pause"
+#~ msgstr "Pauze"
+
+#~ msgid "next"
+#~ msgstr "Volgende"
+
+#~ msgid "stop"
+#~ msgstr "Stop"
+
+#~ msgid "mute"
+#~ msgstr "Dempen"
+
+#~ msgid "unmute"
+#~ msgstr "Geluid"
+
+#~ msgid "max volume"
+#~ msgstr "Max volume"
+
+#~ msgid "full screen"
+#~ msgstr "Volledig scherm"
+
+#~ msgid "restore screen"
+#~ msgstr "Herstel scherm"
+
+#~ msgid "shuffle"
+#~ msgstr "Shuffle"
+
+#~ msgid "shuffle off"
+#~ msgstr "Geen shuffle"
+
+#~ msgid "repeat"
+#~ msgstr "Herhalen"
+
+#~ msgid "repeat off"
+#~ msgstr "Niet herhalen"
+
+#~ msgid "TMP directory is now writable"
+#~ msgstr "TMP folder is nu beschrijfbaar"
+
+#~ msgid ""
+#~ "Because the Google DriveSDK can use 64-bit integers we recommend that you "
+#~ "comment out line 15 in 'includes/dropbox-sdk/Drive/RequestUtil.php'"
+#~ msgstr ""
+#~ "Because the Google DriveSDK can use 64-bit integers we recommend that you "
+#~ "comment out line 15 in 'includes/dropbox-sdk/Drive/RequestUtil.php'"
+
+#~ msgid "Cache directory isn't writeable. "
+#~ msgstr "Cache directory is niet schrijfbaar"
+
+#~ msgid "Google Driveis not succesfully linked. Please Authorize!"
+#~ msgstr ""
+#~ "Er is geen goede connectie gemaakt met Drive. Machtig de App opnieuw!"
+
+#~ msgid ""
+#~ "The Google DriveSDK requires the JSON PHP extension, but it looks like "
+#~ "you don't have it (couldn't find function \"json_decode\")"
+#~ msgstr ""
+#~ "The Google DriveSDK requires the JSON PHP extension, but it looks like "
+#~ "you don't have it (couldn't find function \"json_decode\")"
+
+#~ msgid "You are <strong>not able</strong> to use Use-your-Drive."
+#~ msgstr "You are <strong>not able</strong> to use Use-your-Drive."
+
+#~ msgid ""
+#~ "To enable SSL on your website, you will need to get an SSL Certificate "
+#~ "that identifies you and install it on the server"
+#~ msgstr ""
+#~ "To enable SSL on your website, you will need to get an SSL Certificate "
+#~ "that identifies you and install it on the server"
+
+#~ msgid ""
+#~ "If you dont have a certificate yet, use or Google skills to get one for "
+#~ "free (for example Startssl.com)"
+#~ msgstr ""
+#~ "If you dont have a certificate yet, use or Google skills to get one for "
+#~ "free (for example Startssl.com)"
+
+#~ msgid "No Google Drivetoken found... Please Authorize!"
+#~ msgstr ""
+#~ "Er is geen Google DriveToken gevonden. Keur de App goed via de plugin "
+#~ "instellingen!"
+
+#~ msgid ""
+#~ "No Token file found and could not create one. Please be sure the file ."
+#~ "token exists in the plugin rootdir and is writeable"
+#~ msgstr ""
+#~ "No Token file found and could not create one. Please be sure the file ."
+#~ "token exists in the plugin rootdir and is writeable"
+
+#~ msgid ""
+#~ "/dropbox-auth-finish: Could not store token! Make sure that the file `."
+#~ "token` exists and is writable!"
+#~ msgstr ""
+#~ "/dropbox-auth-finish: Could not store token! Make sure that the file `."
+#~ "token` exists and is writable!"
+
+#~ msgid "Unable to load app-info.json: "
+#~ msgstr "Unable to load app-info.json: "
+
+#~ msgid "Installation"
+#~ msgstr "Installatie"
+
+#~ msgid "Be sure you have an valid SSL certificate on your web server"
+#~ msgstr "Be sure you have an valid SSL certificate on your web server"
+
+#~ msgid "Shortcode Use-your-Drive"
+#~ msgstr "Shortcode Use-your-Drive"
+
+#~ msgid "Current root"
+#~ msgstr "Huidige pad"
+
+#~ msgid "Leave empty for default value (max filesize allowed)"
+#~ msgstr ""
+#~ "Laat leeg om de standaardwaarde te gebruiken (maximale toegestane "
+#~ "bestandsgrootte)"
+
+#~ msgid "shows all folders/files in the root of your Drive"
+#~ msgstr "Alle mappen/bestanden weergeven van je Drive"
+
+#~ msgid "shows all folders/files in a specific directory of your Drive"
+#~ msgstr ""
+#~ "Alleen mappen/bestanden weergeven vanaf een specifieke folder in je Drive"
+
+#~ msgid "NOTE the double quote!!"
+#~ msgstr "LET OP de dubbele aanhalingstekens!!"
+
+#~ msgid "show only files with specific extensions"
+#~ msgstr "Alleen bestanden weergeven met een bepaalde extensie"
+
+#~ msgid "hide or show file size and last modified date"
+#~ msgstr ""
+#~ "Weergeven of verbergen van de bestandsgrootte en laatste wijziginsdatum"
+
+#~ msgid ""
+#~ "add uploadform and overwrite existing files. If overwrite=0 the files "
+#~ "will be renamed"
+#~ msgstr ""
+#~ "Voeg een uploadformulier toe en overschrijf bestaande bestanden. Gebruik "
+#~ "overwrite=0 om bestanden te hernoemen"
+
+#~ msgid "only allow specific extensions for upload"
+#~ msgstr ""
+#~ "Alleen toestaan om bestanden met een bepaalde extensie up-te-loaden."
+
+#~ msgid "Will give some basic debug information"
+#~ msgstr "Geeft wat algemene debug informatie"

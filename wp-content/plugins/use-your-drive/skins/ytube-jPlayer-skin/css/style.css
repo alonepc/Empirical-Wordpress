@@ -1,0 +1,583 @@
+/*Fonts */
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?eegarh');
+  src:url('fonts/icomoon.eot?#iefixeegarh') format('embedded-opentype'),
+    url('fonts/icomoon.woff?eegarh') format('woff'),
+    url('fonts/icomoon.ttf?eegarh') format('truetype'),
+    url('fonts/icomoon.svg?eegarh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Colors */
+#UseyourDrive .jp-playlist-current .jp-playlist-item-song-title,
+#UseyourDrive .jp-playlist-current .jp-playlist-item-song-artist {
+  color: #0e92c7;
+}
+
+/* Reset */
+#UseyourDrive .UseyourDrive.media *{
+  box-sizing: content-box;
+}
+
+#UseyourDrive .UseyourDrive.media ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#UseyourDrive .UseyourDrive.media ul li{
+  list-style: none;
+  margin: 0;
+}
+
+#UseyourDrive .UseyourDrive.media{
+  position: relative;
+  font-family: 'Segoe UI', Verdana, sans-serif;
+  clear: both;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 13px;
+  text-align: center;
+}
+#UseyourDrive .UseyourDrive.media a{
+  color: #333;
+  text-decoration: none;
+}
+#UseyourDrive li:before{
+  content: none !important;
+}
+#UseyourDrive .left {
+  float: left;
+}
+#UseyourDrive .right {
+  float: right;
+}
+
+/* No Solution */
+#UseyourDrive .jp-no-solution{
+  padding: 20px;
+}
+
+/* Containers */
+#UseyourDrive .UseyourDrive.media{
+  margin: 5px 0px 30px;
+  position: relative;
+  z-index: 0;
+  border-radius: 18px;
+}
+
+#UseyourDrive .jp-video {
+  position:relative;
+  margin-bottom: 20px;
+  min-width: 300px;
+  background-color: #000;
+}
+
+#UseyourDrive .jp-video-100 {
+  max-width: 100%;
+}
+
+#UseyourDrive .jp-video-270p {
+  max-width:480px;
+}
+
+#UseyourDrive .jp-video-360p {
+  max-width:570px;
+}
+
+#UseyourDrive .playerScreen .jp-video-play {
+  display: block;
+  position: absolute;
+  z-index: 990;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.1);
+}
+#UseyourDrive .playerScreen .jp-video-play:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%; /* centers the left edge of the sprite */
+  margin: -70px 0 0 -70px; /* this centers the actual sprite--this is half the sprite-window width. if you don't do this, the left edge will be centered instead of the center of the sprite.  */
+  width: 140px; /* set window to see sprite through */
+  height: 140px; /* set window to see sprite through */
+  background: url("sprite.png") 2px -284px no-repeat; /*  set up the sprite. Obviously change this fto make each one different. */
+
+}
+
+#UseyourDrive .playerScreen:hover > .jp-video-play {
+  background-color: rgba(0,0,0,0);
+}
+
+/* Full Screen*/
+#UseyourDrive .jp-video-full {
+  width:100%!important;
+  position:static !important;
+  position:relative;
+  background: none
+}
+#UseyourDrive.jp-video-full .jp-jplayer {
+  top: 0;
+  left: 0;
+  position: fixed !important; position: relative; /* Rules for IE6 (full-screen) */
+  overflow: hidden;
+  z-index:1000;
+}
+
+#UseyourDrive .jp-video-full .jp-gui{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  opacity: 0.8;
+  z-index: 1000;
+}
+
+#UseyourDrive .jp-video.jp-video-full .jp-playlist{
+  display:none !important;
+}
+
+#UseyourDrive .jp-video.jp-video-full .jp-jplayer img{
+  position:absolute;
+  border-radius: 0;
+}
+#UseyourDrive .jp-video.jp-video-full .jp-jplayer video{
+  border-radius: 0;
+}
+#UseyourDrive .jp-video.jp-video-full .jp-video-play {
+  height:100% !important;
+}
+
+#UseyourDrive .jp-video.jp-video-full #UseyourDrive .jp-video.jp-video-full{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  height: 100% !important;
+}
+/* Layout Player */
+#UseyourDrive .jp-jplayer {
+  background: url(../../../css/clouds/cloud_system_128.png) center no-repeat;
+  position: relative;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  margin: 0 auto;
+}
+
+
+#UseyourDrive .jp-video .jp-jplayer img{
+  position:absolute;
+  height:100%;
+}
+#UseyourDrive .jp-video .jp-jplayer video{
+
+}
+
+#UseyourDrive .jp-video-full .jp-jplayer img{
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* Gui & Controls */
+#UseyourDrive .jp-gui{
+  position: relative;
+  height:46px;
+  margin-top: -40px;
+  padding: 0;
+  z-index: 1001;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+#UseyourDrive .gui-container{
+  position: absolute;
+  height:40px;
+  background: #191919;
+  color: #646464;
+  padding: 0;
+  z-index: 1001;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+
+}
+
+#UseyourDrive .jp-gui .jp-progress {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: -6px;
+  left: 0;
+  background: #323232;
+}
+
+#UseyourDrive .jp-gui .jp-progress .jp-seek-bar {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  height: 6px;
+  background: #646464;
+}
+
+#UseyourDrive .jp-gui .jp-progress .jp-seek-bar .jp-play-bar {
+  display: block; 
+  height: 6px;
+  padding: 0;
+  background: #0e92c7;
+}
+
+#UseyourDrive .jp-gui .jp-play {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("sprite-dark.png") no-repeat 10px -60px;
+  opacity: 0.8;
+}
+#UseyourDrive .jp-gui .jp-play:hover,
+#UseyourDrive .jp-gui .jp-pause:hover {
+  opacity: 1;
+}
+#UseyourDrive .jp-gui .jp-pause {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("sprite-dark.png") no-repeat -40px -60px;
+  opacity: 0.8;
+}
+
+#UseyourDrive .jp-gui .seperator {
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background: url("sprite-dark.png") no-repeat 0 0;
+}
+
+#UseyourDrive .jp-gui .volumecontrol {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("sprite-dark.png") no-repeat 8px -105px;
+  opacity: 0.8;
+  overflow: hidden;
+  word-wrap: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+}
+#UseyourDrive .jp-gui .volumecontrol:hover {
+  opacity: 1;
+  width: 115px;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+}
+#UseyourDrive .jp-gui .jp-volume-bar {
+  display: block;
+  margin: 19px 0 0 45px;
+  background-color: #EBEBEB;
+  background: rgba(255,255,255,0.1);
+  width: 60px;
+  cursor: pointer;
+}
+
+#UseyourDrive .jp-gui .jp-volume-bar .currentVolume {
+  position: relative;
+  height: 5px;
+  padding: 0;
+}
+
+#UseyourDrive .jp-gui .jp-volume-bar .currentVolume .jp-volume-bar-value {
+  display: block;
+  height: 5px;
+  padding: 0;
+  background: #0e92c7;
+}
+
+#UseyourDrive .jp-gui .jp-volume-bar .currentVolume a {
+  display: block;
+  position: absolute;
+  top: -5px;
+  margin-left: -2px;
+  width: 3px;
+  height: 16px;
+  background: #dcdcdc;
+}
+
+#UseyourDrive .jp-gui .jp-volume-bar .currentVolume a div {
+  display: block;
+  width: 3px;
+  height: 16px;
+}
+
+#UseyourDrive .jp-gui .jp-timer {
+  display: block;
+  float: left;
+  line-height: 40px;
+  margin: 0 10px;
+}
+
+#UseyourDrive .jp-current-time {
+  display: inline;
+  text-align: left;
+  color: #e6e6e6;
+}
+#UseyourDrive .jp-gui  .jp-timer .seperate {
+  display: inline;
+  color: #787878;
+}
+
+#UseyourDrive .jp-duration {
+  display: inline;
+  right: 0px;
+  text-align: right;
+  color: #787878;
+}
+
+#UseyourDrive .jp-full-screen{
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: transparent url("sprite-dark.png") no-repeat 8px -191px;
+  opacity: 0.4;
+}
+#UseyourDrive  .jp-full-screen:hover,
+#UseyourDrive  .jp-restore-screen:hover {
+  opacity: 0.8;
+}
+#UseyourDrive .jp-restore-screen{
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: transparent url("sprite-dark.png") no-repeat 8px -229px;
+  opacity: 0.4;
+}
+
+/* Playlist*/
+#UseyourDrive .jp-title .jp-playlist-item-song-title,
+#UseyourDrive .jp-title .jp-playlist-item-song-artist{
+  font-size: 12px;
+  margin-left: 0px;
+  display: inline-block;
+  color: #f0f0f0;
+  padding: 0;
+}
+
+#UseyourDrive .jp-playlist-item {
+  text-decoration: none;
+}
+
+/* @group playlist */
+#UseyourDrive div.jp-playlist {
+  width:100%;
+  background-color: #F7F7F7;
+  border: 1px solid #D2D2D2;
+  position: relative;
+  z-index: 1000;
+}
+
+#UseyourDrive div.jp-playlist li {
+  border-top: 1px solid #D2D2D2;
+  margin: 0;
+  padding: 7px 15px;
+  word-wrap: break-word;
+}
+
+#UseyourDrive div.jp-playlist li div{
+  position:relative;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+#UseyourDrive div.jp-playlist li.jp-playlist-current{
+  box-shadow: 0 0 3px #B6ACAC;
+}
+
+#UseyourDrive div.jp-playlist li:hover{
+  box-shadow: 0 0 6px #B6ACAC;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+/* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
+#UseyourDrive div.jp-playlist li:first-child {
+  border-top:none;
+}
+
+#UseyourDrive div.jp-playlist li:last-child {
+  border-bottom:none;
+}
+
+#UseyourDrive div.jp-playlist-item-song-title{
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 3px;
+  padding-top: 5px;
+  text-align: left;
+  font-family: Arial;
+}
+#UseyourDrive div.jp-playlist-item-song-artist{
+  color: #333333;
+  font-size: 11px;
+  text-align: left;
+  font-family: Arial;
+}
+#UseyourDrive .audio .jp-playlist-item-song-artist:before{
+  content: "- ";
+  margin-left:5px;
+}
+#UseyourDrive span.jp-playlist-item-url{
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 14px;
+  z-index: 1;
+  vertical-align: middle;
+}
+
+#UseyourDrive .jp-playlist-item-dl,
+#UseyourDrive .jp-playlist-item-sell{
+  display: inline-block;
+  font-size: 16px;
+  height: 16px;
+  margin-left: 15px;
+  margin-top: -2px;
+  position: relative;
+  vertical-align: middle;
+  width: 16px;
+}
+
+
+#UseyourDrive .jp-playlist-item-sell{
+  top:1px;
+}
+#UseyourDrive .media a.jp-playlist-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left:10px;
+  margin-right:50px;
+}
+#UseyourDrive .media.audio.nocover a.jp-playlist-item {
+  margin-left:0;
+}
+#UseyourDrive .media .jp-playlist-item-thumb{
+  width:50px;
+  height:50px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#UseyourDrive .media li div.jp-playlist-item-song-title,
+#UseyourDrive .media li div.jp-playlist-item-song-artist{
+  display: block;
+}
+
+/* Video player */
+#UseyourDrive .video .gui-container{
+  bottom: -40px;
+}
+
+#UseyourDrive .video div.jp-playlist li {
+  height: 50px;
+}
+
+/* Audio player */
+#UseyourDrive .media.audio .jp-gui{
+  margin-top:0px;
+}
+#UseyourDrive .media.audio.cover .jp-jplayer {
+  overflow:hidden;
+  border: none;
+}
+#UseyourDrive .media.audio .jp-jplayer img{
+  border-radius: 18px 18px 0 0;
+  height:200px!important;
+  width: auto!important;
+  margin: 0 auto;
+  position: relative;
+  display:block!important;
+  background-color: #EEF1F2;
+}
+
+#UseyourDrive .media.audio.nocover .jp-jplayer{
+  display:none!important;
+}
+#UseyourDrive .media.audio.nocover .jp-playlist-item-thumb{
+  display:none;
+}
+#UseyourDrive .media.audio.nocover span.jp-playlist-item-url{
+  top:3px;
+}
+#UseyourDrive .audio .jp-full-screen {
+  display: none !important;
+}
+#UseyourDrive .audio .jp-restore-screen {
+  display: none !important;
+}
+
+#UseyourDrive .audio .rightblock{
+  width:80px; 
+}
+#UseyourDrive .audio .jp-progress {
+  margin-right:100px;
+}
+#UseyourDrive .audio  .rightblock .volumeBar{
+  top: 21px;
+}
+#UseyourDrive .audio .playerScreen{
+  display:none;
+}
+/* Small screens */
+@media only screen and (max-width: 320px){
+  #UseyourDrive .jp-video{
+    min-width: 200px;
+  }
+
+  #UseyourDrive .rightblock .volumeBar,
+  #UseyourDrive .rightblock .volumeText{
+    display: none;
+  }
+  #UseyourDrive .audio .jp-progress{
+    margin-right: 0px;
+  }
+  #UseyourDrive .video .jp-progress{
+    margin-right: 30px;
+  }
+}
+
+/* ICONS */
+#UseyourDrive .jp-playlist-item-dl,
+#UseyourDrive .jp-playlist-item-sell{
+  font-family: 'icomoon';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none !important;
+  text-transform: none;
+}
+
+#UseyourDrive .jp-playlist-item-url .jp-playlist-item-dl:before {
+  content: "\e102";
+}
+
+#UseyourDrive .jp-playlist-item-url .jp-playlist-item-sell:before {
+  content: "\e103";
+}

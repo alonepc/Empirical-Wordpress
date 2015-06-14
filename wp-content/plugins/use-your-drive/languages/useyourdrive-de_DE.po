@@ -1,0 +1,1224 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Use-your-Drive\n"
+"POT-Creation-Date: 2014-11-07 01:05+0100\n"
+"PO-Revision-Date: 2014-11-08 13:45+0100\n"
+"Last-Translator: Neptox <neptox@gmail.com>\n"
+"Language-Team: Neptox <neptox@gmail.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin_page.php:75 use-your-drive.php:122
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: admin_page.php:76 admin_page.php:432
+msgid "File browser"
+msgstr "Datei Browser"
+
+#: admin_page.php:90
+msgid "Own Google Drive App?"
+msgstr "Eigene google Drive App?"
+
+#: admin_page.php:132
+msgid "Advanced settings"
+msgstr "Erweiterte Einstellungen"
+
+#: admin_page.php:138
+msgid "Enable auto-updater"
+msgstr "Aktiviere Auto-Updater"
+
+#: admin_page.php:155
+msgid "User folders"
+msgstr "Nutzer-Ordner"
+
+#: admin_page.php:161
+msgid "Custom CSS"
+msgstr "Eigenes CSS"
+
+#: admin_page.php:167
+msgid "Notify email templates"
+msgstr "Benachrichtigungs-Email Vorlagen"
+
+#: admin_page.php:251
+msgid ""
+"If you created your own Google Drive App, please enter your settings below"
+msgstr ""
+"Wenn Du eine eigene Google Drive App entwickelt hast, gib hier bitte Deine "
+"Daten ein"
+
+#: admin_page.php:252
+msgid "How do I create a Google DriveApp?"
+msgstr "Wie erstelle ich eine Google Drive App?"
+
+#: admin_page.php:268
+msgid "If you would like to receive updates, please insert your Purchase code"
+msgstr ""
+"Wenn Du gerne Updates erhalten würdest, gib hier bitte Deinen Purchase-Code "
+"ein"
+
+#: admin_page.php:270
+msgid "Where do I find the purchase code?"
+msgstr "Wo finde ich den Purchase-Code?"
+
+#: admin_page.php:329
+msgid "You can use"
+msgstr "Erlaubt"
+
+#: admin_page.php:369
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Du hast nicht die erforderlichen Rechte um diese Seite zu betreten"
+
+#: admin_page.php:377
+msgid "System information"
+msgstr "System Information"
+
+#: admin_page.php:402
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: admin_page.php:403
+msgid "Use-your-Drive uses the following shortcode:"
+msgstr "Use-your-Drive nutzt folgenden Shortcode:"
+
+#: admin_page.php:403
+msgid ""
+"To make things easier for you, we added a <u>Shortcode button</u> in the MCE "
+"editor"
+msgstr ""
+"Für eine einfachere Handhabung haben wir einen<u>Shortcode button</u> in den "
+"MCE Editor eingefügt"
+
+#: admin_page.php:405
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: admin_page.php:406
+msgid "Visit the Use-your-Drive website"
+msgstr "Besuche die Use-your-Drive Seite"
+
+#: admin_page.php:406
+msgid "for documentation and installation details"
+msgstr "für Dokumentations- und Installations-Details"
+
+#: admin_page.php:410
+msgid "Overview of your system settings"
+msgstr "Überblick über Deine System-Einstellungen"
+
+#: admin_page.php:461
+msgid "(Re) Authorize the Plugin!"
+msgstr "(Re) autorisiere das Plugin!"
+
+#: admin_page.php:462
+msgid "Revoke authorization"
+msgstr "Widerrufe die Autorisierung"
+
+#: admin_page.php:489 includes/UseyourDrive.php:42
+msgid ""
+"The plugin isn't yet authorized to use your Google Drive! Please (re)-"
+"authorize the plugin"
+msgstr ""
+"Das Plugin ist bisher noch nicht autorisiert, Google Drive zu nutzen. Bitte "
+"(re)autorisiere das Plugin"
+
+#: admin_page.php:500
+msgid "Plugin isn't linked to your Google Drive anymore... Please Reauthorize!"
+msgstr ""
+"Das Plugin ist nicht mehr zu Deiner Google Drive verlinkt... Bitte "
+"reautorisiere es!"
+
+#: admin_page.php:512
+msgid ""
+"Use-your-Drive is succesfully authorized and linked with your Google account:"
+msgstr ""
+"Use-your-Drive wurde erfolgreich autorisiert und verbunden mit Deinem Google "
+"Account:"
+
+#: admin_page.php:542 admin_page.php:579
+msgid "You need at least PHP 5.3 if you want to use Use-your-Drive"
+msgstr "Du benötigst mindestens PHP 5.3 um Use-your-Drive zu verwenden"
+
+#: admin_page.php:543
+msgid "You are using:"
+msgstr "Du nutzt:"
+
+#: admin_page.php:547
+msgid ""
+"We are not able to connect to the Google API as 'allow_url_fopen' is "
+"disabled and you don't have the cURL PHP extension installed"
+msgstr ""
+"Wir können sie Google API nicht verbinden da 'allow_url_fopen' deaktiviert "
+"ist und Du die cURL PHP Erweiterung nicht installiert hast"
+
+#: admin_page.php:548
+msgid "Please enable allow_url_fopen or install the cURL extension"
+msgstr "Bitte aktiviere allow_url_fopen oder installiere die cURL Erweiterung"
+
+#: admin_page.php:553 use-your-drive.php:334
+msgid ""
+"We are not able to connect to the Google API as the plugin is interfering "
+"with an other plugin"
+msgstr ""
+"Wir konnten nicht zur Google API verbinden, da das Plugin mit einem anderen "
+"Plugin kollidiert."
+
+#: admin_page.php:554
+msgid ""
+"The other plugin is using an old version of the Google-Api-PHP-client that "
+"isn't capable of running multiple configurations"
+msgstr ""
+"Das andere Plugin nutzt eine alte Version des Google-Api-PHP-client that "
+"isn't capable of running multiple configurations"
+
+#: admin_page.php:555
+msgid ""
+"Please disable this other plugin if you would like to use Use-your-Drive"
+msgstr ""
+"Bitte deaktiviere dieses andere Plugin wenn Du Use-your-Drive nutzen möchtest"
+
+#: admin_page.php:556
+msgid ""
+"If you would like to use both plugins, ask the developer to update it's code"
+msgstr ""
+"Wenn Du beide Plugins nutzen möchtest, bitte den Entwickler seinen Code zu "
+"aktualisieren"
+
+#: admin_page.php:568
+msgid "The plugin isn't autorized to use your Google Drive"
+msgstr "Dieses Plugin ist nicht autorisiert Deine Google Drive zu nutzen"
+
+#: admin_page.php:569
+msgid "Authorize the plugin!"
+msgstr "Autorisiere das Plugin!"
+
+#: admin_page.php:579 admin_page.php:581
+msgid "PHP version"
+msgstr "PHP-Version"
+
+#: admin_page.php:586 admin_page.php:588
+msgid "cURL PHP extension"
+msgstr "cURL PHP-Erweiterung"
+
+#: admin_page.php:586
+msgid ""
+"You have the cURL PHP extension installed and we can access Google with cURL"
+msgstr ""
+"Du hast die cURL PHP-Erweiterung installiert und wir können Google mit cURL "
+"erreichen"
+
+#: admin_page.php:588
+msgid ""
+"You don't have the cURL PHP extension installed (couldn't find function "
+"\"curl_init\"), please enable or install this extension"
+msgstr ""
+"Du hast nicht die cURL PHP-Erweiterung installiert (\"curl_init\" nicht "
+"gefunden), bitte aktiviere oder installiere die Erweiterung"
+
+#: admin_page.php:593 admin_page.php:595
+msgid "Is allow_url_fopen enabled?"
+msgstr "Ist allow_url_fopen aktiviert?"
+
+#: admin_page.php:593
+msgid "Yes, we can access Google with fopen"
+msgstr "Ja, wir können Google mit fopen erreichen"
+
+#: admin_page.php:595
+msgid "No, we can't access Google with fopen"
+msgstr "Nein,"
+
+#: admin_page.php:601 admin_page.php:603
+msgid "Version Google Api Client"
+msgstr "Version des Google Api Client"
+
+#: admin_page.php:603
+msgid "Before version 1.0.0"
+msgstr "Vor Version 1.0.0"
+
+#: admin_page.php:603
+msgid ""
+"Another plugin is loading an old Google Client library. Use-your-Drive isn't "
+"compatible with this version."
+msgstr ""
+"Ein anderes Plugin lädt eine alte Google Client Bibliothek. Use-your-Drive "
+"ist nicht mit dieser Version kompatibel"
+
+#: admin_page.php:610 admin_page.php:612
+msgid "Is TMP directory writable?"
+msgstr "Ist das TMP-Verzeichnis beschreibbar?"
+
+#: admin_page.php:610
+msgid "TMP directory"
+msgstr "TMP-Verzeichnis"
+
+#: admin_page.php:610
+msgid "isn't writable. You are not able to upload files to Drive."
+msgstr "nicht beschreibbar. Du kannst keine Dateien zu Drive hochladen."
+
+#: admin_page.php:610
+msgid "Make sure TMP directory is writable"
+msgstr "Gib dem TMP-Verzeichnis Schreibrechte"
+
+#: admin_page.php:612
+msgid "TMP directory is writable"
+msgstr "TMP-Verzeichnis ist beschreibbar"
+
+#: admin_page.php:624 admin_page.php:626 admin_page.php:629
+msgid "Is CACHE directory writable?"
+msgstr "Ist das CACHE-Verzeichnis beschreibbar?"
+
+#: admin_page.php:624
+msgid "CACHE directory"
+msgstr "Cache-Verzeichnis"
+
+#: admin_page.php:624 admin_page.php:637
+msgid "isn't writable. The gallery will load very slowly."
+msgstr "nicht beschreibbar. Die Gallerie wird sehr langsam laden."
+
+#: admin_page.php:624
+msgid "Make sure CACHE directory is writable"
+msgstr "Gib dem CACHE-Verzeichnis Schreibrechte"
+
+#: admin_page.php:626
+msgid "CACHE directory is now writable"
+msgstr "CACHE-Verzeichnis ist nicht beschreibbar"
+
+#: admin_page.php:629
+msgid "CACHE directory is writable"
+msgstr "CACHE-Verzeichnis ist beschreibbar"
+
+#: admin_page.php:637 admin_page.php:639 admin_page.php:642
+msgid "Is CACHE-index file writable?"
+msgstr "Ist die CACHE-Index Datei beschreibbar?"
+
+#: admin_page.php:637
+msgid "-index file"
+msgstr "-index Datei"
+
+#: admin_page.php:637
+msgid "Make sure CACHE-index file is writable"
+msgstr "Gib der CACHE-index Datei Schreibrechte"
+
+#: admin_page.php:639
+msgid "CACHE-index file is now writable"
+msgstr "CACHE-index Datei ist jetzt beschreibbar"
+
+#: admin_page.php:642
+msgid "CACHE-index file is writable"
+msgstr "CACH-index Datei ist beschreibbar"
+
+#: admin_page.php:647
+msgid "You can use the ZIP function"
+msgstr "ZIP-Funktion erlaubt"
+
+#: admin_page.php:648 admin_page.php:651
+msgid "Download files as ZIP"
+msgstr "Dateien als ZIP herunterladen"
+
+#: admin_page.php:650
+msgid "You cannot download files as ZIP"
+msgstr "Du kannst die Dateien nicht als ZIP herunterladen"
+
+#: includes/UseyourDrive.php:132 includes/UseyourDrive.php:142
+msgid "Use-you-Drive isn't ready to run"
+msgstr "Use-your-Drive ist nicht startbereit"
+
+#: includes/UseyourDrive.php:146
+msgid "Couldn't connect to Google API: "
+msgstr "Fehlgeschlagene Verbindung zu Google API:"
+
+#: includes/UseyourDrive.php:211
+msgid "Could not start authorization: "
+msgstr "Konnte die Autorisierung nicht starten:"
+
+#: includes/UseyourDrive.php:235 includes/UseyourDrive.php:335
+msgid "Error communicating with Google Drive API: "
+msgstr "Verbindungsfehler zur Google Drive API:"
+
+#: includes/UseyourDrive.php:481
+msgid "Root folder not found "
+msgstr "Hauptordner nicht gefunden"
+
+#: includes/UseyourDrive.php:488 includes/UseyourDrive.php:542
+msgid "You are not authorized to upload files to this directory"
+msgstr "Du darfst keine Dateien in dieses Verzeichnis hochladen"
+
+#: includes/UseyourDrive.php:515
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr "Die hochgeladene Datei die upload_max_filesize Bestimmung in php.ini"
+
+#: includes/UseyourDrive.php:516
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form"
+msgstr ""
+"Die hochgeladene Datei überschreitet die im HTML festgelegte MAX_FILE_SIZE "
+"Bestimmung."
+
+#: includes/UseyourDrive.php:517
+msgid "The uploaded file was only partially uploaded"
+msgstr "Die Datei wurde nur teilweise hochgeladen"
+
+#: includes/UseyourDrive.php:518
+msgid "No file was uploaded"
+msgstr "Es wurde keine Datei hochgeladen"
+
+#: includes/UseyourDrive.php:519
+msgid "Missing a temporary folder"
+msgstr "Ein temporärer Ordner fehlt"
+
+#: includes/UseyourDrive.php:520
+msgid "Failed to write file to disk"
+msgstr "Datei konnte nicht auf die Festplatte gespeichert werden"
+
+#: includes/UseyourDrive.php:521
+msgid "A PHP extension stopped the file upload"
+msgstr "Der Upload wurde durch eine PHP-Erweiterung unterbrochen"
+
+#: includes/UseyourDrive.php:522
+msgid "The uploaded file exceeds the post_max_size directive in php.ini"
+msgstr ""
+"Die hochgeladene Datei überschreitet die post_max_size Bestimmung in php.ini"
+
+#: includes/UseyourDrive.php:523
+msgid "File is too big"
+msgstr "Datei ist zu groß"
+
+#: includes/UseyourDrive.php:524 templates/tinymce_popup.php:123
+#: use-your-drive.php:224
+msgid "File is too small"
+msgstr "Datei ist zu groß"
+
+#: includes/UseyourDrive.php:525
+msgid "Filetype not allowed"
+msgstr "Dateityp nicht erlaubt"
+
+#: includes/UseyourDrive.php:526 templates/tinymce_popup.php:120
+#: use-your-drive.php:221
+msgid "Maximum number of files exceeded"
+msgstr "Anzahl an Dateien überschritten"
+
+#: includes/UseyourDrive.php:527
+msgid "Image exceeds maximum width"
+msgstr "Bild überschreitet maximale Breite"
+
+#: includes/UseyourDrive.php:528
+msgid "Image requires a minimum width"
+msgstr "Bild benötigt Mindestbreite"
+
+#: includes/UseyourDrive.php:529
+msgid "Image exceeds maximum height"
+msgstr "Bild überschreitet maximale Höhe"
+
+#: includes/UseyourDrive.php:530
+msgid "Image requires a minimum height"
+msgstr "Bild benötigt Mindesthöhe"
+
+#: includes/UseyourDrive.php:597
+msgid "Not uploaded to Google Drive"
+msgstr "Nicht zu Google Drive hochgeladen"
+
+#: includes/UseyourDrive.php:608
+msgid "Not succesfully uploaded to Google Drive"
+msgstr "Nicht erfolgreich zu Google Drive hochgeladen"
+
+#: includes/UseyourDrive.php:618 includes/UseyourDrive.php:620
+msgid "Uploading failed"
+msgstr "Hochladen fehlgeschlagen"
+
+#: includes/UseyourDrive.php:642 includes/UseyourDrive.php:654
+#: includes/UseyourDrive.php:705 includes/UseyourDrive.php:735
+#: includes/UseyourDrive_Processor.php:208
+msgid "Failed to delete entry"
+msgstr "Eintrag löschen fehlgeschlagen"
+
+#: includes/UseyourDrive.php:652 includes/UseyourDrive.php:733
+#: includes/UseyourDrive.php:833
+msgid "Invalid entry"
+msgstr "Ungültiger Eintrag"
+
+#: includes/UseyourDrive.php:662
+msgid "You are not authorized to delete files from this directory"
+msgstr "Du darfst Dateien aus diesem Verzeichnis nicht löschen"
+
+#: includes/UseyourDrive.php:671
+msgid "You are not authorized to delete this file or folder"
+msgstr "Du darfst die Datei / den Ordner nicht löschen"
+
+#: includes/UseyourDrive.php:723
+msgid "No new name set"
+msgstr "Nicht umbenannt"
+
+#: includes/UseyourDrive.php:737 includes/UseyourDrive.php:756
+#: includes/UseyourDrive.php:762 includes/UseyourDrive.php:768
+#: includes/UseyourDrive.php:774 includes/UseyourDrive.php:790
+#: includes/UseyourDrive_Processor.php:232
+msgid "Failed to rename entry"
+msgstr "Umbenennen fehlgeschlagen"
+
+#: includes/UseyourDrive.php:743
+msgid "You are not authorized to rename files in this directory"
+msgstr "Du darfst Dateien in diesem Verzeichnis nicht umbenennen"
+
+#: includes/UseyourDrive.php:751
+msgid "You are not authorized to rename this file or folder"
+msgstr "Du darfst die Datei / den Ordner nicht umbenennen"
+
+#: includes/UseyourDrive.php:819 includes/UseyourDrive.php:857
+#: includes/UseyourDrive.php:864 includes/UseyourDrive.php:888
+#: includes/UseyourDrive_Processor.php:263
+msgid "Failed to add folder"
+msgstr "Ordner hinzufügen fehlgeschlagen"
+
+#: includes/UseyourDrive.php:823
+msgid "No new foldername set"
+msgstr "Ordner nicht umbenannt"
+
+#: includes/UseyourDrive.php:835 includes/UseyourDrive.php:837
+msgid "Failed to add entry"
+msgstr "Eintrag nicht hinzugefügt"
+
+#: includes/UseyourDrive.php:843
+msgid "You are not authorized to add folders in this directory"
+msgstr "Du darfst keine Ordner zu diesem Verzeichnis hinzufügen"
+
+#: includes/UseyourDrive.php:851
+msgid "You are not authorized to add a folder"
+msgstr "Du darfst keinen Ordner hinzufügen"
+
+#: includes/UseyourDrive.php:930
+msgid "Failed to add user folder"
+msgstr "Benutzer-Ordner hinzufügen fehlgeschlagen"
+
+#: includes/UseyourDrive.php:1269 includes/UseyourDrive.php:1278
+msgid "Requested directory isn't allowed"
+msgstr "Gewünschtes Verzeichnis nicht erlaubt"
+
+#: includes/UseyourDrive.php:1285
+msgid "Requested item isn't allowed"
+msgstr "Gewünschtes Objekt ist nicht erlaubt"
+
+#: includes/UseyourDrive.php:1442
+msgid "Couldn't create zip file"
+msgstr "ZIP-Datei nicht erstellt"
+
+#: includes/UseyourDrive.php:1636
+msgid "Can't create link"
+msgstr "Link nicht erstellt"
+
+#: includes/UseyourDrive_Filebrowser.php:145
+#: includes/UseyourDrive_Gallery.php:119
+msgid "Results"
+msgstr "Ergebnisse"
+
+#: includes/UseyourDrive_Filebrowser.php:159
+#: includes/UseyourDrive_Gallery.php:133
+msgid "Back"
+msgstr "Zurück"
+
+#: includes/UseyourDrive_Filebrowser.php:205
+#: includes/UseyourDrive_Filebrowser.php:212
+#: includes/UseyourDrive_Gallery.php:109
+msgid "No files or folders found"
+msgstr "Keine Dateien oder Ordner gefunden"
+
+#: includes/UseyourDrive_Filebrowser.php:405
+msgid "Download as"
+msgstr "Herunterladen als"
+
+#: includes/UseyourDrive_Filebrowser.php:413
+msgid "Preview"
+msgstr "Vorschau"
+
+#: includes/UseyourDrive_Filebrowser.php:418
+msgid "Preview in new window"
+msgstr "Vorschau in neuem Fenster"
+
+#: includes/UseyourDrive_Filebrowser.php:424
+#: includes/UseyourDrive_Gallery.php:246
+msgid "Download file"
+msgstr "Datei herunterladen"
+
+#: includes/UseyourDrive_Filebrowser.php:430
+#: includes/UseyourDrive_Gallery.php:252
+msgid "Sharing link"
+msgstr "Link teilen"
+
+#: includes/UseyourDrive_Filebrowser.php:436
+#: includes/UseyourDrive_Gallery.php:258 templates/tinymce_popup.php:105
+#: use-your-drive.php:206
+msgid "Rename"
+msgstr "Umbenennen"
+
+#: includes/UseyourDrive_Filebrowser.php:441
+#: includes/UseyourDrive_Gallery.php:263 templates/tinymce_popup.php:102
+#: use-your-drive.php:203
+msgid "Delete"
+msgstr "Löschen"
+
+#: includes/UseyourDrive_Filebrowser.php:459
+#: includes/UseyourDrive_Filebrowser.php:479
+#: includes/UseyourDrive_Gallery.php:281 templates/tinymce_popup.php:108
+#: use-your-drive.php:209
+msgid "Add folder"
+msgstr "Neuer Ordner"
+
+#: includes/UseyourDrive_Filebrowser.php:460
+msgid "Add a new folder in this directory"
+msgstr "Neuer Ordner in diesem Verzeichnis"
+
+#: includes/UseyourDrive_Filebrowser.php:698
+msgid "Previous folder"
+msgstr "Letzter Ordner"
+
+#: includes/UseyourDrive_Gallery.php:153
+msgid "Load more..."
+msgstr "Lade mehr…"
+
+#: includes/UseyourDrive_Processor.php:217
+msgid "Entry was deleted"
+msgstr "Eintrag wurde gelöscht"
+
+#: includes/UseyourDrive_Processor.php:246
+msgid "Entry was renamed"
+msgstr "Eintrag wurde umbenannt"
+
+#: includes/UseyourDrive_Processor.php:277
+msgid "Folder"
+msgstr "Ordner"
+
+#: includes/UseyourDrive_Processor.php:277
+msgid "was added"
+msgstr "wurde hinzugefügt"
+
+#: includes/UseyourDrive_Processor.php:328 templates/tinymce_popup.php:100
+#: use-your-drive.php:201
+msgid "Start"
+msgstr "Start"
+
+#: includes/UseyourDrive_Processor.php:512
+msgid ""
+"To view the Google Drive folders, you need to have JavaScript enabled in "
+"your browser"
+msgstr ""
+"Um die Google Drive Ordner anzusehen, muss Java Skript in deinem Browser "
+"aktiviert sein"
+
+#: includes/UseyourDrive_Processor.php:513
+msgid "To do so, please follow these instructions"
+msgstr "dazu bitte diesen Instruktionen folgen"
+
+#: includes/UseyourDrive_Processor.php:569
+msgid "Please update your mediaplayer shortcode"
+msgstr "Bitte aktualisiere deinen Media Player Shortcode"
+
+#: includes/UseyourDrive_Processor.php:705 templates/tinymce_popup.php:40
+msgid "Guest"
+msgstr "Gast"
+
+#: includes/UseyourDrive_Processor.php:739
+msgid "A guest"
+msgstr "Ein Gast"
+
+#: includes/UseyourDrive_Processor.php:752
+msgid "File downloaded"
+msgstr "Bild heruntergeladen"
+
+#: includes/UseyourDrive_Processor.php:761
+msgid "New file(s) on your Google Drive"
+msgstr "Neue Datei(en) in deiner Google Drive"
+
+#: templates/frontend.php:5 templates/gallery.php:5
+msgid "Back to our first folder"
+msgstr "Zurück zum ersten Ordner"
+
+#: templates/frontend.php:8 templates/gallery.php:8
+msgid "Refresh"
+msgstr "Neu laden"
+
+#: templates/frontend.php:11
+msgid "Switch between grid and list"
+msgstr "Wechsel zwischen Raster und Liste"
+
+#: templates/frontend.php:19 templates/gallery.php:15
+msgid "Download multiple files at once"
+msgstr "Herunterladen mehrerer Dateien gleichzeitig"
+
+#: templates/frontend.php:24 templates/gallery.php:20
+msgid "Download all files"
+msgstr "Alle Dateien herunterladen"
+
+#: templates/frontend.php:25 templates/gallery.php:21
+msgid "Download selected files"
+msgstr "Markierte herunterladen"
+
+#: templates/frontend.php:26 templates/gallery.php:22
+#: templates/tinymce_popup.php:110 use-your-drive.php:211
+msgid "No files found or selected"
+msgstr "Keine Dateien ausgewählt"
+
+#: templates/frontend.php:32 templates/tinymce_popup.php:511
+#: templates/uploadform.php:11
+msgid "Upload files"
+msgstr "Dateien hochladen"
+
+#: templates/frontend.php:42 templates/gallery.php:35
+msgid "Search filenames"
+msgstr "Dateinamen durchsuchen"
+
+#: templates/frontend.php:42 templates/gallery.php:35
+msgid "and within contents"
+msgstr "Und Datei-Inhalte"
+
+#: templates/frontend.php:46 templates/gallery.php:39
+msgid "Loading..."
+msgstr "Laden..."
+
+#: templates/frontend.php:53 templates/tinymce_popup.php:315
+msgid "Name"
+msgstr "Name"
+
+#: templates/frontend.php:63 templates/tinymce_popup.php:318
+msgid "Size"
+msgstr "Größe"
+
+#: templates/frontend.php:69 templates/tinymce_popup.php:321
+msgid "Date modified"
+msgstr "Änderungsdatum"
+
+#: templates/player.php:56
+msgid "Update Required"
+msgstr "Aktualisierung notwendig"
+
+#: templates/player.php:57
+msgid ""
+"To play the media you will need to either update your browser to a recent "
+"version or update your"
+msgstr ""
+"Um die Medien abzuspielen musst du entweder deinen Browser aktualisieren der "
+"dein"
+
+#: templates/tinymce_popup.php:94 use-your-drive.php:195
+msgid "Success"
+msgstr "Erfolgreich"
+
+#: templates/tinymce_popup.php:95 templates/tinymce_popup.php:98
+#: use-your-drive.php:196 use-your-drive.php:199
+msgid "Error"
+msgstr "Fehler"
+
+#: templates/tinymce_popup.php:96 use-your-drive.php:197
+msgid "In queue"
+msgstr "Warteschlange"
+
+#: templates/tinymce_popup.php:97 use-your-drive.php:198
+msgid "Uploading"
+msgstr "Hochladen"
+
+#: templates/tinymce_popup.php:99 use-your-drive.php:200
+msgid "Close"
+msgstr "Schließen"
+
+#: templates/tinymce_popup.php:101 templates/tinymce_popup.php:558
+#: use-your-drive.php:202
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/tinymce_popup.php:103 use-your-drive.php:204
+msgid "Create zip file"
+msgstr "ZIP-Datei erstellen"
+
+#: templates/tinymce_popup.php:104 use-your-drive.php:205
+msgid "Do you really want to delete:"
+msgstr "Wirklich löschen:"
+
+#: templates/tinymce_popup.php:106 use-your-drive.php:207
+msgid "Rename to:"
+msgstr "Umbenennen in:"
+
+#: templates/tinymce_popup.php:107
+msgid "Can't receive filelist"
+msgstr "Dateiliste nicht empfangen"
+
+#: templates/tinymce_popup.php:109 use-your-drive.php:210
+msgid "New folder"
+msgstr "Neuer Ordner"
+
+#: templates/tinymce_popup.php:111 use-your-drive.php:212
+msgid "Creating zip file"
+msgstr "ZIP-Datei erstellen…"
+
+#: templates/tinymce_popup.php:112 use-your-drive.php:213
+msgid "Share file"
+msgstr "Bild teilen"
+
+#: templates/tinymce_popup.php:113 use-your-drive.php:214
+msgid "Creating shared link..."
+msgstr "Teilen-Link wird erstellt..."
+
+#: templates/tinymce_popup.php:114 use-your-drive.php:215
+msgid "Previous"
+msgstr "Letztes"
+
+#: templates/tinymce_popup.php:115 use-your-drive.php:216
+msgid "Next"
+msgstr "Nächstes"
+
+#: templates/tinymce_popup.php:116 use-your-drive.php:217
+msgid "This content failed to load"
+msgstr "Dieser Inhalt konnte nicht geladen werden"
+
+#: templates/tinymce_popup.php:117 use-your-drive.php:218
+msgid "This image failed to load"
+msgstr "Dieses Bild konnte nicht geladen werden"
+
+#: templates/tinymce_popup.php:118 use-your-drive.php:219
+msgid "Start slideshow"
+msgstr "Diashow starten"
+
+#: templates/tinymce_popup.php:119 use-your-drive.php:220
+msgid "Stop slideshow"
+msgstr "Diashow stoppen"
+
+#: templates/tinymce_popup.php:121 use-your-drive.php:222
+msgid "File type not allowed"
+msgstr "Dateityp nicht erlaubt"
+
+#: templates/tinymce_popup.php:122 use-your-drive.php:223
+msgid "File is too large"
+msgstr "Datei ist zu groß"
+
+#: templates/tinymce_popup.php:133
+msgid "Create Shortcode"
+msgstr "Shortcode erstellen"
+
+#: templates/tinymce_popup.php:135 templates/tinymce_popup.php:178
+msgid "Insert direct links to files or folders"
+msgstr "Direkt-Links in Dateien und Ordner einfügen"
+
+#: templates/tinymce_popup.php:137 templates/tinymce_popup.php:183
+msgid "Embed files"
+msgstr "Dateien einbinden"
+
+#: templates/tinymce_popup.php:155
+msgid "Use-your-Drive should behave as"
+msgstr "Use-your-Drive soll sich verhalten als"
+
+#: templates/tinymce_popup.php:159
+msgid "Filelist"
+msgstr "Dateiliste"
+
+#: templates/tinymce_popup.php:162
+msgid "Photogallery"
+msgstr "Fotogalerie"
+
+#: templates/tinymce_popup.php:165
+msgid "Audio player"
+msgstr "Audio-Player"
+
+#: templates/tinymce_popup.php:168
+msgid "Video player"
+msgstr "Video-Player"
+
+#: templates/tinymce_popup.php:173
+msgid "Select root folder"
+msgstr "Hauptordner auswählen"
+
+#: templates/tinymce_popup.php:184
+msgid "Please note that the embedded files need to be public (with link)"
+msgstr "Die eingebundenen Dateien müssen öffentlich sein (mit Link)"
+
+#: templates/tinymce_popup.php:210
+msgid "Selected root folder"
+msgstr "Gewählter Hauptordner"
+
+#: templates/tinymce_popup.php:212
+msgid "Layout"
+msgstr "Layout"
+
+#: templates/tinymce_popup.php:217
+msgid "Show files as:"
+msgstr "Zeige Dateien als"
+
+#: templates/tinymce_popup.php:219
+msgid "Files with thumbnails in a grid"
+msgstr "Dateien mit Miniaturbildern im Raster"
+
+#: templates/tinymce_popup.php:222
+msgid "A list of files"
+msgstr "Eine Dateiliste"
+
+#: templates/tinymce_popup.php:229
+msgid "Show folders breadcrumb"
+msgstr "Dateipfad anzeigen"
+
+#: templates/tinymce_popup.php:234
+msgid "Root breadcrumb title"
+msgstr "Hauptordner-Name im Dateipfad"
+
+#: templates/tinymce_popup.php:234 templates/tinymce_popup.php:273
+#: templates/tinymce_popup.php:372 templates/tinymce_popup.php:377
+msgid "Leave empty for default value"
+msgstr "Leer lassen für Standardwert"
+
+#: templates/tinymce_popup.php:241
+msgid "Show searchbox"
+msgstr "Suchfeld anzeigen"
+
+#: templates/tinymce_popup.php:246 templates/tinymce_popup.php:313
+msgid "Sort files and folders by:"
+msgstr "Dateien und Ordner sortieren nach:"
+
+#: templates/tinymce_popup.php:248
+msgid "Search only on filename"
+msgstr "Nur nach Dateinamen suchen"
+
+#: templates/tinymce_popup.php:251
+msgid "Search on filename and contents"
+msgstr "Nach Dateinamen und Inhalt suchen"
+
+#: templates/tinymce_popup.php:258
+msgid "Show columnnames"
+msgstr "Spalten-Namen anzeigen"
+
+#: templates/tinymce_popup.php:263
+msgid "Show download button (zip-archive)"
+msgstr "Download Button anzeigen (zip-Archiv)"
+
+#: templates/tinymce_popup.php:268
+msgid "Show share button"
+msgstr "Teilen Button anzeigen"
+
+#: templates/tinymce_popup.php:272
+msgid "Set max width for the Use-your-Drive container"
+msgstr "max width für den Use-your-Drive Container festlegen"
+
+#: templates/tinymce_popup.php:273
+msgid "You can use pixels or percentages, eg '360px', '480px', '70%'"
+msgstr ""
+"Du kannst wechseln oder Prozent verwenden, z.B. '360px', '480px', '70%'"
+
+#: templates/tinymce_popup.php:281
+msgid "Media files"
+msgstr "Media-Dateien"
+
+#: templates/tinymce_popup.php:283
+msgid "Select which sort of media files you will provide"
+msgstr "Wähle welche Media Dateien du anbietest"
+
+#: templates/tinymce_popup.php:285
+msgid "Do always supply a mp3 file to support all browsers"
+msgstr "Biete immer eine mp3 Datei an um alle Browser zu unterstützen"
+
+#: templates/tinymce_popup.php:295
+msgid "Do always supply a m4v/mp4 file to support all browsers"
+msgstr "Biete immer eine m4v/mp4 Datei an um alle Browser zu unterstützen"
+
+#: templates/tinymce_popup.php:304
+msgid ""
+"The mediaplayer will decided, based on the provided formats, if the user "
+"will have a HTML5 player or a Flash Player"
+msgstr ""
+"Der Media Player wird auf Grundlage des gelieferten Formates entscheiden ob "
+"der Nutzer ein HTML 5 Player oder einen Flashplayer haben wird"
+
+#: templates/tinymce_popup.php:304
+msgid ""
+"You may provide the same file with different extensions to increase cross-"
+"browser support"
+msgstr ""
+"Du könntest dieselbe Datei mit verschiedenen Änderungen anbieten Um "
+"verschiedene Browser zu unterstützen"
+
+#: templates/tinymce_popup.php:309
+msgid "Sorting"
+msgstr "Sortierung"
+
+#: templates/tinymce_popup.php:326
+msgid "Sort order:"
+msgstr "Reihenfolge"
+
+#: templates/tinymce_popup.php:328
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: templates/tinymce_popup.php:331
+msgid "Descending"
+msgstr "Abstand"
+
+#: templates/tinymce_popup.php:338
+msgid "Filelist options"
+msgstr "Dateilisten Optionen"
+
+#: templates/tinymce_popup.php:343
+msgid "Show files in folder"
+msgstr "Dateien im Ordner anzeigen"
+
+#: templates/tinymce_popup.php:347
+msgid "Show folders in folder"
+msgstr "Ordner im Ordner anzeigen"
+
+#: templates/tinymce_popup.php:351
+msgid "Show filesize"
+msgstr "Dateigröße anzeigen"
+
+#: templates/tinymce_popup.php:355
+msgid "Show date last modified"
+msgstr "Änderungsdatum anzeigen"
+
+#: templates/tinymce_popup.php:359
+msgid "Show file extensions"
+msgstr "Dateiendungen anzeigen"
+
+#: templates/tinymce_popup.php:363
+msgid "Force a 'Save as' Dialog on downloading file"
+msgstr "Erzwinge den 'Sichern als' Dialog beim herunterladen"
+
+#: templates/tinymce_popup.php:369
+msgid "Gallery options"
+msgstr "Galerie Optionen"
+
+#: templates/tinymce_popup.php:372
+msgid "Number of images to be loaded each time"
+msgstr "Anzahl gleichzeitig geladener Bilder"
+
+#: templates/tinymce_popup.php:372
+msgid "Set to 0 to load all images at once"
+msgstr "Auf 0 setzen um alle Bilder gleichzeitig zu laden"
+
+#: templates/tinymce_popup.php:377
+msgid "Row height"
+msgstr "Reihen-Höhe"
+
+#: templates/tinymce_popup.php:377
+msgid "The ideal height you want your grid rows to be"
+msgstr "Die ideale Höhe die du für die Raster-Reihen willst"
+
+#: templates/tinymce_popup.php:377
+msgid ""
+"It won't set it exactly to this as plugin adjusts the row height to get the "
+"correct width"
+msgstr ""
+"Es wird nicht exakt sein da das Plugin die Reihenhöhe anpasst um die "
+"korrekte Weite zu erhalten"
+
+#: templates/tinymce_popup.php:383
+msgid "Don't stretch last row to fit grid width"
+msgstr "Die letzte Reihe nicht strecken um zur Rasterweite zu passen"
+
+#: templates/tinymce_popup.php:388
+msgid "Shuffle images"
+msgstr "Zufallsbilder"
+
+#: templates/tinymce_popup.php:393
+msgid "Exclusions"
+msgstr "Ausnahmen"
+
+#: templates/tinymce_popup.php:396
+msgid "Limit files by extension"
+msgstr "Dateien durch Endung limitieren"
+
+#: templates/tinymce_popup.php:397 templates/tinymce_popup.php:431
+msgid "Add extensions separated with | e.g. (jpg|png|gif)"
+msgstr "Füge Dateiendungen hinzu getrennt durch  | z.B. (jpg|png|gif)"
+
+#: templates/tinymce_popup.php:397
+msgid "Leave empty to show all files"
+msgstr "Leer lassen um alle Dateien anzuzeigen"
+
+#: templates/tinymce_popup.php:402
+msgid "Include files or folders (only show these items)"
+msgstr "Beziehe Dateien oder Ordner mit ein (Zeige nur diese Objekte)"
+
+#: templates/tinymce_popup.php:403 templates/tinymce_popup.php:409
+msgid "Add files or folders separated with | e.g. (file1.jpg|long folder name)"
+msgstr ""
+"Füge Dateien oder Ordner hinzu getrennt durch  | z.B. (file1.jpg|long folder "
+"name)"
+
+#: templates/tinymce_popup.php:408
+msgid "Exclude files or folders"
+msgstr "Schließe Dateien oder Ordner aus"
+
+#: templates/tinymce_popup.php:415
+msgid "Upload form options"
+msgstr "Upload-Feld Optionen"
+
+#: templates/tinymce_popup.php:419
+msgid "Include upload form"
+msgstr "Upload-Feld anzeigen"
+
+#: templates/tinymce_popup.php:426
+msgid "Start uploading automatically (no start/cancel buttons)"
+msgstr "Upload automatisch starten (keine Start/Stopp Buttons)"
+
+#: templates/tinymce_popup.php:430
+msgid "Limit upload by extension"
+msgstr "Hochladen durch Endungen limitieren"
+
+#: templates/tinymce_popup.php:431
+msgid "Leave empty for no restricion"
+msgstr "Leer lassen für keine Limitierungen"
+
+#: templates/tinymce_popup.php:438
+msgid "Max filesize for uploading in bytes"
+msgstr "Maximale Einzel-Dateigröße für Upload in Bytes"
+
+#: templates/tinymce_popup.php:439
+msgid "Leave empty for server maximum "
+msgstr "Leer lassen für Server Maximum"
+
+#: templates/tinymce_popup.php:439
+msgid "How to calculate?"
+msgstr "Wie berechnen?"
+
+#: templates/tinymce_popup.php:449
+msgid "Email notifications"
+msgstr "Benachrichtigungs-Emails"
+
+#: templates/tinymce_popup.php:453
+msgid ""
+"Would you like to receive a notification email when someone downloads a file?"
+msgstr ""
+"Würdest du gerne eine Benachrichtigung E-Mail erhalten wenn jemand eine "
+"Datei herunterlädt?"
+
+#: templates/tinymce_popup.php:459
+msgid ""
+"Would you like to receive a notification email when someone uploads a file?"
+msgstr ""
+"Würdest du gerne eine Benachrichtigung E-Mail erhalten wenn jemand eine "
+"Datei hochlädt?"
+
+#: templates/tinymce_popup.php:464
+msgid "On which email address would you like to receive the notification?"
+msgstr "An welche E-Mail-Adresse möchtest du die Benachrichtigung erhalten?"
+
+#: templates/tinymce_popup.php:465
+msgid "Default value is:"
+msgstr "Standardwert ist:"
+
+#: templates/tinymce_popup.php:475
+msgid "Edit files &amp; folders"
+msgstr "Dateien &amp; Ordner bearbeiten"
+
+#: templates/tinymce_popup.php:479
+msgid "Files &amp; folders can be renamed"
+msgstr "Dateien &amp; Ordner dürfen umbenannt werden"
+
+#: templates/tinymce_popup.php:484
+msgid "Files &amp; folders can be deleted"
+msgstr "Dateien &amp; Ordnern dürfen gelöscht werden"
+
+#: templates/tinymce_popup.php:489
+msgid "Can add new folders"
+msgstr "Neue Ordner dürfen hinzugefügt werden"
+
+#: templates/tinymce_popup.php:495
+msgid "User management"
+msgstr "Benutzer Management"
+
+#: templates/tinymce_popup.php:497
+msgid ""
+"Use-your-Drive uses Wordpress Roles to determine how an user can use the "
+"plugin"
+msgstr ""
+"Use-your-Drive nutzt das Wordpress-Rechtesystem Um festzulegen wie ein "
+"Benutzer des Plugin verwenden darf"
+
+#: templates/tinymce_popup.php:499
+msgid "View Use-your-Drive"
+msgstr "Besuche die Use-your-Drive Seite"
+
+#: templates/tinymce_popup.php:504
+msgid "Download files"
+msgstr "Heruntergeladene Dateien"
+
+#: templates/tinymce_popup.php:518
+msgid "Rename files & folders"
+msgstr "Dateien &amp; Ordner umbenennen"
+
+#: templates/tinymce_popup.php:524
+msgid "Delete files & folders"
+msgstr "Datei &amp; Ordner löschen"
+
+#: templates/tinymce_popup.php:530
+msgid "Add folders"
+msgstr "Ordner hinzufügen"
+
+#: templates/tinymce_popup.php:540
+msgid "Users can only use their own folder within the selected rootfolder"
+msgstr ""
+"Benutzer dürfen nur ihren eigenen Ordner innerhalb des Hauptordners verwenden"
+
+#: templates/tinymce_popup.php:544
+msgid "Note"
+msgstr "Notiz"
+
+#: templates/tinymce_popup.php:544
+msgid "By default guests (not logged in users) will also get their own folder"
+msgstr ""
+"Standardmäßig bekommen auch Gäste (nicht angemeldete Benutzer) Ihren eigenen "
+"Ordner"
+
+#: templates/tinymce_popup.php:544
+msgid "Remove 'Guest' from View Roles to disable guests to use the plugin"
+msgstr "Entferne 'Gast' aus den Rechten um Gäste aus dem Plugin auszuschließen"
+
+#: templates/tinymce_popup.php:546
+msgid "See and edit all user folders"
+msgstr "Zeigen wir arbeiten alle Benutzer -Ordner"
+
+#: templates/tinymce_popup.php:562
+msgid "Insert"
+msgstr "Einfügen"
+
+#: templates/tinymce_popup.php:564
+msgid "Insert links"
+msgstr "Links einfügen"
+
+#: templates/tinymce_popup.php:566
+msgid "Embed"
+msgstr "Einbinden"
+
+#: templates/uploadform.php:9
+msgid "Add files"
+msgstr "Dateien hinzufügen"
+
+#: templates/uploadform.php:18
+msgid "Start upload"
+msgstr "Hochladen starten"
+
+#: templates/uploadform.php:21
+msgid "Cancel upload"
+msgstr "Hochladen abbrechen"
+
+#: templates/uploadform.php:24
+msgid "Max. "
+msgstr "Max."
+
+#: use-your-drive.php:208
+msgid "Oops! This shouldn't happen... Try again!"
+msgstr "Uups! Das hätte nicht passieren sollen… Versuch's nochmal!"
+
+#: wp-updates-plugin.php:76
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr ""
+"Ein unerwarteter HTTP Fehler trat auf während der API Anfrage </p> <p><a "
+"href=\"?\" onclick=\"document.location.reload(); return false;\">Try again</"
+"a>"
+
+#: wp-updates-plugin.php:80
+msgid "An unknown error occurred"
+msgstr "Ein unbekannter Fehler trat auf"

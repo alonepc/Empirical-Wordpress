@@ -1,0 +1,343 @@
+body.UseyourDrive {
+  margin:10px;
+  background: #f1f1f1;
+}
+.UseyourDrive strong{
+  font-weight: bold;
+}
+.UseyourDrive .loadingshortcode{
+  text-align: center;
+  min-height: initial!important;
+}
+
+.root-folder .UseyourDrive.files,
+.template-folder .UseyourDrive.files {
+  width: 340px;
+}
+
+#UseyourDrive .uyd-list .ajax-filelist,
+#UseyourDrive .uyd-grid .ajax-filelist{
+  height:240px !important;
+  overflow: auto;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+
+#UseyourDrive .uyd-list .entry_name{
+  width: 210px;
+}
+#UseyourDrive .uyd-list .entry_icon, #UseyourDrive .uyd-list .entry_edit{
+  margin-top: 5px;
+}
+
+.UseyourDrive.default .entry.file{
+  opacity: .5;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+.UseyourDrive .footer{
+  padding: 10px;
+  border-top: 1px solid #e3e3e3;
+  height: 30px;
+  background: #f1f1f1;
+}
+
+.UseyourDrive .inputfield{
+  width: 90%;
+  padding:3px;
+  margin-top: 5px;
+}
+.UseyourDrive .smallinput,
+.UseyourDrive .largeinput{
+  overflow: auto;
+  margin-bottom: 15px;
+}
+
+.UseyourDrive .smallinput div{
+}
+
+.UseyourDrive .smallinput input,
+.UseyourDrive .largeinput input,
+.UseyourDrive .smallinput textarea
+.UseyourDrive .largeinput textarea{
+  font-size: 80%;
+  color:#666;
+  border: 1px solid #d1d1d1;
+  width: 100px;
+  padding: 6px 25px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+}
+.UseyourDrive .largeinput input,
+.UseyourDrive .largeinput textarea{
+  width: 330px;
+}
+
+.UseyourDrive .input_right{
+  position:relative;
+}
+
+.UseyourDrive .input_right select{
+  position: absolute;
+  right:0;
+  margin-top: 0;
+  padding: 6px;
+  font-size: 110%;
+}
+
+.UseyourDrive .sorting{
+  overflow: auto;
+}
+.UseyourDrive .sort_fields{
+  float: left;
+  margin-right: 100px;
+}
+
+/*Checkboxes and Radiobuttons */
+.UseyourDrive .radiobuttons-container {
+  margin-bottom: 10px;
+  position:relative;
+}
+
+.UseyourDrive .radiobutton{
+  position:relative;
+  line-height: 30px;
+  height:30px;
+}
+
+.UseyourDrive .checkbox{
+  position: relative;
+  min-height:30px;
+}
+
+.UseyourDrive label{
+  font-weight: bold;
+}
+
+.UseyourDrive .radiobutton label{
+  margin-left: 30px;
+}
+
+div.jquery-checkbox-wrapper {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0px;
+  right: 17px;
+  z-index: 50;
+}
+
+div.jquery-checkbox-wrapper a.jquery-checkbox {
+  background: transparent url('images/checkbox.png') repeat scroll 0px 0px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  cursor: default;
+  outline: none;
+}
+
+div.jquery-checkbox-wrapper a.jquery-checkbox-on {
+  background-position: 16px 0px;
+}
+
+div.jquery-switch-wrapper {
+  position: absolute;
+  width: 94px;
+  height: 27px;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+}
+
+div.jquery-switch-wrapper a.jquery-switch {
+  background: transparent url('images/switches.png') repeat scroll 0px 27px;
+  display: block;
+  width: 94px;
+  height: 27px;
+  cursor: default;
+  outline: none;
+}
+
+div.jquery-switch-wrapper a.jquery-switch-on {
+  background-position: 0px 0px;
+}
+
+div.jquery-radiobutton-wrapper {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 5px;
+  z-index: 50;
+}
+
+div.jquery-radiobutton-wrapper a.jquery-radiobutton {
+  background: transparent url('images/radiobutton.png') repeat scroll 0px 0px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  cursor: default;
+  outline: none;
+}
+
+div.jquery-radiobutton-wrapper a.jquery-radiobutton-on {
+  background-position: 21px 0px;
+}
+
+.hidden{
+  display: none;
+}
+
+.UseyourDrive ul{
+  list-style: initial;
+  padding-left: 20px;
+}
+.UseyourDrive .wrap{
+  position: relative;
+  border-radius: 2px;
+}
+
+#UseyourDrive .selected-folder{
+  font-size: 80%;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+/* jQuery*/
+.UseyourDrive .ui-tabs-panel h4 {
+  border-bottom: none;
+  padding-bottom: 0;
+  clear: none;
+  float: left;
+  width: 160px;
+  margin: 10px 10px 0 5px;
+  padding: 0 25px 0 0;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+}
+
+.UseyourDrive .ui-tabs-panel h4 > .help {
+  background: url('images/help.png') no-repeat;
+  width: 12px;
+  height: 12px;
+  display: block;
+  float: right;
+  text-indent: -9999px;
+  margin-left: 10px;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+
+.UseyourDrive .ui-tabs-panel .option {
+  padding-bottom: 10px;
+  clear: both;
+}
+
+.UseyourDrive .ui-tabs-panel .option .section {
+  margin-top: 5px;
+  padding-bottom: 10px;
+  float: left;
+  width: 340px;
+}
+.UseyourDrive.settingspage .ui-tabs-panel .option-help .section{
+  width:100%;
+}
+.UseyourDrive .ui-tabs-panel .option-help .section {
+  float: left;
+  clear: left;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.UseyourDrive .ui-tabs-panel .option .section .description{
+  color: #555;
+  float: left;
+  padding: 2px 10px 0 0;
+  font-size: 11px;
+  line-height: 16px;
+  width: 350px;
+  display: none;
+}
+
+.UseyourDrive.settingspage .ui-tabs-panel .option-help .section .description{
+  width:100%;
+}
+
+.UseyourDrive .ui-tabs-panel .option-help .section .description {
+  display: block;
+}
+
+.UseyourDrive .ui-tabs.ui-tabs-vertical {
+  padding: 0!important;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-widget-header {
+  border: none;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-nav {
+  float: left;
+  width: 10em;
+  background: #f1f1f1;
+  padding-left: 10px;
+  border-radius: 4px 0 0 4px;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-nav li {
+  clear: left;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+  color: #21759B;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 12px;
+  height: 17px;
+}
+
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover {
+  cursor: pointer;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-state-default {
+  background: #f1f1f1;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+  border-right: 1px solid white;
+  background: #fff;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active a{
+  color: #d54e45;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-nav li:last-child {
+  margin-bottom: 10px;
+}
+.UseyourDrive .ui-tabs.ui-tabs-vertical .ui-tabs-panel {
+  float: left;
+  border-radius: 0;
+  position: relative;
+  padding: 0 20px 20px !important;
+  width: 540px;
+}
+
+.UseyourDrive.qtip-default.help {
+  padding: 0px 20px !important;
+  color: #666;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  line-height: 20px;
+  border-color: #aaa;
+  font-size: 100%;
+}
+
+.UseyourDrive li.ui-state-default.ui-state-hidden[role=tab]:not(.ui-tabs-active) {
+  display: none;
+}
