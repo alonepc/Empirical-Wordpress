@@ -172,8 +172,8 @@
 	                <li><a href="/">Contributors</a></li>
 	                <li class="<?php if($post_slug == 'activity') { echo 'active';} ?>"><a href="/activity/">Activity</a></li>
 	                <li class="<?php if($post_slug == 'teams') { echo 'active';} ?>"><a href="/teams/">Teams</a></li>
-	                <li class="<?php if($post_slug == 'mailing-list') { echo 'active';} ?>"><a href="/mailing-list/">Mailing List</a></li>
-	                <li class="<?php if($post_slug == 'chat') { echo 'active';} ?>"><a href="/chat/">Chat</a></li>
+	                <li class="<?php if($post_slug == 'weekly-goals') { echo 'active';} ?>"><a href="/weekly-goals/">Weekly Goals</a></li>
+	                <li class="<?php if($post_slug == 'getting-started') { echo 'active';} ?>"><a href="/teams/quill-lms/getting-started/">Getting Started</a></li>
 				</ul>
 			<?php endif; ?>
 			</nav>
