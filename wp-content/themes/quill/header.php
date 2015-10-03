@@ -100,7 +100,7 @@
 			      </li>
 
 			      <li class="<?php if($active == 'fundraising'){echo('active');} ?>">
-			        <a href="/teams/fundraising/">Fundraising</a>
+			        <a href="/teams/fundraising/">Partnerships</a>
 			      </li>
 			    
 			    </ul>
@@ -170,10 +170,11 @@
 				?>
 				<ul class="menu">
 	                <li><a href="/">Contributors</a></li>
-	                <li class="<?php if($post_slug == 'activity') { echo 'active';} ?>"><a href="/activity/">Activity</a></li>
+	                <li class="<?php if($post_slug == 'activity') { echo 'active';} ?>"><a href="/activity/">Activity</a				></li>
 	                <li class="<?php if($post_slug == 'teams') { echo 'active';} ?>"><a href="/teams/">Teams</a></li>
-	                <li class="<?php if($post_slug == 'weekly-goals') { echo 'active';} ?>"><a href="/weekly-goals/">Weekly Goals</a></li>
-	                <li class="<?php if($post_slug == 'getting-started') { echo 'active';} ?>"><a href="/teams/quill-lms/getting-started/">Getting Started</a></li>
+	                <li class="<?php if($post_slug == 'weekly-goals') { echo 'active';} ?>"><a href="/weekly-goals/"				>Weekly Goals</a></li>
+	                <li class="<?php if($post_slug == 'roadmap') { echo 'active';} ?>"><a href="/roadmap/">Roadmap</a				></li>
+	                <li class="<?php if($post_slug == 'getting-started') { echo 'active';} ?>"><a href="/teams/quill-lms				/getting-started/">Getting Started</a></li>
 				</ul>
 			<?php endif; ?>
 			</nav>
