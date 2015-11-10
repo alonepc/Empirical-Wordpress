@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+
 /**
  * WPBakery Visual Composer Plugin
  *
@@ -14,8 +18,14 @@ class Vc_License {
 	 *
 	 */
 	public function addAjaxHooks() {
-		add_action( 'wp_ajax_wpb_activate_license', array( &$this, 'activate' ) );
-		add_action( 'wp_ajax_wpb_deactivate_license', array( &$this, 'deactivate' ) );
+		add_action( 'wp_ajax_wpb_activate_license', array(
+			&$this,
+			'activate',
+		) );
+		add_action( 'wp_ajax_wpb_deactivate_license', array(
+			&$this,
+			'deactivate',
+		) );
 	}
 
 	/**
@@ -77,15 +87,28 @@ class Vc_License {
 	 *
 	 */
 	public function activate() {
+		vc_user_access()
+			->checkAdminNonce()
+			->validateDie()
+			->wpAny( 'manage_options' )
+			->validateDie()
+			->part( 'settings' )
+			->can( 'vc-updater-tab' )
+			->validateDie();
+
 		$params = array();
 		$params['username'] = vc_post_param( 'username' );
+		$params['version'] = WPB_VC_VERSION;
 		$params['key'] = vc_post_param( 'key' );
 		$params['api_key'] = vc_post_param( 'api_key' );
 		$params['url'] = get_site_url();
 		$params['ip'] = isset( $_SERVER['SERVER_ADDR'] ) ? $_SERVER['SERVER_ADDR'] : '';
-		$params['dkey'] = substr( str_shuffle( "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" ), 0, 20 );
+		$params['dkey'] = substr( str_shuffle( '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' ), 0, 20 );
 		$string = 'activatelicense?';
-		$request_url = self::getWpbControlUrl( array( $string, http_build_query( $params, '', '&' ) ) );
+		$request_url = self::getWpbControlUrl( array(
+			$string,
+			http_build_query( $params, '', '&' ),
+		) );
 		$response = wp_remote_get( $request_url, array( 'timeout' => 300 ) );
 		if ( is_wp_error( $response ) ) {
 			echo json_encode( array( 'result' => false ) );
@@ -96,7 +119,7 @@ class Vc_License {
 			echo json_encode( array( 'result' => false ) );
 			die();
 		}
-		if ( (boolean) $result->result === true || ( (int) $result->code === 401 && isset( $result->deactivation_key ) ) ) {
+		if ( true === (boolean) $result->result || ( 401 === (int) $result->code && isset( $result->deactivation_key ) ) ) {
 			$this->setDeactivation( isset( $result->code ) && (int) $result->code === 401 ? $result->deactivation_key : $params['dkey'] );
 			vc_settings()->set( 'envato_username', $params['username'] );
 			vc_settings()->set( 'envato_api_key', $params['api_key'] );
@@ -112,10 +135,22 @@ class Vc_License {
 	 *
 	 */
 	public function deactivate() {
+		vc_user_access()
+			->checkAdminNonce()
+			->validateDie()
+			->wpAny( 'manage_options' )
+			->validateDie()
+			->part( 'settings' )
+			->can( 'vc-updater-tab' )
+			->validateDie();
+
 		$params = array();
 		$params['dkey'] = $this->deactivation();
 		$string = 'deactivatelicense?';
-		$request_url = self::getWpbControlUrl( array( $string, http_build_query( $params, '', '&' ) ) );
+		$request_url = self::getWpbControlUrl( array(
+			$string,
+			http_build_query( $params, '', '&' ),
+		) );
 		$response = wp_remote_get( $request_url, array( 'timeout' => 300 ) );
 		if ( is_wp_error( $response ) ) {
 			echo json_encode( array( 'result' => false ) );
@@ -130,13 +165,56 @@ class Vc_License {
 	}
 
 	/**
+	 * Set up license activation notice if needed
 	 *
+	 * Don't show notice on dev environment
 	 */
 	public function setupReminder() {
+		if ( self::isDevEnvironment() ) {
+			return;
+		}
+
 		$deactivation_key = $this->deactivation();
 		if ( empty( $deactivation_key ) && empty( $_COOKIE['vchideactivationmsg'] ) && ! vc_is_network_plugin() && ! vc_is_as_theme() ) {
-			add_action( 'admin_notices', array( &$this, 'adminNoticeLicenseActivation' ) );
+			add_action( 'admin_notices', array(
+				&$this,
+				'adminNoticeLicenseActivation',
+			) );
 		}
+	}
+
+	/**
+	 * Check if current enviroment is dev
+	 *
+	 * Environment is considered dev if host is:
+	 * - ip address
+	 * - tld is local, dev, wp, test, example, localhost or invalid
+	 * - no tld (localhost, custom hosts)
+	 *
+	 * @param string $host Hostname to check. If null, use HTTP_HOST
+	 *
+	 * @return boolean
+	 */
+	public static function isDevEnvironment( $host = null ) {
+		if ( ! $host ) {
+			$host = $_SERVER['HTTP_HOST'];
+		}
+
+		$chunks = explode( '.', $host );
+
+		if ( 1 === count( $chunks ) ) {
+			return true;
+		}
+
+		if ( in_array( end( $chunks ), array( 'local', 'dev', 'wp', 'test', 'example', 'localhost', 'invalid' ) ) ) {
+			return true;
+		}
+
+		if ( preg_match( '/^[0-9\.]+$/', $host ) ) {
+			return true;
+		}
+
+		return false;
 	}
 
 	/**
@@ -144,6 +222,6 @@ class Vc_License {
 	 */
 	public function adminNoticeLicenseActivation() {
 		update_option( 'wpb_js_composer_license_activation_notified', 'yes' );
-		echo '<div class="updated vc_license-activation-notice"><p>' . sprintf( __( 'Hola! Please <a href="%s">activate your copy</a> of Visual Composer to receive automatic updates.', 'js_composer' ), wp_nonce_url( admin_url( 'options-general.php?page=vc_settings&tab=updater' ) ) ) . '</p></div>';
+		echo '<div class="updated vc_license-activation-notice"><p>' . sprintf( __( 'Hola! Please <a href="%s">activate your copy</a> of Visual Composer to receive automatic updates.', 'js_composer' ), wp_nonce_url( admin_url( 'admin.php?page=vc-updater' ) ) ) . '</p></div>';
 	}
 }

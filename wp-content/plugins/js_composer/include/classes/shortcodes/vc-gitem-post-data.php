@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 require_once vc_path_dir( 'SHORTCODES_DIR', 'vc-custom-heading.php' );
 
 class WPBakeryShortCode_VC_Gitem_Post_Data extends WPBakeryShortCode_VC_Custom_heading {
@@ -14,6 +17,7 @@ class WPBakeryShortCode_VC_Gitem_Post_Data extends WPBakeryShortCode_VC_Custom_h
 	}
 
 	public function getAttributes( $atts ) {
+		$atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 		if ( isset( $atts['block_container'] ) && strlen( $atts['block_container'] ) > 0 ) {
 			if ( ! isset( $atts['font_container'] ) ) {
 				$atts['font_container'] = $atts['block_container'];

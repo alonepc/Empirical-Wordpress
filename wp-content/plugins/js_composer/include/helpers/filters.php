@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+
 /**
  * WPBakery Visual Composer filter functions
  *
@@ -26,32 +30,28 @@
  * @return mixed|string|void
  */
 function wpb_widget_title( $params = array( 'title' => '' ) ) {
-	if ( $params['title'] == '' ) {
+	if ( '' === $params['title'] ) {
 		return '';
 	}
 
-	$extraclass = ( isset( $params['extraclass'] ) ) ? " " . $params['extraclass'] : "";
+	$extraclass = ( isset( $params['extraclass'] ) ) ? ' ' . $params['extraclass'] : '';
 	$output = '<h2 class="wpb_heading' . $extraclass . '">' . $params['title'] . '</h2>';
 
 	return apply_filters( 'wpb_widget_title', $output, $params );
 }
-
 
 /*
 
 Available filters in default.php
 wpb_toggle_heading
 
-
 Available filters in buttons.php
 wpb_cta_text
-
 
 Available filters in teaser_grid.php
 vc_teaser_grid_title
 vc_teaser_grid_thumbnail
 vc_teaser_grid_content
 vc_teaser_grid_carousel_arrows
-
 
 */

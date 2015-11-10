@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+
 /**
  * WPBakery Visual Composer main class.
  *
@@ -32,11 +36,19 @@ class Vc_Post_Settings implements Vc_Render {
 	}
 
 	/**
-	 *
+	 * @deprecated 4.7
 	 */
 	public function render() {
 		vc_include_template( 'editors/popups/panel_post_settings.tpl.php', array(
-			'box' => $this
+			'box' => $this,
+		) );
+	}
+	/**
+	 *
+	 */
+	public function renderUITemplate() {
+		vc_include_template( 'editors/popups/vc_ui-panel-post-settings.tpl.php', array(
+			'box' => $this,
 		) );
 	}
 }

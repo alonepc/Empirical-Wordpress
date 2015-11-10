@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+
 /**
  * Sort array values by key, default key is 'weight'
  * Used in usort() function.
@@ -33,6 +37,17 @@ class Vc_Sort {
 	}
 
 	/**
+	 * Used to change/set data to sort
+	 *
+	 * @since 4.5
+	 *
+	 * @param $data
+	 */
+	public function setData( $data ) {
+		$this->data = $data;
+	}
+
+	/**
 	 * Sort $this->data by user key, used in class-vc-mapper.
 	 * If keys are equals it SAVES a position in array (index).
 	 *
@@ -44,7 +59,7 @@ class Vc_Sort {
 	 */
 	public function sortByKey( $key = 'weight' ) {
 		$this->key = $key;
-		@usort( $this->data, array( &$this, '_key' ) );
+		usort( $this->data, array( &$this, '_key' ) );
 
 		return $this->data;
 	}
@@ -74,6 +89,7 @@ class Vc_Sort {
 
 	/**
 	 * @since 4.4
+	 *
 	 * @return array - sorting data
 	 */
 	public function getData() {
