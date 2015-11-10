@@ -6,7 +6,9 @@ get_header();
 
 ?>
 <style>
-
+header#masthead {
+    display: none !important;
+}
 </style>
 
 <div id="main-content" class="main-content">
