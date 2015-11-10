@@ -2,7 +2,12 @@
 /*
 Template Name: Blank Template
 */
+get_header();
+
 ?>
+<style>
+
+</style>
 
 <div id="main-content" class="main-content signup-page">
 	<div id="primary" class="content-area">
@@ -15,3 +20,4 @@ Template Name: Blank Template
 		</div>
 	</div>
 </div>
+<?php get_footer();?>
