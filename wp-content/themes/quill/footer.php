@@ -9,7 +9,10 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
-                    <center><a href="https://www.atatus.com/?utm_source=badge" rel="nofollow"><img style="width:122px;height:48px" src="//dmc1acwvwny3.cloudfront.net/images/badge_dark.png" alt="Atatus | Mobile and Web Performance Monitoring"></a><br /><br /></center>
+<footer>
+    <center><a href="https://www.atatus.com/?utm_source=badge" rel="nofollow">
+        <img style="width:122px;height:48px" src="//dmc1acwvwny3.cloudfront.net/images/badge_dark.png" alt="Atatus | Mobile and Web Performance Monitoring"></a><br /><br /></center>
+</footer>
 		</div><!-- #main -->
 	</div><!-- #page -->
 

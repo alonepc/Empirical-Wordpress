@@ -9,6 +9,9 @@ get_header();
 header#masthead {
     display: none !important;
 }
+footer {
+    display: none !important;
+}
 </style>
 
 <div id="main-content" class="main-content">
