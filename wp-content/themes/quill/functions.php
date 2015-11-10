@@ -225,7 +225,7 @@ function twentyfourteen_font_url() {
 function twentyfourteen_scripts() {
 	//Add our custom css
 	wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.css' );
-	
+
 	// Add Lato font, used in the main stylesheet.
 	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
 
@@ -531,3 +531,10 @@ if ( !function_exists('empirical_addgravatar') ) {
 
 	add_filter( 'avatar_defaults', 'empirical_addgravatar' );
 }
+
+// Allow SVG uploads
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
