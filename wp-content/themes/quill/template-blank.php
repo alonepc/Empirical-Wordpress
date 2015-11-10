@@ -9,15 +9,26 @@ get_header();
 
 </style>
 
-<div id="main-content" class="main-content signup-page">
+<div id="main-content" class="main-content">
+
 	<div id="primary" class="content-area">
-		<div id="content" role="main">
+		<div id="content" class="site-content" role="main">
+
 			<?php
-			while ( have_posts() ) : the_post();
-				the_content();
-			endwhile;
+				// Start the Loop.
+				while ( have_posts() ) : the_post();
+
+					// Include the page content template.
+					get_template_part( 'content', 'page' );
+
+				endwhile;
 			?>
-		</div>
-	</div>
-</div>
-<?php get_footer();?>
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+	<?php get_sidebar( 'content' ); ?>
+</div><!-- #main-content -->
+
+<?php
+get_sidebar();
+get_footer();
