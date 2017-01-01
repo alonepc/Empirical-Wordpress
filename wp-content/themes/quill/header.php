@@ -170,10 +170,10 @@
 				?>
 				<ul class="menu">
 	                <li><a href="/">Contributors</a></li>
-	                <li class="<?php if($post_slug == 'activity') { echo 'active';} ?>"><a href="/activity/">Activity</a></li>
 	                <li class="<?php if($post_slug == 'teams') { echo 'active';} ?>"><a href="/teams/">Teams</a></li>
-	                <li class="<?php if($post_slug == 'weekly-goals') { echo 'active';} ?>"><a href="/weekly-goals/">Weekly Goals</a></li>
-	                <li class="<?php if($post_slug == 'roadmap') { echo 'active';} ?>"><a href="/roadmap/">Roadmap</a></li>
+	                <li class="<?php if($post_slug == 'links') { echo 'active';} ?>"><a href="/links/">Links</a></li>
+	                <li class="<?php if($post_slug == 'guides') { echo 'active';} ?>"><a href="/guides/">Guides</a></li>
+			<li class="<?php if($post_slug == 'glossary') { echo 'active';} ?>"><a href="/glossary/">Glossary</a></li>
 	                 <li class="<?php if($post_slug == 'join-slack') { echo 'active';} ?>"><a href="/join-slack/">Join Slack</a></li>
 	                <li class="<?php if($post_slug == 'getting-started') { echo 'active';} ?>"><a href="/teams/quill-lms/getting-started/">Getting Started</a></li>
 				</ul>
